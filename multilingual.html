@@ -1,0 +1,183 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Alan Akbik's Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+
+
+
+    <style>
+        /* Note: Try to remove the following lines to see the effect of CSS positioning */
+        .affix {
+        top: 20px;
+        }
+
+        .lbl_A0 {
+        color:blue;
+        }
+
+        .lbl_A1 {
+        color:red;
+        }
+
+        .lbl_A2 {
+        color:green;
+        }
+
+        .lbl_A3 {
+        color:brown;
+        }
+
+        .lbl_pred{
+        color:purple;
+        }
+    </style>
+</head>
+
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10">
+            <div class="navbar navbar-default" style="height:5%;" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img style="max-width:100px; margin-top: +3px;"
+                                                          src="img/logo-ibm_research.png"></a>
+
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li class="active"><a href="projects.html">Research</a></li>
+                   <!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li><a href="personal.html">Personal</a></li>
+                </ul>
+            </div>
+            <div class="col-md-12">
+                <h3>Multilingual Semantic Role Labeling</h3>
+</div>
+            <div class="col-md-7">
+ 
+ <p>               
+ In this line of research, our goal is to enable shallow semantic parsing of arbitrary languages. One crucial bottleneck is the availability of 
+suitable training data for shallow semantic parsers: While for English such data exists in the form of text data labeled with Propbank labels, 
+such corpora generally do not exist for most other languages and are very expensive to produce.</p>
+
+ <p>  
+We investigated a method for automatically generating such data, using <i>annotation projection</i> in parallel corpora. Our approach is designed
+to sidestep problems stemming from translation shifts. It works in two steps: In the first step, projectable
+ labels are identified (see Figure) and projected. In the second step, a bootstrapping approach repeatedly samples the
+ target language corpus to estimate labels for all unlabeled target language consitutents.</p>
+	
+
+<p> Please refer to <a href="papers/acl2015.pdf" download><b>(Akbik et al., 2015)</b></a> for a detailed overview of the approach and the results.</p>	
+
+		</div>
+
+            <div class="col-md-5"><img src="img/annotation_projection.png" alt="A picture of should be here" width="350" />
+<p>Example of annotation projection for one sentence pair. The English labels can in some cases be projected onto French words. Our approach determines projectable labels (blue) and blocks projection of all other labels (red). </p>
+		</div>
+
+
+            <div class="col-md-12">
+<p>
+On this page, we present the generated resources for all seven target languages: Arabic, Chinese, French, German, Hindi, Russian and Spanish. You may browse the frame files and download the annotated corpora.
+				
+</p>
+                <hr/>
+                <h4 >Arabic</h4>
+ 		<p>
+					In version 1.0, the generated Arabic Proposition Bank covers <b>330 distinct verbs</b>.
+ 					Browse all verbs with examples here: <a href="ArabicPropbank/"><b>Arabic Frames</b></a>. 
+				</p>	
+
+				<p> The annotated corpus consists of <b>68,512 sentences</b> in CONLL-X format. 
+				</p>	
+                <hr/>
+
+                <h4 >Chinese</h4>
+		<p>
+					In version 1.0, the generated Chinese Proposition Bank covers <b>1,102 distinct verbs</b>.
+ 					Browse all verbs with examples here: <a href="ChinesePropbank/"><b>Chinese Frames</b></a>. 
+				</p>	
+
+				<p> The annotated corpus consists of <b>419,140 sentences</b> in CONLL-X format.
+				</p>
+
+                <hr/>
+                <h4 >French</h4>
+
+				<p>
+					In version 1.0, the generated French Proposition Bank covers <b>1,145 distinct verbs</b>.
+ 					Browse all verbs with examples here: <a href="FrenchPropbank/"><b>French Frames</b></a>. 
+				</p>	
+
+				<p> The annotated corpus consists of <b>248,256 sentences</b> in CONLL-X format. </p>	
+                <hr/>
+                <h4>German</h4>
+
+		<p>
+					In version 1.0, the generated German Proposition Bank covers <b>537 distinct verbs</b>.
+ 					Browse all verbs with examples here: <a href="GermanPropbank/"><b>German Frames</b></a>. 
+				</p>	
+
+				<p> The annotated corpus consists of <b>44,007 sentences</b> in CONLL-X format. </p>	
+
+                <hr/>
+                <h4>Hindi</h4>
+				<p>
+					In version 1.0, the generated Hindi Proposition Bank covers <b>59 distinct verbs</b>.
+ 					Browse all verbs with examples here: <a href="HindiPropbank/"><b>Hindi Frames</b></a>. 
+				</p>	
+
+				<p> The annotated corpus consists of <b>1,623 sentences</b> in CONLL-X format. </p>
+ 		<hr/>
+                <h4>Russian</h4>
+		<p>
+					In version 1.0, the generated Russian Proposition Bank covers <b>1,349 distinct verbs</b>.
+ 					Browse all verbs with examples here: <a href="RussianPropbank/"><b>Russian Frames</b></a>. 
+				</p>	
+
+				<p> The annotated corpus consists of <b>496,033 sentences</b> in CONLL-X format. </p>	
+
+ 		<hr/>
+                <h4>Spanish</h4>
+		<p>
+					In version 1.0, the generated Spanish Proposition Bank covers <b>909 distinct verbs</b>.
+ 					Browse all verbs with examples here: <a href="SpanishPropbank/"><b>Spanish Frames</b></a>. 
+				</p>	
+
+				<p> The annotated corpus consists of <b>165,582 sentences</b> in CONLL-X format. </p>
+	</div>
+
+
+
+
+        </div>
+
+        <div class="col-md-1">
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

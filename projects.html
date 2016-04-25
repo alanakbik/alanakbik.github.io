@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Alan Akbik's Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+
+
+
+    <style>
+        /* Note: Try to remove the following lines to see the effect of CSS positioning */
+        .affix {
+        top: 20px;
+        }
+
+        .lbl_A0 {
+        color:blue;
+        }
+
+        .lbl_A1 {
+        color:red;
+        }
+
+        .lbl_A2 {
+        color:green;
+        }
+
+        .lbl_A3 {
+        color:brown;
+        }
+
+        .lbl_pred{
+        color:purple;
+        }
+    </style>
+</head>
+
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10">
+            <div class="navbar navbar-default" style="height:5%;" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img style="max-width:100px; margin-top: +3px;"
+                                                          src="img/logo-ibm_research.png"></a>
+
+                </div>                
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li class="active"><a href="projects.html">Research</a></li>
+ 			<!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li><a href="personal.html">Personal</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+                <h3>Projects</h3>
+  <p>                 On this page, you find a quick overview of my current and recent research projects. Most of these have Web demonstrators or resources available.
+</p>
+
+                <hr/>
+                <h4 align="middle">Multilingual Semantic Role Labeling</h4>
+ 		In this line of research, I am investigating methods for semantically parsing text data in a wide range of languages, such 
+		   as Arabic, Chinese, German, Hindi, Russian and many others.  In order to train such parsers, we are automatically generating
+		   Proposition Bank-style resources from parallel corpora. We are making all resources publicly available, so check out 
+		   the project overview page for more details and the generated Proposition Banks.
+
+				<p align="right"><a href="multilingual.html"><span
+				class="glyphicon glyphicon-arrow-right"></span><i> project overview page </i></a></p>
+                <hr/>
+
+                <h4 align="middle">Exploratory Information Extraction</h4>
+
+		<p>Imagine you get hold of an extremely large dataset (such as very large Web crawls) and a customer asks you to mine this dataset
+		for useful information. Traditionally, you would first define some extraction tasks, then go through the expensive process of creating extractors, 
+		then execute them on the data and - only after all this work - see what you find and analyze whether it is useful. If not, you go back and repeat the process. </p>
+
+		<p>We argue that this approach is too static and to costly for realistic Information Extraction scenarios: Instead, we propose an <i>exploratory approach</i> in 
+		which you immediately work with the avaiable data and create prototypical extractors with a small number of queries. Key ideas are keyword-style queries 
+		that return structured information, 
+		high interactivity when working with the data, as well as a data-guided workflow that makes suggestions based on earlier interactions and available data. </p>
+
+		<b>Resources:</b>
+		<ul>
+		<li>Demo: Try out the workflow with <a href="http://lucene.textmining.tu-berlin.de/"><b>SCHN&Auml;PPER</b></a>, our Web-based demo here! </li>
+		<li>Paper: The paradigm is introduced in our COLING 2014 paper <a href="papers/coling2014_final.pdf">[pdf]</a> .</li>
+		<li>Paper: The tool is described in out ACL 2015 demo <a href="papers/acl2015demo.pdf">[pdf]</a>. </li>
+		</ul>
+	
+		<p></p>
+		
+
+                <hr/>
+                <h4 align="middle">The Weltmodell - A Data-Driven Commonsense Knowledge Base</h4>
+
+		<p>In this line of work, we used OpenIE and distributional similarity on an extremely large corpus provided by Google to create a knowledge base
+		of commonsense statements. I am currently working on using this knowledge to handle NLP tasks.</p>
+		<b>Resources:</b>
+		<ul>
+		<li>Demo: Browse the <a href="http://www.textmining.tu-berlin.de/weltmodell/"><b>Weltmodell</b></a> online here! </li>
+		<li>Data: You can download the <a href="data/weltmatrix_1.5.tar.gz"> Weltmodell data</a>. If you like the data, please contact me and let me know what you're using it for!</li>
+		<li>Paper: The knowledge base is described in our LREC 2014 paper <a href="papers/weltmodell.pdf">[pdf]</a>. </li>
+		</ul>
+	
+		<hr/>
+                <h4 align="middle">Nerdle: Topic-Specific Question Answering</h4>
+
+		<p>This is my student Umar Maqsud's work (who, incidentally, now also works at IBM). The idea here was to use OpenIE techniques on large collections 
+		of <i>topically focused</i> text. In our case, we used the topics "Star Trek", "Star Wars" and "The Simpsons", and used a focused crawler to retrieve as 
+		much text as possible from the Web. The goal was to investigate in how far OpenIe can be used as basis for question-answering systems.</p>
+		<b>Resources:</b>
+		<ul>
+		<li>Demo: Ask <a href="http://www.textmining.tu-berlin.de/nerdle/"><b>Nerdle</b></a> some questions online here! </li>
+		<li>Paper: The knowledge base is described in our COLING 2014 demo paper <a href="papers/coling2014_nerdle.pdf">[pdf]</a>. </li>
+		</ul>
+	
+
+                <hr/>
+	</div>
+
+
+            <div class="col-md-3">
+                <img align="middle" src="img/alan.jpg" alt="A picture of me should be here" width="200"/>
+				
+				<h3 align="middle">Alan Akbik</h3>
+				<p align="middle"><b>Text and Data Mining</b><br/>IBM Research<br/>
+				<i>akbika [ät] us [dot] ibm [dot] com</i></p>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-1">
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
