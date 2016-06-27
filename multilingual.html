@@ -60,47 +60,95 @@
         <div class="col-md-10">
             <div class="navbar navbar-default" style="height:5%;" role="navigation">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#"><img style="max-width:100px; margin-top: +3px;"
+                    <a class="navbar-brand" href="index.html"><img style="max-width:100px; margin-top: +3px;"
                                                           src="img/logo-ibm_research.png"></a>
 
                 </div>
-                <ul class="nav navbar-nav">
+               <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="publications.html">Publications</a></li>
-                    <li class="active"><a href="projects.html">Research</a></li>
-                   <!-- <li><a href="blog.html">Blog</a></li> -->
+                    <li class="active"><a href="multilingual.html">Multilingual Semantic Role Labeling</a></li>
+                    <li><a href="projects.html">Research</a></li>
                     <li><a href="personal.html">Personal</a></li>
                 </ul>
             </div>
             <div class="col-md-12">
                 <h3>Multilingual Semantic Role Labeling</h3>
+
+ 
+ <p>            
+ In this line of research, our goal is to enable shallow semantic parsing of arbitrary languages into one unified semantic abstraction.</p>
+
+                <hr/>
+<h4> Polyglot </h4>
+ <p> I am building a system (called "Polyglot") that is currently capable of <b>semantically parsing 9 different languages</b>. Check out the three
+screenshots below for example sentences in English, Mandarin Chinese and Spanish. No matter what input language, 
+the system identifies the same semantic concepts such as <b>buyer</b>, <b>thing bought</b>,  <b>price paid</b> or temporal context.  </p>
+
+<br>
+ <p> 
+<img src="img/3examples.png" alt="A picture of should be here" width="100%"/>   </p>
+<br> 
+
+<p> This unified semantic abstraction may serve as basis for applications such as crosslingual information extraction or question answering. 
+In fact, one of my active fields of research is to utilize this system for multilingual data mining applications at IBM. </p>
+
+
+ <p> We will demo the system at ACL 2016. The corresponding publication is:  </p>
+
+                <p>  <b>Polyglot: Multilingual Semantic Role Labeling with Unified Labels. </b>
+                    Alan Akbik and Yunyao Li. 
+                    <b><font color="#336699"> 54th Annual Meeting of the Association for Computational Linguistics, ACL
+                        2016.</font></b>
+                    <a href="papers/acl2016-demo.pdf">[pdf]</a>  </p>
+
+                <hr/>
+<h4> Generating Multilingual Proposition Banks </h4>
+
+
 </div>
             <div class="col-md-7">
- 
- <p>               
- In this line of research, our goal is to enable shallow semantic parsing of arbitrary languages. One crucial bottleneck is the availability of 
-suitable training data for shallow semantic parsers: While for English such data exists in the form of text data labeled with Propbank labels, 
-such corpora generally do not exist for most other languages and are very expensive to produce.</p>
+<p> 
+We require Proposition Bank-style resources for arbitrary languages in order to train our system. Unfortunately, 
+such corpora generally do not exist for most languages and are prohibitively expensive to manually produce. </p>
+
+<p> For this reason I am investigating <b>semi-automatic approaches of creating Proposition Banks for arbitrary languages</b>. 
+
+
 
  <p>  
-We investigated a method for automatically generating such data, using <i>annotation projection</i> in parallel corpora. Our approach is designed
-to sidestep problems stemming from translation shifts. It works in two steps: In the first step, projectable
+In its first incarnation, our approach is fully automatic and based on  <i>annotation projection</i> in parallel corpora. We specifically 
+address problems of translation shifts with a two step approach: In the first step, projectable
  labels are identified (see Figure) and projected. In the second step, a bootstrapping approach repeatedly samples the
  target language corpus to estimate labels for all unlabeled target language consitutents.</p>
 	
 
-<p> Please refer to <a href="papers/acl2015.pdf" download><b>(Akbik et al., 2015)</b></a> for a detailed overview of the approach and the results.</p>	
-
 		</div>
 
             <div class="col-md-5"><img src="img/annotation_projection.png" alt="A picture of should be here" width="350" />
-<p>Example of annotation projection for one sentence pair. The English labels can in some cases be projected onto French words. Our approach determines projectable labels (blue) and blocks projection of all other labels (red). </p>
+<p>Example of annotation projection for one sentence pair. English labels can in some cases (blue) be projected onto French words.</p>
 		</div>
 
 
             <div class="col-md-12">
+
+<p> Using this approach, we auto-generated Proposition Banks for 7 languages. The corresponding publication is:</p>
+
 <p>
-On this page, we present the generated resources for all seven target languages: Arabic, Chinese, French, German, Hindi, Russian and Spanish. You may browse the frame files and download the annotated corpora.
+                <b>Generating High Quality Proposition Banks for Multilingual Semantic Role Labeling. </b>
+                    Alan Akbik, Laura Chiticariu, Marina Danilevsky, Yunyao Li, Shivakumar Vaithyanathan and Huaiyu
+                    Zhu.
+                    <b><font color="#336699"> 53rd Annual Meeting of the Association for Computational Linguistics, ACL
+                        2015.</font></b>
+                    <a href="papers/acl2015.pdf">[pdf]</a>
+</p>
+
+
+                <hr/>
+<h3> Resources </h3>
+
+<p>
+Below we present the generated resources for all seven target languages of the ACL 2015 paper: Arabic, Chinese, French, German, Hindi, Russian and Spanish. You may browse the frame files and download the annotated corpora.
 				
 </p>
                 <hr/>
