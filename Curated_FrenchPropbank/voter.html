@@ -1,0 +1,46 @@
+<center><h2>Predicate: <font color=red><i>voter</i></font></h2></center>
+
+<h4>Roleset id: <font color=green>voter.01</font>, vote, cast a ballot <font color=purple>Source: </font>[vote.01]</h4><font size=2 color=blue><b>voter.01</b>: voter </font><br>
+
+<h4>Roles:</h4>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>A0</b>: <i>voter</i><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>A1</b>: <i>candidate or ballot issue</i><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>A2</b>: <i>numerical count of vote, margin, down/up</i><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>AA</b>: <i>proxy voter</i><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Aa</b>: <i>proxy voter</i><br>
+<h4>Example: </h4>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size=2>Il a toujours <b>vot&#233;</b> r&#233;publicain .</font><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size=2>He always voted Republican .</font><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>A0</b>: Il   <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>AM-TMP</b>: toujours   <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Rel</b>: vot&#233;<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>A1</b>: r&#233;publicain   <br>
+<h4>Example: </h4>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size=2>Ils ne <b>votent</b> pas une fois sur deux .</font><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size=2>Half the time they do n't vote , anyway .</font><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>A0</b>: Ils   <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>AM-NEG</b>: ne   <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Rel</b>: votent<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>C-AM-NEG</b>: pas   <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>AM-TMP</b>: une fois sur deux   <br>
+<h4>Example: </h4>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size=2>Restent les trois qui ont <b>vot&#233;</b> &#34; non coupable &#34; .</font><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size=2>So now remaining is only the three who voted not guilty .</font><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>A0</b>: les trois   <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>R-A0</b>: qui   <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Rel</b>: vot&#233;<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>A1</b>: non coupable   <br>
+<h4>Example: </h4>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size=2>- Et il a <b>vot&#233;</b> Roosevelt .</font><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size=2>- And he voted for Roosevelt .</font><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>AM-DIS</b>: Et   <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>A0</b>: il   <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Rel</b>: vot&#233;<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>A1</b>: Roosevelt   <br>
+<h4>Example: </h4>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size=2>Je n' irais m&#234;me pas <b>voter</b> avec toi .</font><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <font size=2>I would n't vote with you in the same election .</font><br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>A0</b>: Je   <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>AM-NEG</b>: pas   <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>Rel</b>: voter<br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <b>A1</b>: toi   <br>
