@@ -67,60 +67,110 @@
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="publications.html">Publications</a></li>
+                    <li class="active"><a href="projects.html">Universal Proposition Banks</a></li>
                     <li><a href="multilingual.html">Multilingual Text Analytics</a></li>
-                    <li class="active"><a href="projects.html">Other Research</a></li>
- 			<!-- <li><a href="blog.html">Blog</a></li> -->
                     <li><a href="personal.html">Personal</a></li>
                 </ul>
             </div>
             <div class="col-md-9">
-                <h3>Other Research Projects</h3>
-  <p>                 On this page, you find a quick overview of other lines of research that I pursue, next to my main focus on <a href="multilingual.html">multilingual text analytics</a>.
+                <h3>Universal Proposition Banks</h3>
+  <p> One of my main research projects is to semi-automatically create the <a href="https://github.com/System-T/UniversalPropositions/" target="_blank"><b>Universal Proposition 			Banks</b></a>, 
+a set of treebanks that enable the training of crosslingual parsers and the study of crosslingual semantics. This effort builds on the Universal Dependencies project and adds a layer
+of crosslingually unified shallow semantic information. 
+</p>
+ <p>
+To illustrate what Universal Proposition Banks are, consider the following sentences: 
+<ol>
+<li> <i>Letzte Woche habe ich den Futon bestellt.</i>  (German)</li>
+<li> <i>Vahtimestari tilasi taksin.</i>  (Finnish)</li>
+<li> <i>同年12月29日, 美國大陸航空 訂購 10架787.</i>  (Mandarin Chinese)</li>
+</ol>
+
+While these sentences have different meanings, they all share the fact that they pertain to a similar action, namely the action of <b><i>ordering something</i></b> (a futon, a taxi, 
+or some airplanes). The Universal Proposition Banks formalize these shared semantics. The action of "ordering something" for instance is marked with the frame label "<b>order.02</b>".
+The entity that places the order is marked up as <b>A0</b>, and the thing that is being ordered is marked up as <b>A1</b>. Check out these sentences with semantic markup in the
+Universal Proposition Banks:
+
+ <img src="img/UPs.png" alt="A picture of should be here" width="100%"/>
 </p>
 
+
+		 <p>We formalize these crosslingual shallow semantics using <a href="http://propbank.github.io/" target="_blank">Proposition Bank</a> frame and role labels.
+ Check our version 1.0 of the Universal Proposition Banks, publicly available <a href="https://github.com/System-T/UniversalPropositions/" target="_blank"><b>here</b></a>!</p>
                 <hr/>
               
-                <h4 align="middle">Exploratory Information Extraction</h4>
+                <h4>Two-Step Annotation Projection</h4>
 
-		<p>In this line of research, I am investigating unsupervised and semi-supervised approach for <b>Information Discovery</b> and <b>Exploratory Information Extraction</b> 
-		in very large collections of unstructured data. </p>
+		 <p>
+                       We proposed a two-step annotation projection approach to automatically generate the universal proposition banks. 
+		       In annotation projection, we utilize parallel corpora that consist of English sentences and their translations 
+in a target language. We use an English SRL system to predict English semantic frame and role labels for the English sentences. Then, 
+we project this annotation along word alignments to the target language side. This produces a target language sentence with English frame 
+and role labels.  
+                    </p>
 
-		<b>Resources:</b>
-		<ul>
-		<li>Demo: Try out the workflow with <a href="http://lucene.textmining.tu-berlin.de/"><b>SCHN&Auml;PPER</b></a>, our Web-based demo here! </li>
-		<li>Paper: The paradigm is introduced in our COLING 2014 paper <a href="papers/coling2014_final.pdf">[pdf]</a> .</li>
-		<li>Paper: The tool is described in out ACL 2015 demo <a href="papers/acl2015demo.pdf">[pdf]</a>. </li>
-		</ul>
-	
+
+                    <p> <img src="img/annotation_projection.png" alt="A picture of should be here" ALIGN="left" HSPACE="10" VSPACE="10" width="350"/> 
+                    In our canonical work, we presented a two-step filtering and bootstrapping approach to address the problem of 
+translation shift in annotation projection (i.e. which occurs when a sentence is translated in a non-literal manner).
+  Using this approach, we auto-generated Proposition Banks for 7 languages. The corresponding
+                        publication is: </p>
+
+	  <p>
+                    <b>Generating High Quality Proposition Banks for Multilingual Semantic Role Labeling.</b>
+                    Alan Akbik, Laura Chiticariu, Marina Danilevsky, Yunyao Li, Shivakumar Vaithyanathan and Huaiyu
+                    Zhu.
+                    <b>
+                        <font color="#336699">53rd Annual Meeting of the Association for Computational Linguistics,
+                            ACL
+                            2015.
+                        </font>
+                    </b>
+                    <a href="papers/acl2015.pdf">[pdf]</a>
+                </p>
 		<p></p>
 		
 
                 <hr/>
-                <h4 align="middle">The Weltmodell - A Data-Driven Commonsense Knowledge Base</h4>
+                <h4>Low Resource Languages</h4>
 
-		<p>In this line of work, we used OpenIE and distributional similarity on an extremely large corpus provided by Google to create a knowledge base
-		of commonsense statements. I am currently working on using this knowledge to handle NLP tasks.</p>
-		<b>Resources:</b>
-		<ul>
-		<li>Demo: Browse the <a href="http://www.textmining.tu-berlin.de/weltmodell/"><b>Weltmodell</b></a> online here! </li>
-		<li>Data: You can download the <a href="data/weltmatrix_1.5.tar.gz"> Weltmodell data</a>. If you like the data, please contact me and let me know what you're using it for!</li>
-		<li>Paper: The knowledge base is described in our LREC 2014 paper <a href="papers/weltmodell.pdf">[pdf]</a>. </li>
-		</ul>
-	
+		 <p>
+                        We are also interested in text analytics and semantic parsing over low-resource languages.
+                    </p>
+
+                    <p>  <img src="img/tamil.png" alt="A picture of should be here"  ALIGN="left" HSPACE="10" VSPACE="10" width="350"/>
+                        We applied our approach to <b>Bengali</b>, <b>Malayalam</b> and <b>Tamil</b>, three low-resource languages with over 
+			300 million first language speakers - but almost no NLP resources and tools. 
+
+                    <p>We propose a 
+			combination of annotation projection, crowdsourcing and limited expert involvement to create 
+			NLP resources for low-resource languages in a cost-effective way. The corresponding
+                        publication is:
+                    </p>
+	<p>
+                <b>Towards Semi-Automatic Generation of Proposition Banks for Low-Resource Languages. </b>
+                    Alan Akbik and Yunyao Li.
+                    <b><font color="#336699"> 2016 Conference on Empirical Methods on Natural Language Processing, EMNLP
+                        2016.</font></b>                   
+</p>	
 		<hr/>
-                <h4 align="middle">Nerdle: Topic-Specific Question Answering</h4>
 
-		<p>This is my student Umar Maqsud's work (who, incidentally, now also works at IBM). The idea here was to use OpenIE techniques on large collections 
-		of <i>topically focused</i> text. In our case, we used the topics "Star Trek", "Star Wars" and "The Simpsons", and used a focused crawler to retrieve as 
-		much text as possible from the Web. The goal was to investigate in how far OpenIe can be used as basis for question-answering systems.</p>
-		<b>Resources:</b>
-		<ul>
-		<li>Demo: Ask <a href="http://www.textmining.tu-berlin.de/nerdle/"><b>Nerdle</b></a> some questions online here! </li>
-		<li>Paper: The knowledge base is described in our COLING 2014 demo paper <a href="papers/coling2014_nerdle.pdf">[pdf]</a>. </li>
-		</ul>
-	
 
-                <hr/>
+                <h4>Multilingual Aliasing</h4>
+
+		<p>We also experimented with expert frame aliasing to attain better mappings between target languages 
+		and English frames. To this end, we defined a two-stage process for the curation of automatically determined
+		mappings in which (1) incorrect mappings are manually removed, and (2) synonymous mappings are manually merged. 
+		Our experiments show that this significantly increases the quality of generated Universal Proposition Banks, 
+		while also increasing the saliency of the frame lexicon. The corresponding publication is:</p>
+
+		<p>
+                <b>Multilingual Aliasing for Auto-Generating Proposition Banks. </b>
+                    Alan Akbik, Xinyu Guan and Yunyao Li.
+                    <b><font color="#336699">  26th International Conference on Computational Linguistics, COLING
+                        2016.</font></b>
+ <a href="papers/COLING_2016_aliasing.pdf">[pdf]</a>            
+</p>
 	</div>
 
 

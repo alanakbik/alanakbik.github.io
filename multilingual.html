@@ -5,18 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 
-    <!-- Latest compiled JavaScript -->
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+
 
 
     <style>
@@ -46,7 +48,7 @@
         }
     </style>
 </head>
-<body>
+
 
 <div class="container">
 
@@ -60,97 +62,81 @@
                 <div class="navbar-header">
                     <a class="navbar-brand" href="index.html"><img style="max-width:100px; margin-top: -7px;"
                                                           src="img/zalando-research-logo.png"></a>
-                    </a>
 
-                </div>
+                </div>                
                 <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="publications.html">Publications</a>
-                    </li>
-                    <li class="active">
-                        <a href="multilingual.html">Multilingual Text Analytics</a>
-                    </li>
-                    <li>
-                        <a href="projects.html">Other Research</a>
-                    </li>
-                    <li>
-                        <a href="personal.html">Personal</a>
-                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li><a href="projects.html">Universal Proposition Banks</a></li>
+                    <li class="active"><a href="multilingual.html">Multilingual Text Analytics</a></li>
+                    <li><a href="personal.html">Personal</a></li>
                 </ul>
             </div>
-            <div class="col-md-12">
-               <!-- <h4>Multilingual Text Analytics</h4> -->
-
-
+            <div class="col-md-9">
                 <h3>Multilingual Text Analytics</h3>
+  <p> A principal focus of my research is to develop text analytics capabilities for multilingual text. A crucial challenge here is 
+how to effectively create Information Extraction (IE) methods that can discover and extract specific structured information 
+from large-scale unstructured data in multiple languages.</p> 
 
 
-
-                <div class="col-md-6">
-
-
-                <p>
-                    This page gives an overview of my work on multilingual text data. My goal is twofold: 
-<ol>
-<li>
-To
-                    enable shallow semantic parsing of arbitrary languages into one unified semantic abstraction.</li>
-<li>
-                    To enable multilingual text analytics over this shared abstraction.</li></ol>
-                </p>
-
-                    <p> For instance, the screenshot to the right shows the <b>PolyglotIE</b> system that I am currently developing. 
-			It shows the output of an extractor that identifies <b>buying intentions of smartphones</b>
-			 in multilingual 
-			text. </p>
-
-                    <p>With my research, this extractor was created only once for one language - but automatically works for a large number of supported languages without any additional
-                        effort!</p>
-
-
-
-		<p>Check out screencasts of the system: <ul> <li>  <a href="https://vimeo.com/180382223" target="_blank"><b>PolyglotIE</b> - Introduction</a> </li> <li> <a href="https://vimeo.com/180797542" target="_blank"><b>PolyglotIE</b> - More complex example</a> </li> </ul>  </p>
-
-                </div>
-
-
-                <div class="col-md-6">
-                    <img src="img/buying_intentions.png" alt="A picture of should be here" width="400"/>
-                </div>
-            </div>
-
-
-
-            <div class="col-md-12">
                 <hr/>
-                <h3>Multilingual Semantic Parsing</h3>
-                <p>I am building a system (called <a href="https://vimeo.com/161718580" target="_blank">
+              
+                <h4>Multilingual Information Extraction</h4>
+
+
+ <p><img src="img/buying_intentions.png" alt="A picture of should be here" ALIGN="left" HSPACE="10" VSPACE="10"  width="400"/> 
+Our core research is in determining a semantic feature space that is shared between all languages. Such a feature space may be 
+explicit and human-readable, as is the case of the Universal Proposition Banks, or induced such as a high dimensional embedding space.
+Given such a shared feature space, we can develop an extractor only one, but immediately run it on multilingual text without
+ any
+language-specific adaptation. The Figure on the left shows such an extractor in our PolyGlotIE system. </p>
+
+<p>Check out screencasts of the system: <ul> <li>  <a href="https://vimeo.com/180382223" target="_blank"><b>PolyglotIE</b> - Introduction</a> </li> <li> <a href="https://vimeo.com/180797542" target="_blank"><b>PolyglotIE</b> - More complex example</a> </li> </ul>  </p>
+ <p>
+The corrsponding publication is found here: 
+</p>
+
+<p>
+                <b>Multilingual Information Extraction with PolyglotIE. </b>
+                    Alan Akbik, Laura Chiticariu, Marina Danilevsky, Yonas Kbrom, Yunyao Li and Huaiyu Zhu.
+                    <b><font color="#336699">  26th International Conference on Computational Linguistics, COLING
+                        2016.</font></b>   
+ <a href="papers/coling2016-demo.pdf">[pdf]</a><a href="https://vimeo.com/180382223">[video]</a>                     
+</p>	
+
+
+          
+                <hr/>
+		
+
+                <h4>Crosslingual Semantic Parsing</h4>
+
+		<p>An Information Extraction system such as PolyglotIE cannot work without a crosslingual parser that
+parses text in different languages into a shared, language-independent abstraction. Much of our research has focused both 
+on developing a high quality parsing system, as well as training it for different languages. This work has resulted 
+in the  <b>state-of-the-art K-SRL parsing</b> approach and the <a href="https://vimeo.com/161718580" target="_blank">
                         <b>Polyglot</b>
-                    </a>
-                    ) that is currently capable of <b>semantically parsing 9 different languages</b>. Check out the
-                    three
-                    screenshots below for example sentences in English, Mandarin Chinese and Spanish.
-                </p>
-                <br>
-                <p>
+                    </a> semantic role labeler.
+
+<p>
                     <img src="img/3examples.png" alt="A picture of should be here" width="100%"/>
                 </p>
-                <br>
-                <p>No matter what input language,
-                    the system identifies the same semantic concepts such as<b>buyer</b>,<b>thing bought</b>,
-                    <b>price paid</b>
-                    or temporal context. These
-                    <b>unified semantic labels</b>
-                    enable text analytics that automatically works across a range of different languages.
-                </p>
 
+<p>Polyglot is currently capable of <b>semantically parsing 9 different languages</b>. Check out the
+                    three
+                    screenshots above for example sentences in English, Mandarin Chinese and Spanish. The
+same semantic concepts are recognized across languages, allowing us to build extractors on top of parser 
+output. The corresponging publications are as follows:
+</p>
 
-                <p>We demo'ed the system at ACL 2016. The corresponding publication is:</p>
-
-                <p>
+		<p>
+<p>
+                <b>K-SRL: Instance-based Learning for Semantic Role Labeling. </b>
+                    Alan Akbik and Yunyao Li.
+                    <b><font color="#336699">  26th International Conference on Computational Linguistics, COLING
+                        2016.</font> </b>
+  <a href="papers/K_SRL.pdf">[pdf]</a>                     
+</p>	
                     <b>Polyglot: Multilingual Semantic Role Labeling with Unified Labels.</b>
                     Alan Akbik and Yunyao Li.
                     <b>
@@ -161,233 +147,15 @@ To
                     </b>
                     <a href="papers/acl2016-demo.pdf">[pdf]</a>
                 </p>
-
-            </div>
-             
+	</div>
 
 
-            <div class="col-md-12">
-
-                <hr/>
-                <h3>Auto-Generating Proposition Banks</h3>
-
-
-                <div class="col-md-7">
-                    <p>
-                        We require labeled data to train our semantic parser. Unfortunately,
-                        such corpora generally do not exist for most languages and are prohibitively expensive to
-                        manually produce.
-                    </p>
-
-                    <p>
-                        For this reason I am investigating <b>semi-automatic approaches of creating Proposition Banks
-                        for
-                        arbitrary languages</b>. We require only parallel corpora as input and limited human interaction
-                        to create high-quality resources.</p>
-
-                    <p>Using this approach, we auto-generated Proposition Banks for 7 languages. The corresponding
-                        publication is:
-                    </p>
-                </div>
-
-                <div class="col-md-5">
-                    <img src="img/annotation_projection.png" alt="A picture of should be here" width="350"/>
-                    <p>Example of annotation projection for one sentence pair.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="col-md-12">
-
-                <p>
-                    <b>Generating High Quality Proposition Banks for Multilingual Semantic Role Labeling.</b>
-                    Alan Akbik, Laura Chiticariu, Marina Danilevsky, Yunyao Li, Shivakumar Vaithyanathan and Huaiyu
-                    Zhu.
-                    <b>
-                        <font color="#336699">53rd Annual Meeting of the Association for Computational Linguistics,
-                            ACL
-                            2015.
-                        </font>
-                    </b>
-                    <a href="papers/acl2015.pdf">[pdf]</a>
-                </p>
-            </div>
-
-
-            <hr/>
-
-
-            <div class="col-md-12">
-
-                <hr/>
-                <h3>Low-Resource Languages</h3>
-
-
-                <div class="col-md-5">
-                    <img src="img/tamil.png" alt="A picture of should be here" width="350"/>
-                    <p>Projecting syntactic and semantic labels from English to Tamil.
-                    </p>
-                </div>
-
-                <div class="col-md-7">
-                    <p>
-                        We are also interested in text analytics and semantic parsing over low-resource languages.
-                    </p>
-
-                    <p>
-                        We applied our approach to <b>Bengali</b>, <b>Malayalam</b> and <b>Tamil</b>, three low-resource languages with over 
-			300 million first language speakers - but almost no NLP resources and tools. 
-
-                    <p>We propose a 
-			combination of annotation projection, crowdsourcing and limited expert involvement to create 
-			NLP resources for low-resource languages in a cost-effective way. The corresponding
-                        publication is:
-                    </p>
-                </div>
-
-            </div>
-
-
-            <div class="col-md-12">
-
-<p>
-                <b>Towards Semi-Automatic Generation of Proposition Banks for Low-Resource Languages. </b>
-                    Alan Akbik and Yunyao Li.
-                    <b><font color="#336699"> 2016 Conference on Empirical Methods on Natural Language Processing, EMNLP
-                        2016.</font></b>                   
-</p>	
-
-            </div>
-
-
-            <hr/>
-
-
-
-            <div class="col-md-12">
-
-
-                <hr/>
-                <h3>Resources</h3>
-
-                <p>
-                    Below we present the generated resources for all seven target languages of the ACL 2015 paper:
-                    Arabic, Chinese, French, German, Hindi, Russian and Spanish. You may browse the frame files and
-                    download the annotated corpora.
-
-                </p>
-                <hr/>
-                <h4>Arabic</h4>
-                <p>
-                    In version 1.0, the generated Arabic Proposition Bank covers<b>330 distinct verbs</b>.
-                    Browse all verbs with examples here:
-                    <a href="ArabicPropbank/">
-                        <b>Arabic Frames</b>
-                    </a>
-                    .
-                </p>
-
-                <p>The annotated corpus consists of
-                    <b>68,512 sentences</b>
-                    in CONLL-X format.
-                </p>
-                <hr/>
-
-                <h4>Chinese</h4>
-                <p>
-                    In version 1.0, the generated Chinese Proposition Bank covers<b>1,102 distinct verbs</b>.
-                    Browse all verbs with examples here:
-                    <a href="ChinesePropbank/">
-                        <b>Chinese Frames</b>
-                    </a>
-                    .
-                </p>
-
-                <p>The annotated corpus consists of
-                    <b>419,140 sentences</b>
-                    in CONLL-X format.
-                </p>
-
-                <hr/>
-                <h4>French</h4>
-
-                <p>
-                    In version 1.0, the generated French Proposition Bank covers<b>1,145 distinct verbs</b>.
-                    Browse all verbs with examples here:
-                    <a href="FrenchPropbank/">
-                        <b>French Frames</b>
-                    </a>
-                    .
-                </p>
-
-                <p>The annotated corpus consists of
-                    <b>248,256 sentences</b>
-                    in CONLL-X format.
-                </p>
-                <hr/>
-                <h4>German</h4>
-
-                <p>
-                    In version 1.0, the generated German Proposition Bank covers<b>537 distinct verbs</b>.
-                    Browse all verbs with examples here:
-                    <a href="GermanPropbank/">
-                        <b>German Frames</b>
-                    </a>
-                    .
-                </p>
-
-                <p>The annotated corpus consists of
-                    <b>44,007 sentences</b>
-                    in CONLL-X format.
-                </p>
-
-                <hr/>
-                <h4>Hindi</h4>
-                <p>
-                    In version 1.0, the generated Hindi Proposition Bank covers<b>59 distinct verbs</b>.
-                    Browse all verbs with examples here:
-                    <a href="HindiPropbank/">
-                        <b>Hindi Frames</b>
-                    </a>
-                    .
-                </p>
-
-                <p>The annotated corpus consists of
-                    <b>1,623 sentences</b>
-                    in CONLL-X format.
-                </p>
-                <hr/>
-                <h4>Russian</h4>
-                <p>
-                    In version 1.0, the generated Russian Proposition Bank covers<b>1,349 distinct verbs</b>.
-                    Browse all verbs with examples here:
-                    <a href="RussianPropbank/">
-                        <b>Russian Frames</b>
-                    </a>
-                    .
-                </p>
-
-                <p>The annotated corpus consists of
-                    <b>496,033 sentences</b>
-                    in CONLL-X format.
-                </p>
-
-                <hr/>
-                <h4>Spanish</h4>
-                <p>
-                    In version 1.0, the generated Spanish Proposition Bank covers<b>909 distinct verbs</b>.
-                    Browse all verbs with examples here:
-                    <a href="SpanishPropbank/">
-                        <b>Spanish Frames</b>
-                    </a>
-                    .
-                </p>
-
-                <p>The annotated corpus consists of
-                    <b>165,582 sentences</b>
-                    in CONLL-X format.
-                </p>
+            <div class="col-md-3">
+                <img align="middle" src="img/alan.jpg" alt="A picture of me should be here" width="200"/>
+				
+				<h3 align="middle">Alan Akbik</h3>
+				<p align="middle"><b>Text and Data Mining</b><br/>IBM Research<br/>
+				<i>akbika [ät] us [dot] ibm [dot] com</i></p>
             </div>
 
 
