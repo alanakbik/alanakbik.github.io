@@ -67,21 +67,77 @@
                 <ul class="nav navbar-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="publications.html">Publications</a></li>
-                    <li><a href="projects.html">Universal Proposition Banks</a></li>
-                    <li class="active"><a href="multilingual.html">Multilingual Text Analytics</a></li>
+                    <li><a href="flair.html">Flair NLP</a></li>
+                    <li class="active"><a href="multilingual.html">Universal Proposition Banks</a></li>
                     <li><a href="personal.html">Personal</a></li>
                 </ul>
             </div>
             <div class="col-md-9">
-                <h3>Multilingual Text Analytics</h3>
-  <p> A principal focus of my research is to develop text analytics capabilities for multilingual text. A crucial challenge here is 
-how to effectively create Information Extraction (IE) methods that can discover and extract specific structured information 
-from large-scale unstructured data in multiple languages.</p> 
+
+<h3>Universal Proposition Banks</h3>
+  <p> One of my main research projects is to semi-automatically create the <a href="https://github.com/System-T/UniversalPropositions/" target="_blank"><b>Universal Proposition 			Banks</b></a>, 
+a set of treebanks that enable the training of crosslingual parsers and the study of crosslingual semantics. This effort builds on the Universal Dependencies project and adds a layer
+of crosslingually unified shallow semantic information. 
+</p>
+ <p>
+To illustrate what Universal Proposition Banks are, consider the following sentences: 
+<ol>
+<li> <i>Letzte Woche habe ich den Futon bestellt.</i>  (German)</li>
+<li> <i>Vahtimestari tilasi taksin.</i>  (Finnish)</li>
+<li> <i>同年12月29日, 美國大陸航空 訂購 10架787.</i>  (Mandarin Chinese)</li>
+</ol>
+
+While these sentences have different meanings, they all share the fact that they pertain to a similar action, namely the action of <b><i>ordering something</i></b> (a futon, a taxi, 
+or some airplanes). The Universal Proposition Banks formalize these shared semantics. The action of "ordering something" for instance is marked with the frame label "<b>order.02</b>".
+The entity that places the order is marked up as <b>A0</b>, and the thing that is being ordered is marked up as <b>A1</b>. Check out these sentences with semantic markup in the
+Universal Proposition Banks:
+
+ <img src="img/UPs.png" alt="A picture of should be here" width="100%"/>
+</p>
 
 
+		 <p>We formalize these crosslingual shallow semantics using <a href="http://propbank.github.io/" target="_blank">Proposition Bank</a> frame and role labels.
+ Check out version 1.0 of the Universal Proposition Banks, publicly available <a href="https://github.com/System-T/UniversalPropositions/" target="_blank"><b>here</b></a>!</p>
+
+<hr/>
+ <p> We use a semi-automatic annotation projection approach to generate these resources. The approach is described in detail in our publications:</p>
+
+<p> 
+                    <b>Generating High Quality Proposition Banks for Multilingual Semantic Role Labeling.</b>
+                    Alan Akbik, Laura Chiticariu, Marina Danilevsky, Yunyao Li, Shivakumar Vaithyanathan and Huaiyu
+                    Zhu.
+                    <b>
+                        <font color="#336699">53rd Annual Meeting of the Association for Computational Linguistics,
+                            ACL
+                            2015.
+                        </font>
+                    </b>
+                    <a href="papers/acl2015.pdf">[pdf]</a>
+                </p>
+<p>
+                <b>Towards Semi-Automatic Generation of Proposition Banks for Low-Resource Languages. </b>
+                    Alan Akbik and Yunyao Li.
+                    <b><font color="#336699"> 2016 Conference on Empirical Methods on Natural Language Processing, EMNLP
+                        2016.</font></b>                   
+</p>	
+		<p>
+                <b>Multilingual Aliasing for Auto-Generating Proposition Banks. </b>
+                    Alan Akbik, Xinyu Guan and Yunyao Li.
+                    <b><font color="#336699">  26th International Conference on Computational Linguistics, COLING
+                        2016.</font></b>
+ <a href="papers/COLING_2016_aliasing.pdf">[pdf]</a>            
+</p>
+<p>
+<b>The Projector: An Interactive Annotation Projection Visualization Tool. </b>
+                    Alan Akbik and Roland Vollgraf.
+                    <b><font color="#336699"> 2017 Conference on Empirical Methods on Natural Language Processing, EMNLP
+                        2017.</font></b>  
+ <a href="papers/EMNLP2017_demo_final.pdf">[pdf]</a><a href="https://vimeo.com/217035646">[video]</a>             
+</p>
                 <hr/>
+             
               
-                <h4>Multilingual Information Extraction</h4>
+                <h3>Multilingual Information Extraction</h3>
 
 
  <p><img src="img/buying_intentions.png" alt="A picture of should be here" ALIGN="left" HSPACE="10" VSPACE="10"  width="400"/> 
@@ -103,13 +159,8 @@ The corrsponding publication is found here:
                         2016.</font></b>   
  <a href="papers/coling2016-demo.pdf">[pdf]</a><a href="https://vimeo.com/180382223">[video]</a>                     
 </p>	
-
-
-          
-                <hr/>
-		
-
-                <h4>Crosslingual Semantic Parsing</h4>
+<hr/>
+  <h3>Crosslingual Semantic Parsing</h3>
 
 		<p>An Information Extraction system such as PolyglotIE cannot work without a crosslingual parser that
 parses text in different languages into a shared, language-independent abstraction. Much of our research has focused both 
@@ -147,6 +198,10 @@ output. The corresponging publications are as follows:
                     </b>
                     <a href="papers/acl2016-demo.pdf">[pdf]</a>
                 </p>
+   <hr/>
+
+          
+             
 	</div>
 
 
@@ -156,6 +211,7 @@ output. The corresponging publications are as follows:
 				<h3 align="middle">Alan Akbik</h3>
 				<p align="middle"><b>Text and Data Mining</b><br/>Zalando Research<br/>
 				<i>alan [dot] akbik [ät] zalando [dot] de</i></p>
+<p align="middle"><i>(BTW: we are <a href="https://research.zalando.com/welcome/jobs/" target="_blank"><b>hiring</b></a>!)</i></p>
             </div>
 
 

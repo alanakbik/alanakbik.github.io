@@ -1,0 +1,202 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Alan Akbik's Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+
+
+
+    <style>
+        /* Note: Try to remove the following lines to see the effect of CSS positioning */
+        .affix {
+        top: 20px;
+        }
+
+        .lbl_A0 {
+        color:blue;
+        }
+
+        .lbl_A1 {
+        color:red;
+        }
+
+        .lbl_A2 {
+        color:green;
+        }
+
+        .lbl_A3 {
+        color:brown;
+        }
+
+        .lbl_pred{
+        color:purple;
+        }
+    </style>
+</head>
+
+
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-1">
+        </div>
+
+        <div class="col-md-10">
+            <div class="navbar navbar-default" style="height:5%;" role="navigation">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img style="max-width:100px; margin-top: -7px;"
+                                                          src="img/zalando-research-logo.png"></a>
+
+                </div>                
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="publications.html">Publications</a></li>
+                    <li class="active"><a href="projects.html">Flair NLP</a></li>
+                    <li><a href="multilingual.html">Universal Proposition Banks</a></li>
+                    <li><a href="personal.html">Personal</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9">
+
+                <h3>Flair: State-of-the-Art NLP with Neural Language Modeling</h3>
+
+<p> My current research proposes a new approach to address core natural language processing tasks such as part-of-speech (PoS) tagging, named entity recognition (NER), sense disambiguation and text classification. Our approach leverages character-level neural language modeling to learn powerful, contextualized representations of human language from large corpora. The Figure below illustrates how it works: 
+
+</p>
+<div class="row">
+	<div class="col-md-2">
+	</div>
+	<div class="col-md-8">
+	<p>
+	 <img src="img/neuralLMtagging.png"  alt="A picture of should be here" width="100%"/>
+	</p>
+	</div>
+	<div class="col-md-2">
+	</div>
+	</div>
+ <p>
+Here, a sentence (bottom) is input as a character sequence into a bidirectional character language model (LM, yellow in Figure) that was pre-trained on extremely large unlabeled text corpora. From this LM, we retrieve for each word a contextual embedding by extracting the first and last character cell states. This word embedding is then passed into a vanilla BiLSTM-CRF sequence labeler (blue in Figure), achieving robust state-of-the-art results on downstream tasks (NER in this example).
+</p>
+
+ <p>
+This simple approach works incredibly well. In fact, it <b>outperforms all previous approaches by a significant margin across many classic NLP tasks</b>. Check out some results below:  
+</p>
+<table class="table">
+  <thead class="thead-light">
+    <tr>
+      <th scope="col">Task</th>
+      <th scope="col">Dataset</th>
+      <th scope="col">Our Result</th>
+      <th scope="col">Previous best</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Named Entity Recognition (English)</td>
+      <td>Conll-03</td>
+      <td><b>93.09</b> (F1)</td>
+      <td>92.22 (Peters et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>Named Entity Recognition (English)</td>
+      <td>Ontonotes</td>
+      <td><b>89.71</b> (F1)</td>
+      <td>86.28 (Chiu et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Emerging Entity Detection (English)</td>
+      <td>WNUT-17</td>
+      <td><b>50.20</b> (F1)</td>
+      <td>45.55 (Aguilar et al., 2018)</td>
+    </tr>
+
+    <tr>
+      <td>Named Entity Recognition (German)</td>
+      <td>Conll-03</td>
+      <td><b>88.32</b> (F1)</td>
+      <td>78.76 (Lample et al., 2016)</td>
+    </tr>
+
+    <tr>
+      <td>Named Entity Recognition (German)</td>
+      <td>Germeval</td>
+      <td><b>84.65</b> (F1)</td>
+      <td>79.08 (Hänig et al, 2014)</td>
+    </tr>
+
+    <tr>
+      <td>Part-of-Speech tagging (English)</td>
+      <td>WSJ</td>
+      <td><b>97.85</b></td>
+      <td>97.64 (Choi, 2016)</td>
+    </tr>
+
+    <tr>
+      <td>Chunking (English)</td>
+      <td>Conll-2000</td>
+      <td><b>96.72</b> (F1)</td>
+      <td>96.36 (Peters et al., 2017)</td>
+    </tr>
+  </tbody>
+</table>
+
+	
+
+
+ <p>
+Check out the corresponsing publication for more details: 
+</p>
+ <p>
+                <b>Contextual String Embeddings for Sequence Labeling. </b>
+                    Alan Akbik, Duncan Blythe and Roland Vollgraf.
+                    <b><font color="#336699"> 27th International Conference on Computational Linguistics, COLING
+                        2018.</font></b> 
+ <a href="papers/coling2018.pdf">[pdf]</a>                      
+</p>	
+<hr/>
+
+<h3>The Flair Framework</h3>
+           
+               <p><img src="img/flair_logo.svg" alt="A picture of should be here" ALIGN="left" HSPACE="20" VSPACE="20"  />  
+Thanks to Zalando Research's <b> great</b> open source policy, we are making <a href="https://github.com/zalandoresearch/flair" target="_blank"><b>Flair</b></a> - our state-of-the-art NLP framework - openly available both as a github project and a installable Python library.
+
+Together with the open source community, we are actively developing Flair - and invite you to join us!
+
+	</div>
+
+
+            <div class="col-md-3">
+                <img align="middle" src="img/alan.jpg" alt="A picture of me should be here" width="200"/>
+				
+				<h3 align="middle">Alan Akbik</h3>
+				<p align="middle"><b>Text and Data Mining</b><br/>Zalando Research<br/>
+				<i>alan [dot] akbik [ät] zalando [dot] de</i></p>
+<p align="middle"><i>(BTW: we are <a href="https://research.zalando.com/welcome/jobs/" target="_blank"><b>hiring</b></a>!)</i></p>
+            </div>
+
+
+        </div>
+
+        <div class="col-md-1">
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
