@@ -45,30 +45,37 @@
             </nav>
             <div class="col-md-9">
 
-                  <h1>The Flair NLP Framework</h1>
+                <div>
+                    <h2>The Flair NLP Framework</h2>
 
-                <p><img src="img/flair_logo_2020.svg" alt="A picture of should be here" ALIGN="left" HSPACE="20"
-                        VSPACE="20"/></p>
+                    <p><img src="img/flair_logo_2020.svg" alt="A picture of should be here" ALIGN="left" HSPACE="20"
+                            VSPACE="20"/></p>
 
-                <p> My group maintains and develops <a href="https://github.com/flairNLP/flair" target="_blank"><b>Flair</b></a>,
-                    an open source framework for state-of-the-art NLP. Flair is an official part of
-                    the <a href="https://pytorch.org/ecosystem/" target="_blank"><b>PyTorch ecosystem</b></a>
-                    and to-date is used in hundreds of industrial and academic projects. 
+                    <p> My group maintains and develops <a href="https://github.com/flairNLP/flair" target="_blank"><b>Flair</b></a>,
+                        an open source framework for state-of-the-art NLP. Flair is an official part of
+                        the <a href="https://pytorch.org/ecosystem/" target="_blank"><b>PyTorch ecosystem</b></a>
+                        and to-date is used in hundreds of industrial and academic projects.
 
-                    Together with the open source community and Zalando Resarch, my group is
-                    are actively developing Flair - and invite you to join us!
+                        Together with the open source community and Zalando Resarch, my group is
+                        are actively developing Flair - and invite you to join us!
 
-                </p>
-                <div class="row">
-                <h4>Research behind Flair</h4>
+                    </p>
+                </div>
+                <hr/>
+                <div >
+                    <h4>Research behind Flair</h4>
 
-                <p> My current research proposes a new approach to address core natural language processing tasks such
-                    as part-of-speech (PoS) tagging, named entity recognition (NER), sense disambiguation and text
-                    classification. Our approach leverages character-level neural language modeling to learn powerful,
-                    contextualized representations of human language from large corpora. The Figure below illustrates
-                    how it works:
+                    <p> My current research proposes a new approach to address core natural language processing
+                        tasks such
+                        as part-of-speech (PoS) tagging, named entity recognition (NER), sense disambiguation and
+                        text
+                        classification. Our approach leverages character-level neural language modeling to learn
+                        powerful,
+                        contextualized representations of human language from large corpora. The Figure below
+                        illustrates
+                        how it works:
 
-                </p></div>
+                    </p></div>
                 <div class="row">
                     <div class="col-md-2">
                     </div>
@@ -81,15 +88,20 @@
                     </div>
                 </div>
                 <p>
-                    Here, a sentence (bottom) is input as a character sequence into a bidirectional character language
-                    model (LM, yellow in Figure) that was pre-trained on extremely large unlabeled text corpora. From
-                    this LM, we retrieve for each word a contextual embedding by extracting the first and last character
-                    cell states. This word embedding is then passed into a vanilla BiLSTM-CRF sequence labeler (blue in
+                    Here, a sentence (bottom) is input as a character sequence into a bidirectional character
+                    language
+                    model (LM, yellow in Figure) that was pre-trained on extremely large unlabeled text corpora.
+                    From
+                    this LM, we retrieve for each word a contextual embedding by extracting the first and last
+                    character
+                    cell states. This word embedding is then passed into a vanilla BiLSTM-CRF sequence labeler (blue
+                    in
                     Figure), achieving robust state-of-the-art results on downstream tasks (NER in this example).
                 </p>
 
                 <p>
-                    This simple approach works incredibly well. In fact, it <b>outperforms all previous approaches by a
+                    This simple approach works incredibly well. In fact, it <b>outperforms all previous approaches
+                    by a
                     significant margin across many classic NLP tasks</b>. Check out some results below:
                 </p>
                 <table class="table">
