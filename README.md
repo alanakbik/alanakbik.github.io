@@ -1,20 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
-
 ## Getting Started
 
-First, run the development server:
+You will need to install Node.js and NPM to build and run the project.
+
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result. To work with GitHub pages, we configured Next.js
+to produce a static output. This is why there is a build command in the `package.json` but no command for running the
+build artifacts. For developing, you only need to use the above dev command.
+
+## ESLint
+To mainting constant code quality adhering to the linter rules is necessary. These rules are checked
+at build time. If your changes violate the linter rules, the build will fail. The rules are defined in
+the `.eslintrc.json`. It is recommended to connect this file to your IDE for automatic checking and/or enforcement
+of these rules when writing code. Alternatively, you can run `npm run lint` to check your code for errors
+and `npm run fix` to automatically them.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+To learn more about the technology used in this repo, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- [React](https://react.dev/) - The underlying frontend framework Next.js is encapsulating.
+- [TailwindCSS](https://tailwindcss.com) - the library we use for styling in this project.
