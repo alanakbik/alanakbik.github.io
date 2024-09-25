@@ -1,0 +1,44 @@
+name: Deploy live website
+
+on:
+  push:
+    branches:
+      - 'master'
+
+jobs:
+  generate-and-deploy-docs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Use Node.js 22.x
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22.x
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit and push to deployment branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git fetch --all
+          git checkout -B deployment
+          git reset --hard origin/main
+          find . -maxdepth 1 -not -path './.git' -not -path './out' -not -path '.' -not -path '..' -exec rm -rf {} +
+          shopt -s dotglob
+          mv docs/* .
+          rmdir docs
+          git add --all
+          git commit -m "Deploy live website"
+          git push origin deployment --force
