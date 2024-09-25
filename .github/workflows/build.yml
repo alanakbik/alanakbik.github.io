@@ -6,7 +6,7 @@ on:
       - 'master'
 
 jobs:
-  generate-and-deploy-docs:
+  generate-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -37,8 +37,8 @@ jobs:
           git reset --hard origin/master
           find . -maxdepth 1 -not -path './.git' -not -path './out' -not -path '.' -not -path '..' -exec rm -rf {} +
           shopt -s dotglob
-          mv docs/* .
-          rmdir docs
+          mv out/* .
+          rmdir out
           git add --all
           git commit -m "Deploy live website"
           git push origin deployment --force
