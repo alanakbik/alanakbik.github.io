@@ -28,8 +28,9 @@ function HeaderLink({ href, children }: { href: string, children: string }) {
 }
 
 export default function Header() {
-    const [isDesktop, setIsDesktop] = useState(false);
+    const [isDesktop, setIsDesktop] = useState(true);
     useEffect(() => {
+        setIsDesktop(window.matchMedia(`(min-width: ${fullConfig.theme.screens.md})`).matches);
         if (typeof window !== "undefined") {
             const handleChange = (e: MediaQueryListEvent) => {
                 setIsDesktop(e.matches);
