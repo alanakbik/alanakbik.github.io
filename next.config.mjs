@@ -2,7 +2,6 @@
 const nextConfig = {
     output: "export",
     reactStrictMode: true,
-    basePath: "/alanakbik.github.io",
+    basePath: process.env.NODE_ENV === "development" ? undefined : "/alanakbik.github.io",
 };
-
 export default nextConfig;
