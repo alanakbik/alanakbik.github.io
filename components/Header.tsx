@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import resolveConfig from "tailwindcss/resolveConfig";
 
+import MobileMenu from "@/components/MobileMenu";
 import Wrapper from "@/components/Wrapper";
 import logo from "@/public/HU_Siegel-Kombi_RGB.svg";
 import tailwindConfig from "@/tailwind.config";
@@ -13,11 +14,11 @@ const fullConfig = resolveConfig(tailwindConfig);
 
 function HeaderLink({ href, children }: { href: string, children: string }) {
     return (
-        <li className="group/li flex h-full items-center">
+        <li className="group flex h-full items-center">
             <Link
                 href={href}
-                className="group/link flex h-full items-center text-[color:var(--hu-blue)] group-first-of-type/li:pl-0
-                group-last-of-type/li:pr-0 md:px-2 lg:px-4 xl:px-6"
+                className="flex h-full items-center text-[color:var(--hu-blue)] group-first-of-type:pl-0
+                group-last-of-type:pr-0 md:px-2 lg:px-4 xl:px-6"
             >
                 <span className="inline-link-header transition-all">
                     {children}
@@ -30,17 +31,25 @@ function HeaderLink({ href, children }: { href: string, children: string }) {
 export default function Header() {
     const [isDesktop, setIsDesktop] = useState(true);
     useEffect(() => {
-        setIsDesktop(window.matchMedia(`(min-width: ${fullConfig.theme.screens.md})`).matches);
+        setIsDesktop(
+            window
+                .matchMedia(`(min-width: ${fullConfig.theme.screens.md}) and (min-height: ${fullConfig.theme.screens.sm})`)
+                .matches,
+        );
         if (typeof window !== "undefined") {
             const handleChange = (e: MediaQueryListEvent) => {
                 setIsDesktop(e.matches);
             };
-            window.matchMedia(`(min-width: ${fullConfig.theme.screens.md})`).addEventListener("change", handleChange);
-            return window.matchMedia(`(min-width: ${fullConfig.theme.screens.md})`).removeEventListener("change", handleChange);
+            window
+                .matchMedia(`(min-width: ${fullConfig.theme.screens.md}) and (min-height: ${fullConfig.theme.screens.sm})`)
+                .addEventListener("change", handleChange);
+            return window
+                .matchMedia(`(min-width: ${fullConfig.theme.screens.md}) and (min-height: ${fullConfig.theme.screens.sm})`)
+                .removeEventListener("change", handleChange);
         }
     }, []);
     if (!isDesktop) {
-        return null;
+        return <MobileMenu/>;
     }
     return (
         <header className="shadow-lg">
@@ -55,8 +64,14 @@ export default function Header() {
                             <HeaderLink href="/travel">Travel</HeaderLink>
                         </ul>
                     </nav>
-                    <Link href="https://www.hu-berlin.de/de" className="h-full" target="_blank">
-                        <Image src={logo} alt="HU-Logo" unoptimized className="relative left-[10%] h-[var(--header-height)] w-auto"/>
+                    <Link href="https://www.hu-berlin.de/en" className="h-full" target="_blank">
+                        <Image
+                            src={logo}
+                            alt="HU-Logo"
+                            unoptimized
+                            className="relative left-[10%] h-[var(--header-height)] w-auto"
+                            priority
+                        />
                     </Link>
                 </div>
             </Wrapper>
