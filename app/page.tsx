@@ -1,8 +1,8 @@
-import Image from "next/image";
 import React from "react";
 import { FaAnglesDown } from "react-icons/fa6";
 
 import BlockLink from "@/components/BlockLink";
+import BasePathImage from "@/components/shared/BasePathImage";
 import H1 from "@/components/shared/H1";
 import Wrapper from "@/components/Wrapper";
 
@@ -25,14 +25,14 @@ export default function Page() {
                 </div>
                 <div className="hidden h-full w-2/5 shrink items-center pl-8 desktop:flex">
                     <div className="relative aspect-square w-full overflow-hidden rounded-full">
-                        <Image
+                        <BasePathImage
                             src="/alan.jpg"
                             alt="A photo of Alan Akbik"
                             priority
-                            unoptimized={true}
                             width={500}
                             height={500}
-                            className="center-absolute hidden desktop:block"
+                            draggable={false}
+                            className="center-absolute hidden select-none desktop:block"
                         />
                     </div>
                 </div>
