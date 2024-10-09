@@ -40,7 +40,7 @@ export default function MobileMenu() {
                 </Link>
                 <nav>
                     <ul className="flex flex-col items-center landscape:items-start">
-                        <MenuLink closeMenu={setIsOpen} href="/public">Home</MenuLink>
+                        <MenuLink closeMenu={setIsOpen} href="/">Home</MenuLink>
                         <MenuLink closeMenu={setIsOpen} href="/publications">Publications</MenuLink>
                         <MenuLink closeMenu={setIsOpen} href="/research">Research</MenuLink>
                         <MenuLink closeMenu={setIsOpen} href="/chair">Chair</MenuLink>

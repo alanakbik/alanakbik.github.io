@@ -57,7 +57,7 @@ export default function Header() {
                 <div className="flex justify-between">
                     <nav className="h-header-height">
                         <ul className="flex h-full items-center">
-                            <HeaderLink href="/public">Home</HeaderLink>
+                            <HeaderLink href="/">Home</HeaderLink>
                             <HeaderLink href="/publications">Publications</HeaderLink>
                             <HeaderLink href="/research">Research</HeaderLink>
                             <HeaderLink href="/chair">Chair</HeaderLink>
