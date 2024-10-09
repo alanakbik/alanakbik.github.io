@@ -14,7 +14,7 @@ function MenuLink({ href, children, closeMenu }: { href: string, children: strin
                 className="flex h-full items-center py-2 text-hu-blue-primary"
                 onClick={() => closeMenu(false)}
             >
-                <span className="inline-link-header transition-all">
+                <span>
                     {children}
                 </span>
             </Link>

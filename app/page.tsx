@@ -61,23 +61,23 @@ export default function Page() {
                         category="New Paper"
                         conference="ACL 2025"
                     >
-                        Our paper "TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
-                        for Downstream Classification Tasks" now on arXiv
+                        Our paper &quot;TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
+                        for Downstream Classification Tasks&quot; now on <InlineLink href="https://google.com" target="_blank">arXiv</InlineLink>
                     </TimelineEntry>
                     <TimelineEntry
                         date="2024-07-09"
                         category="New Researcher"
                     >
-                        Our paper "TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
-                        for Downstream Classification Tasks" now on arXiv
+                        Our paper &quot;TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
+                        for Downstream Classification Tasks&quot; now on <InlineLink href="https://google.com" target="_blank">arXiv</InlineLink>
                     </TimelineEntry>
                     <TimelineEntry
                         date="2024-11-09"
                         category="New Paper"
                         conference="EMNLP 2025"
                     >
-                        Our paper "TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
-                        for Downstream Classification Tasks" now on arXiv
+                        Our paper &quot;TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
+                        for Downstream Classification Tasks&quot; now on <InlineLink href="https://google.com" target="_blank">arXiv</InlineLink>
                     </TimelineEntry>
                 </div>
             </section>
