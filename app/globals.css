@@ -14,6 +14,13 @@
         background: var(--hu-blue-secondary);
         color: white;
     }
+
+    hr {
+        height: 1rem;
+        background: linear-gradient(0deg, rgba(0, 0, 0, .1), transparent);
+        font-size: 0;
+        border: 0;
+    }
 }
 
 @layer utilities {

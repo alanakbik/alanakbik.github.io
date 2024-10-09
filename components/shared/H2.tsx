@@ -5,7 +5,7 @@ export default function H1({ children, className }: {
     className?: string
 }) {
     return (
-        <h2 className={"text-2xl text-hu-blue-primary " + (className ? className : "")}>
+        <h2 className={"text-xl sm:text-2xl text-hu-blue-primary " + (className ? className : "")}>
             {children}
         </h2>
     );

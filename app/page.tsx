@@ -16,58 +16,63 @@ export default function Page() {
     const map = getCategoryColorMap(TimelineEntries);
 
     return (
-        <Wrapper>
-            <div className="relative flex h-dvh items-center justify-between desktop:pt-header-height">
-                <div className="desktop:w-3/5">
-                    <H1>
-                        <span className="block text-xl text-hu-blue-secondary">Prof. Dr.</span>
-                        <span className="block">Alan Akbik</span>
-                    </H1>
-                    <p className="mb-4 mt-2 text-balance leading-5">
-                        Hi, I&apos;m a professor of machine learning at Humboldt University of Berlin, specializing
-                        in natural language processing (NLP) and leading the development of the Flair NLP framework.
-                    </p>
-                    <BlockLink href="/publications" className="text-xl">
-                        Publications
-                    </BlockLink>
-                </div>
-                <div className="hidden h-full w-2/5 shrink items-center pl-8 desktop:flex">
-                    <div className="relative aspect-square w-full overflow-hidden rounded-full">
-                        <BasePathImage
-                            src="/alan.jpg"
-                            alt="A photo of Alan Akbik"
-                            priority
-                            width={500}
-                            height={500}
-                            draggable={false}
-                            className="center-absolute hidden select-none desktop:block"
-                        />
+        <>
+            <Wrapper>
+                <div className="relative flex h-dvh items-center justify-between desktop:pt-header-height">
+                    <div className="desktop:w-3/5">
+                        <H1>
+                            <span className="block text-xl text-hu-blue-secondary">Prof. Dr.</span>
+                            <span className="block">Alan Akbik</span>
+                        </H1>
+                        <p className="mb-4 mt-2 text-balance leading-5">
+                            Hi, I&apos;m a professor of machine learning at Humboldt University of Berlin, specializing
+                            in natural language processing (NLP) and leading the development of the Flair NLP framework.
+                        </p>
+                        <BlockLink href="/publications" className="text-xl">
+                            Publications
+                        </BlockLink>
                     </div>
+                    <div className="hidden h-full w-2/5 shrink items-center pl-8 desktop:flex">
+                        <div className="relative aspect-square w-full overflow-hidden rounded-full">
+                            <BasePathImage
+                                src="/alan.jpg"
+                                alt="A photo of Alan Akbik"
+                                priority
+                                width={500}
+                                height={500}
+                                draggable={false}
+                                className="center-absolute hidden select-none desktop:block"
+                            />
+                        </div>
+                    </div>
+                    <ScrollDownButton/>
                 </div>
-                <ScrollDownButton/>
-            </div>
-            <section className="pb-header-height pt-[calc(2*var(--header-height))]" id="pinned-messages">
-                <PinnedMessage title="New PhD position available">
-                    We have a new PhD position available, fully funded for 4 years through the
-                    <InlineLink href="https://google.com" target="_blank">HEIBRIDS</InlineLink> programme!
-                    Apply here! Deadline is August 23rd!
-                </PinnedMessage>
-            </section>
-            <section className="mb-32">
-                <div
-                    className="relative mb-header-height flex justify-center after:absolute after:top-1/2 after:-z-10
-                    after:h-[3px] after:w-full after:bg-hu-blue-primary after:content-['']"
-                >
-                    <H1 className="bg-white px-12">Latest News</H1>
-                </div>
-                <div>
-                    {TimelineEntries.map((e, i) => <TimelineEntry
-                        data={e}
-                        color={map.get(e.category) ?? "var(--hu-blue-primary)"}
-                        key={i}
-                    />)}
-                </div>
-            </section>
-        </Wrapper>
+            </Wrapper>
+            <hr/>
+            <Wrapper>
+                <section className="py-24 sm:pb-header-height sm:pt-[calc(2*var(--header-height))]" id="pinned-messages">
+                    <PinnedMessage title="New PhD position available">
+                        We have a new PhD position available, fully funded for 4 years through the
+                        <InlineLink href="https://google.com" target="_blank">HEIBRIDS</InlineLink> programme!
+                        Apply here! Deadline is August 23rd!
+                    </PinnedMessage>
+                </section>
+                <section className="mb-32">
+                    <div
+                        className="relative mb-header-height flex justify-center sm:after:absolute sm:after:top-1/2 sm:after:-z-10
+                    sm:after:h-[3px] sm:after:w-full sm:after:bg-hu-blue-primary sm:after:content-['']"
+                    >
+                        <H1 className="bg-white sm:px-12">Latest News</H1>
+                    </div>
+                    <div>
+                        {TimelineEntries.map((e, i) => <TimelineEntry
+                            data={e}
+                            color={map.get(e.category) ?? "var(--hu-blue-primary)"}
+                            key={i}
+                        />)}
+                    </div>
+                </section>
+            </Wrapper>
+        </>
     );
 }
