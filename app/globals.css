@@ -7,6 +7,7 @@
         font-weight: 200;
         --hu-blue-primary: theme(colors.hu-blue-primary);
         --hu-blue-secondary: theme(colors.hu-blue-secondary);
+        --header-height: theme(spacing.header-height);
     }
 
     ::selection {

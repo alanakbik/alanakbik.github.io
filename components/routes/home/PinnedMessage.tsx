@@ -3,7 +3,7 @@ import { BsPinAngle } from "react-icons/bs";
 
 import H2 from "@/components/shared/H2";
 
-export default function Wrapper({ title, children }: {
+export default function PinnedMessage({ title, children }: {
     title: string,
     children: React.ReactNode,
 }) {

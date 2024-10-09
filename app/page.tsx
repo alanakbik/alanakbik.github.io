@@ -2,6 +2,7 @@ import React from "react";
 
 import PinnedMessage from "@/components/routes/home/PinnedMessage";
 import ScrollDownButton from "@/components/routes/home/ScrollDownButton";
+import TimelineEntry from "@/components/routes/home/TimelineEntry";
 import BasePathImage from "@/components/shared/BasePathImage";
 import BlockLink from "@/components/shared/BlockLink";
 import H1 from "@/components/shared/H1";
@@ -40,19 +41,44 @@ export default function Page() {
                 </div>
                 <ScrollDownButton/>
             </div>
-            <section className="py-header-height" id="pinned-messages">
+            <section className="pb-header-height pt-[calc(2*var(--header-height))]" id="pinned-messages">
                 <PinnedMessage title="New PhD position available">
                     We have a new PhD position available, fully funded for 4 years through the
                     <InlineLink href="https://google.com" target="_blank">HEIBRIDS</InlineLink> programme!
                     Apply here! Deadline is August 23rd!
                 </PinnedMessage>
             </section>
-            <section>
+            <section className="mb-32">
                 <div
                     className="relative mb-header-height flex justify-center after:absolute after:top-1/2 after:-z-10
                     after:h-[3px] after:w-full after:bg-hu-blue-primary after:content-['']"
                 >
                     <H1 className="bg-white px-12">Latest News</H1>
+                </div>
+                <div>
+                    <TimelineEntry
+                        date="2024-11-09"
+                        category="New Paper"
+                        conference="ACL 2025"
+                    >
+                        Our paper "TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
+                        for Downstream Classification Tasks" now on arXiv
+                    </TimelineEntry>
+                    <TimelineEntry
+                        date="2024-07-09"
+                        category="New Researcher"
+                    >
+                        Our paper "TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
+                        for Downstream Classification Tasks" now on arXiv
+                    </TimelineEntry>
+                    <TimelineEntry
+                        date="2024-11-09"
+                        category="New Paper"
+                        conference="EMNLP 2025"
+                    >
+                        Our paper "TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
+                        for Downstream Classification Tasks" now on arXiv
+                    </TimelineEntry>
                 </div>
             </section>
         </Wrapper>
