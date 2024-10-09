@@ -25,7 +25,7 @@ function MenuLink({ href, children, closeMenu }: { href: string, children: strin
 export default function MobileMenu() {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="z-50">
+        <header className="relative z-50">
             <div
                 className={`fixed left-0 top-0 flex h-dvh w-dvw flex-col items-center justify-center bg-white 
                 landscape:flex-row ${isOpen ? "pointer-events-auto" : "pointer-events-none opacity-0"}
@@ -54,6 +54,6 @@ export default function MobileMenu() {
             >
                 <Hamburger toggled={isOpen} color="white" size={25}/>
             </button>
-        </div>
+        </header>
     );
 }

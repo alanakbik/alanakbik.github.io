@@ -52,7 +52,7 @@ export default function Header() {
         return <MobileMenu/>;
     }
     return (
-        <header className="shadow-lg">
+        <header className="z-50 shadow-lg">
             <Wrapper>
                 <div className="flex justify-between">
                     <nav className="h-[var(--header-height)]">
