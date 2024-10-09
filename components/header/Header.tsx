@@ -1,8 +1,9 @@
 "use client";
 
+import { useDefer, useEvent } from "anzol";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import resolveConfig from "tailwindcss/resolveConfig";
 
 import MobileMenu from "@/components/header/MobileMenu";
@@ -13,6 +14,7 @@ import tailwindConfig from "@/tailwind.config";
 const fullConfig = resolveConfig(tailwindConfig);
 
 function HeaderLink({ href, children }: { href: string, children: string }) {
+
     return (
         <li className="group flex h-full items-center">
             <Link
@@ -29,6 +31,21 @@ function HeaderLink({ href, children }: { href: string, children: string }) {
 }
 
 export default function Header() {
+
+    const scroll = useRef<number>();
+    const [hideHeader, setHideHeader] = useState(false);
+    const hideHeaderDeferred = useDefer(hideHeader, 220);
+
+    const windowTarget = useEvent("scroll", () => {
+        if (!scroll.current) {
+            scroll.current = window.scrollY;
+            return;
+        }
+        setHideHeader(window.innerHeight / 5 < window.scrollY && window.scrollY > scroll.current);
+        scroll.current = window.scrollY;
+    });
+    useEffect(() => windowTarget(document), [windowTarget]);
+
     const [isDesktop, setIsDesktop] = useState(true);
     useEffect(() => {
         setIsDesktop(
@@ -52,7 +69,12 @@ export default function Header() {
         return <MobileMenu/>;
     }
     return (
-        <header className="fixed z-50 w-full bg-white shadow-lg">
+        <header
+            style={{
+                transform: hideHeaderDeferred ? "translateY(calc(-100% - 3rem))" : "none",
+            }}
+            className="fixed z-50 w-full bg-white shadow-lg transition-transform"
+        >
             <Wrapper>
                 <div className="flex justify-between">
                     <nav className="h-header-height">

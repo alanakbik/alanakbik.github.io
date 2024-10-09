@@ -50,7 +50,7 @@ export default function Page() {
             </Wrapper>
             <hr/>
             <Wrapper>
-                <section className="py-24 sm:pb-header-height sm:pt-[calc(2*var(--header-height))]" id="pinned-messages">
+                <section className="py-24 sm:pb-header-height" id="pinned-messages">
                     <PinnedMessage title="New PhD position available">
                         We have a new PhD position available, fully funded for 4 years through the
                         <InlineLink href="https://google.com" target="_blank">HEIBRIDS</InlineLink> programme!
@@ -59,7 +59,7 @@ export default function Page() {
                 </section>
                 <section className="mb-32">
                     <div
-                        className="relative mb-header-height flex justify-center sm:after:absolute sm:after:top-1/2 sm:after:-z-10
+                        className="relative mb-12 flex sm:mb-header-height sm:justify-center sm:after:absolute sm:after:top-1/2 sm:after:-z-10
                     sm:after:h-[3px] sm:after:w-full sm:after:bg-hu-blue-primary sm:after:content-['']"
                     >
                         <H1 className="bg-white sm:px-12">Latest News</H1>

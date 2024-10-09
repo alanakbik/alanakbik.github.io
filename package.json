@@ -9,6 +9,7 @@
     "fix": "next lint --fix"
   },
   "dependencies": {
+    "anzol": "^4.1.0",
     "hamburger-react": "^2.5.1",
     "next": "14.2.13",
     "react": "^18",
