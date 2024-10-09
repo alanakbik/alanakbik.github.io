@@ -1,8 +1,11 @@
 import React from "react";
 
-import type { TimelineEntryData } from "@/data/types";
+import type { TimelineEntryData } from "@/content/types";
 
-export default function TimelineEntry({ data: { date, category, conference, content }}: { data: TimelineEntryData }) {
+export default function TimelineEntry({ data: { date, category, conference, content }, color }: {
+    data: TimelineEntryData,
+    color: string,
+}) {
     const formattedDate = (() => {
         const d = new Date(date);
 
@@ -25,11 +28,26 @@ export default function TimelineEntry({ data: { date, category, conference, cont
                     {formattedDate}
                 </time>
                 <div
-                    className="ml-6 inline-block overflow-hidden rounded-lg border-3 border-hu-blue-primary
-                    bg-hu-blue-primary leading-4"
+                    style={{
+                        borderColor: color,
+                        backgroundColor: color,
+                    }}
+                    className="ml-6 inline-block overflow-hidden rounded-lg border-3 leading-4"
                 >
-                    <span className="inline-block bg-hu-blue-primary px-2 pb-[0.05rem] text-white">{category}</span>
-                    {conference && <span className="inline-block bg-white px-2 pb-[0.05rem] text-hu-blue-primary">{conference}</span>}
+                    <span
+                        style={{
+                            backgroundColor: color,
+                        }}
+                        className="inline-block px-2 pb-[0.05rem] text-white"
+                    >{category}</span>
+                    {conference &&
+                        <span
+                            style={{
+                                color: color,
+                            }}
+                            className="inline-block bg-white px-2 pb-[0.05rem]"
+                        >{conference}</span>
+                    }
                 </div>
             </div>
             <p className="leading-loose">

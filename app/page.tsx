@@ -8,9 +8,13 @@ import BlockLink from "@/components/shared/BlockLink";
 import H1 from "@/components/shared/H1";
 import InlineLink from "@/components/shared/InlineLink";
 import Wrapper from "@/components/Wrapper";
-import TimelineEntries from "@/data/LatestNews";
+import TimelineEntries from "@/content/LatestNews";
+import { getCategoryColorMap } from "@/utils";
 
 export default function Page() {
+
+    const map = getCategoryColorMap(TimelineEntries);
+
     return (
         <Wrapper>
             <div className="relative flex h-dvh items-center justify-between desktop:pt-header-height">
@@ -57,7 +61,11 @@ export default function Page() {
                     <H1 className="bg-white px-12">Latest News</H1>
                 </div>
                 <div>
-                    {TimelineEntries.map((e, i) => <TimelineEntry data={e} key={i}/>)}
+                    {TimelineEntries.map((e, i) => <TimelineEntry
+                        data={e}
+                        color={map.get(e.category) ?? "var(--hu-blue-primary)"}
+                        key={i}
+                    />)}
                 </div>
             </section>
         </Wrapper>

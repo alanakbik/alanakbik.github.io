@@ -1,14 +1,17 @@
 import React from "react";
 
 import InlineLink from "@/components/shared/InlineLink";
-import type { TimelineEntryData } from "@/data/types";
+import type { TimelineEntryData } from "@/content/types";
 
 /**
  * PLEASE READ BEFORE EDITING
  *
  * The data in this file is displayed on the landing page after the banner screen and the pinned messages.
  * String types are as restrictive as possible to avoid inconsistent spellings of the same thing across the site.
- * This means if you want to add a new "category" or "conference", you need to extend their types first.
+ * This also allows us to automatically set the colors of category labels because we can be sure the same categories
+ * are consistently spelled the same.
+ *
+ * If you want to add a new "category" or "conference", you need to extend their types first.
  * All types are defined in data/types.d.ts. Please don't edit the IsoDate type though. Date strings are automatically
  * formatted. The IsoDate type helps make sure date strings are valid.
  *
@@ -35,7 +38,7 @@ const LatestNews: TimelineEntryData[] = [
         </>,
     }, {
         date: "2024-11-09",
-        category: "New Paper",
+        category: "Paper accepted",
         content: <>
             Our paper &quot;TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
             for Downstream Classification Tasks&quot; now on <InlineLink href="https://google.com" target="_blank">arXiv</InlineLink>
