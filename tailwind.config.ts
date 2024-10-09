@@ -8,6 +8,9 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            borderWidth: {
+                "3": "3px",
+            },
             colors: {
                 "hu-blue-primary": "#00376c",
                 "hu-blue-secondary": "#8db4d9",

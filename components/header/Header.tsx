@@ -20,7 +20,7 @@ function HeaderLink({ href, children }: { href: string, children: string }) {
                 className="flex h-full items-center text-hu-blue-primary group-first-of-type:pl-0
                 group-last-of-type:pr-0 md:px-2 lg:px-4 xl:px-6"
             >
-                <span className="inline-link-header transition-all">
+                <span className="inline-link bg-gradient-to-b from-hu-blue-primary to-hu-blue-primary">
                     {children}
                 </span>
             </Link>

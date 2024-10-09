@@ -6,6 +6,12 @@
     :root {
         font-weight: 200;
         --hu-blue-primary: theme(colors.hu-blue-primary);
+        --hu-blue-secondary: theme(colors.hu-blue-secondary);
+    }
+
+    ::selection {
+        background: var(--hu-blue-secondary);
+        color: white;
     }
 }
 
@@ -17,16 +23,14 @@
         transform: translate(-50%, -50%);
     }
 
-    .inline-link-header {
-        background: linear-gradient(
-                to bottom,
-                var(--hu-blue-primary) 0%,
-                var(--hu-blue-primary) 100%
-        ) no-repeat center bottom;
-        background-size: 0 0.05rem;
+    .inline-link {
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        background-size: 0 1px;
+        transition: background-size 0.1s ease-in-out;
     }
 
-    a:hover .inline-link-header {
+    a:hover .inline-link, .inline-link:hover {
         background-size: 100% 0.05rem;
     }
 

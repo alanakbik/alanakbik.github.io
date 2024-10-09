@@ -1,9 +1,11 @@
 import React from "react";
-import { FaAnglesDown } from "react-icons/fa6";
 
-import BlockLink from "@/components/BlockLink";
+import PinnedMessage from "@/components/routes/home/PinnedMessage";
+import ScrollDownButton from "@/components/routes/home/ScrollDownButton";
 import BasePathImage from "@/components/shared/BasePathImage";
+import BlockLink from "@/components/shared/BlockLink";
 import H1 from "@/components/shared/H1";
+import InlineLink from "@/components/shared/InlineLink";
 import Wrapper from "@/components/Wrapper";
 
 export default function Page() {
@@ -36,10 +38,15 @@ export default function Page() {
                         />
                     </div>
                 </div>
-                <button className="absolute bottom-4 left-1/2 -translate-x-1/2 desktop:bottom-8">
-                    <FaAnglesDown className="size-6 animate-bounce text-hu-blue-primary desktop:size-8"/>
-                </button>
+                <ScrollDownButton/>
             </div>
+            <section className="pb-96 pt-header-height" id="pinned-messages">
+                <PinnedMessage title="New PhD position available">
+                    We have a new PhD position available, fully funded for 4 years through the
+                    <InlineLink href="https://google.com" target="_blank">HEIBRIDS</InlineLink> programme!
+                    Apply here! Deadline is August 23rd!
+                </PinnedMessage>
+            </section>
         </Wrapper>
     );
 }
