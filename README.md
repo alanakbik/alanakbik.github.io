@@ -18,6 +18,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 to produce a static output. This is why there is a build command in the `package.json` but no command for running the
 build artifacts. For developing, you only need to use the above dev command.
 
+## Editing Content
+For making changes to the content of the site please only edit files in the `data` directory. The rest of project
+mostly doesn't contain content and instead consists of only markup, styles, and render logic.
+Each file in the `data` directory comes with a leading comment explaining what to watch out for when making changes.
+If you need to change an image, just replace the corresponding file in the `public` directory.
+
 ## Deploying
 Make sure the `.env` file contains the correct base path. This is necessary for loading images correctly
 on GitHub pages. This needs to be set to `"/alanakbik.github.io"` on forked versions of the repo and be set
@@ -38,3 +44,5 @@ To learn more about the technology used in this repo, take a look at the followi
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 - [React](https://react.dev/) - The underlying frontend framework Next.js is encapsulating.
 - [TailwindCSS](https://tailwindcss.com) - the library we use for styling in this project.
+
+Note: if you see `@` used inside path names, this refers to the project root.

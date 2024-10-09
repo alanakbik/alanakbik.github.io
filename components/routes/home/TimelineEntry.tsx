@@ -1,13 +1,8 @@
 import React from "react";
 
-import type { IsoDate } from "@/types";
+import type { TimelineEntryData } from "@/data/types";
 
-export default function TimelineEntry({ date, category, conference, children }: {
-    date: IsoDate,
-    category: string,
-    conference?: string,
-    children: React.ReactNode,
-}) {
+export default function TimelineEntry({ data: { date, category, conference, content }}: { data: TimelineEntryData }) {
     const formattedDate = (() => {
         const d = new Date(date);
 
@@ -38,7 +33,7 @@ export default function TimelineEntry({ date, category, conference, children }: 
                 </div>
             </div>
             <p className="leading-loose">
-                {children}
+                {content}
             </p>
         </div>
     );

@@ -8,6 +8,7 @@ import BlockLink from "@/components/shared/BlockLink";
 import H1 from "@/components/shared/H1";
 import InlineLink from "@/components/shared/InlineLink";
 import Wrapper from "@/components/Wrapper";
+import TimelineEntries from "@/data/LatestNews";
 
 export default function Page() {
     return (
@@ -56,29 +57,7 @@ export default function Page() {
                     <H1 className="bg-white px-12">Latest News</H1>
                 </div>
                 <div>
-                    <TimelineEntry
-                        date="2024-11-09"
-                        category="New Paper"
-                        conference="ACL 2025"
-                    >
-                        Our paper &quot;TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
-                        for Downstream Classification Tasks&quot; now on <InlineLink href="https://google.com" target="_blank">arXiv</InlineLink>
-                    </TimelineEntry>
-                    <TimelineEntry
-                        date="2024-07-09"
-                        category="New Researcher"
-                    >
-                        Our paper &quot;TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
-                        for Downstream Classification Tasks&quot; now on <InlineLink href="https://google.com" target="_blank">arXiv</InlineLink>
-                    </TimelineEntry>
-                    <TimelineEntry
-                        date="2024-11-09"
-                        category="New Paper"
-                        conference="EMNLP 2025"
-                    >
-                        Our paper &quot;TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
-                        for Downstream Classification Tasks&quot; now on <InlineLink href="https://google.com" target="_blank">arXiv</InlineLink>
-                    </TimelineEntry>
+                    {TimelineEntries.map((e, i) => <TimelineEntry data={e} key={i}/>)}
                 </div>
             </section>
         </Wrapper>
