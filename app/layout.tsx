@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import React from "react";
 
-import Header from "@/components/Header";
+import Header from "@/components/header/Header";
 
 const outfit = Outfit({
     weight: "200",

@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import resolveConfig from "tailwindcss/resolveConfig";
 
-import MobileMenu from "@/components/MobileMenu";
+import MobileMenu from "@/components/header/MobileMenu";
 import Wrapper from "@/components/Wrapper";
 import logo from "@/public/HU_Siegel-Kombi_RGB.svg";
 import tailwindConfig from "@/tailwind.config";
@@ -17,7 +17,7 @@ function HeaderLink({ href, children }: { href: string, children: string }) {
         <li className="group flex h-full items-center">
             <Link
                 href={href}
-                className="flex h-full items-center text-[color:var(--hu-blue)] group-first-of-type:pl-0
+                className="flex h-full items-center text-hu-blue-primary group-first-of-type:pl-0
                 group-last-of-type:pr-0 md:px-2 lg:px-4 xl:px-6"
             >
                 <span className="inline-link-header transition-all">
@@ -52,12 +52,12 @@ export default function Header() {
         return <MobileMenu/>;
     }
     return (
-        <header className="z-50 shadow-lg">
+        <header className="fixed z-50 w-full bg-white shadow-lg">
             <Wrapper>
                 <div className="flex justify-between">
-                    <nav className="h-[var(--header-height)]">
+                    <nav className="h-header-height">
                         <ul className="flex h-full items-center">
-                            <HeaderLink href="/">Home</HeaderLink>
+                            <HeaderLink href="/public">Home</HeaderLink>
                             <HeaderLink href="/publications">Publications</HeaderLink>
                             <HeaderLink href="/research">Research</HeaderLink>
                             <HeaderLink href="/chair">Chair</HeaderLink>
@@ -69,7 +69,7 @@ export default function Header() {
                             src={logo}
                             alt="HU-Logo"
                             unoptimized
-                            className="relative left-[10%] h-[var(--header-height)] w-auto"
+                            className="relative left-[10%] h-header-height w-auto"
                             priority
                         />
                     </Link>

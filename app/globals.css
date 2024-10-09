@@ -5,60 +5,67 @@
 @layer base {
     :root {
         font-weight: 200;
-        --hu-blue: #00376c;
-        --header-height: 6rem;
+        --hu-blue-primary: theme(colors.hu-blue-primary);
     }
 }
 
-.inline-link-header {
-    background: linear-gradient(
-            to bottom,
-            var(--hu-blue) 0%,
-            var(--hu-blue) 100%
-    ) no-repeat center bottom;
-    background-size: 0 0.05rem;
-}
+@layer utilities {
+    .center-absolute {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-a:hover .inline-link-header {
-    background-size: 100% 0.05rem;
-}
+    .inline-link-header {
+        background: linear-gradient(
+                to bottom,
+                var(--hu-blue-primary) 0%,
+                var(--hu-blue-primary) 100%
+        ) no-repeat center bottom;
+        background-size: 0 0.05rem;
+    }
 
-.block-link {
-    color: white;
-    font-size: 1.3rem;
-    display: inline-block;
-    border-radius: 0.4rem;
-    padding-bottom: .25em;
-}
+    a:hover .inline-link-header {
+        background-size: 100% 0.05rem;
+    }
 
-.block-link span {
-    background: radial-gradient(100% 100% at 130% 0, #8db4d9 0, #00376c 130%);
-    border-radius: 0.4rem;
-    padding: 0.4rem 1.5rem;
-    transition: top 50ms linear;
-    display: inline-block;
-    top: 0;
-    left: 0;
-    position: relative;
-}
+    .block-link {
+        color: white;
+        display: inline-block;
+        border-radius: 0.6em;
+        padding-bottom: .2em;
+    }
 
-.block-link span::after {
-    content: "";
-    background-color: #082745;
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    left: 0;
-    bottom: -.25em;
-    border-radius: 0.4rem;
-    z-index: -1;
-    transition: bottom 50ms linear;
-}
+    .block-link span {
+        background: radial-gradient(100% 100% at 130% 0, #8db4d9 0, #00376c 130%);
+        border-radius: 0.4em;
+        padding: 0.2em 1.3em;
+        transition: top 50ms linear;
+        display: inline-block;
+        top: 0;
+        left: 0;
+        position: relative;
+    }
 
-.block-link:hover span {
-    top: .25em;
-}
+    .block-link span::after {
+        content: "";
+        background-color: #082745;
+        width: 100%;
+        height: 50%;
+        position: absolute;
+        left: 0;
+        bottom: -.2em;
+        border-radius: 0.4em;
+        z-index: -1;
+        transition: bottom 50ms linear;
+    }
 
-.block-link:hover span::after {
-    bottom: 0;
+    .block-link:hover span {
+        top: .2em;
+    }
+
+    .block-link:hover span::after {
+        bottom: 0;
+    }
 }

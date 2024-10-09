@@ -7,7 +7,20 @@ const config: Config = {
         "./app/**/*.{js,ts,jsx,tsx,mdx}",
     ],
     theme: {
-        extend: {},
+        extend: {
+            colors: {
+                "hu-blue-primary": "#00376c",
+                "hu-blue-secondary": "#8db4d9",
+            },
+            spacing: {
+                "header-height": "6rem",
+            },
+            screens: {
+                "desktop": {
+                    "raw": "(min-width: 768px) and (min-height: 640px)",
+                },
+            },
+        },
     },
     plugins: [],
 };
