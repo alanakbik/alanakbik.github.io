@@ -18,6 +18,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 to produce a static output. This is why there is a build command in the `package.json` but no command for running the
 build artifacts. For developing, you only need to use the above dev command.
 
+## Deploying
+Make sure the `.env` file contains the correct base path. This is necessary for loading images correctly
+on GitHub pages. This needs to be set to `"/alanakbik.github.io"` on forked versions of the repo and be set
+to `""` on the main repo.
+
 ## ESLint
 To mainting constant code quality adhering to the linter rules is necessary. These rules are checked
 at build time. If your changes violate the linter rules, the build will fail. The rules are defined in
