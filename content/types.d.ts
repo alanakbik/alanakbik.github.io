@@ -34,3 +34,20 @@ export interface TimelineEntryData {
      */
     content: ReactNode,
 }
+
+/**
+ * This is the allowed strings for the links below a publication. This type ensures consistent spelling of the same
+ * strings and can be extended as needed.
+ */
+export type PublicationLinkLabel = "PDF" | "Cite" | "Code";
+
+/**
+ * This is the information for a single publication delineated by a blue left border on the publications page
+ */
+export interface Publication {
+    year: number,
+    conference?: Conference,
+    title: string,
+    authors: string,
+    links: { url: string; label: PublicationLinkLabel }[],
+}

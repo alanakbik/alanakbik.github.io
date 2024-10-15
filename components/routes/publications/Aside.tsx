@@ -13,7 +13,7 @@ function Year({ children, highlighted }: { children: string, highlighted: boolea
     );
 }
 
-export default function Aside() {
+export default function Aside({ years }: { years: number[] }) {
     const [scrollY, setScrollY] = useState(0);
     const sectionCount = 8;
     useEffect(() => {
@@ -22,7 +22,7 @@ export default function Aside() {
     const windowTarget = useEvent("scroll", () => setScrollY(window.scrollY / (document.body.clientHeight - window.innerHeight)));
     useEffect(() => windowTarget(window), [windowTarget]);
     const calculatedOffset = useMemo(() => {
-        if (typeof window === "undefined") return "0";
+        if (typeof window === "undefined") return "translateY(0px)";
         return `translateY(${Math.min(0, (window.innerHeight / 2) + Math.floor(-scrollY * window.innerHeight))}px)`;
     }, [scrollY]);
     return (
@@ -33,14 +33,11 @@ export default function Aside() {
                     transform: calculatedOffset,
                 }}
             >
-                <Year highlighted={Math.floor(sectionCount * scrollY) === 0}>2024</Year>
-                <Year highlighted={Math.floor(sectionCount * scrollY) === 1}>2023</Year>
-                <Year highlighted={Math.floor(sectionCount * scrollY) === 2}>2022</Year>
-                <Year highlighted={Math.floor(sectionCount * scrollY) === 3}>2021</Year>
-                <Year highlighted={Math.floor(sectionCount * scrollY) === 4}>2020</Year>
-                <Year highlighted={Math.floor(sectionCount * scrollY) === 5}>2019</Year>
-                <Year highlighted={Math.floor(sectionCount * scrollY) === 6}>2018</Year>
-                <Year highlighted={Math.floor(sectionCount * scrollY) >= 7}>2017</Year>
+                {years.map((year, i) => {
+                    let highlighted = Math.floor(sectionCount * scrollY) === i;
+                    if (i === years.length - 1) highlighted = Math.floor(sectionCount * scrollY) >= i;
+                    return <Year key={i} highlighted={highlighted}>{year.toString()}</Year>;
+                })}
             </ul>
         </aside>
     );
