@@ -13,7 +13,8 @@ export type IsoDate =`${number}${number}${number}${number}-${number}${number}-${
  *
  * If you need to add a new one you can extend this type.
  */
-export type Conference = "ACL" | "EMNLP";
+export type Conference = "ACL" | "EMNLP" | "NAACL" | "Bioinformatics" | "COLING-LREC" | "EACL" | "ACL-IJCNLP" | "COLING"
+    | "NLDL" | "LREC" | "ICIQ" | "IJCNLP" | "iPres" | "GSCL" | "NAACL-HLT" | "WWW";
 
 /**
  * This type enforces a valid conference name to be followed by a year after 2000 (inclusive)
@@ -44,7 +45,7 @@ export interface TimelineEntryData {
  * This is the allowed strings for the links below a publication. This type ensures consistent spelling of the same
  * strings and can be extended as needed.
  */
-export type PublicationLinkLabel = "PDF" | "Cite" | "Code";
+export type PublicationLinkLabel = "PDF" | "Video";
 
 /**
  * This is the information for a single publication delineated by a blue left border on the publications page

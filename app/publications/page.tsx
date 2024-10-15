@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import React from "react";
 
 import Aside from "@/components/routes/publications/Aside";
@@ -6,6 +7,10 @@ import H1 from "@/components/shared/H1";
 import WrapperLarge from "@/components/WrapperLarge";
 import Publications from "@/content/Publications";
 import type { Publication } from "@/content/types";
+
+export const metadata: Metadata = {
+    title: "Publications - Alan Akbik",
+};
 
 function Section({ year, publications }: { year: number, publications: Publication[] }) {
     return (
@@ -35,9 +40,11 @@ function Publication({ p }: { p: Publication }) {
             <span className="block">
                 {p.authors}
             </span>
-            <div className="mt-4 flex gap-5">
-                {p.links.map((l, i) => <BlockLink key={i} href={l.url}>{l.label}</BlockLink>)}
-            </div>
+            {p.links.length > 0 && (
+                <div className="mt-4 flex gap-5">
+                    {p.links.map((l, i) => <BlockLink key={i} href={l.url} target="_blank">{l.label}</BlockLink>)}
+                </div>
+            )}
         </li>
     );
 }
@@ -48,8 +55,9 @@ export default function Page() {
         if (!publications.has(publication.year)) publications.set(publication.year, []);
         publications.get(publication.year)?.push(publication);
     }
-    const sections = Array.from(publications.entries()).map(([key, value]) => <Section key={key} year={key} publications={value}/>);
-    console.log(sections);
+    const sections = Array.from(publications.entries()).map(([key, value]) => (
+        <Section key={key} year={key} publications={value}/>
+    ));
     return (
         <WrapperLarge className="flex py-[calc(var(--header-height)*2)]">
             <Aside years={Array.from(publications.keys())}/>

@@ -15,7 +15,7 @@ function Year({ children, highlighted }: { children: string, highlighted: boolea
 
 export default function Aside({ years }: { years: number[] }) {
     const [scrollY, setScrollY] = useState(0);
-    const sectionCount = 8;
+    const sectionCount = years.length;
     useEffect(() => {
         setScrollY(window.scrollY / (document.body.clientHeight - window.innerHeight));
     }, []);
