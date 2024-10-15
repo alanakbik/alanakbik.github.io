@@ -6,7 +6,15 @@ import React, { useEffect, useMemo, useState } from "react";
 function Year({ children, highlighted }: { children: string, highlighted: boolean }) {
     return (
         <li className="mt-6 first:mt-0" style={{ color: highlighted ? "var(--hu-blue-primary)" : undefined }}>
-            <button onClick={() => document.getElementById(children)?.scrollIntoView({ behavior: "smooth" })}>
+            <button onClick={() => {
+                const element = document.getElementById(children);
+                if (element) {
+                    window.scrollTo({
+                        top: element.offsetTop + 1,
+                        behavior: "smooth",
+                    });
+                }
+            }}>
                 {children}
             </button>
         </li>
@@ -35,7 +43,12 @@ export default function Aside({ years }: { years: number[] }) {
             >
                 {years.map((year, i) => {
                     let highlighted = Math.floor(sectionCount * scrollY) === i;
-                    if (i === years.length - 1) highlighted = Math.floor(sectionCount * scrollY) >= i;
+                    const element = document.getElementById(year.toString());
+                    if (element) {
+                        const rect = element.getBoundingClientRect();
+                        if (i === 0) highlighted = rect.height + rect.y > 0;
+                        else highlighted = rect.y <= 0 && rect.height + rect.y > 0;
+                    }
                     return <Year key={i} highlighted={highlighted}>{year.toString()}</Year>;
                 })}
             </ul>

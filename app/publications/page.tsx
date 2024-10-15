@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 function Section({ year, publications }: { year: number, publications: Publication[] }) {
     return (
-        <section className="mt-24" id={year.toString()}>
+        <section className="pt-24" id={year.toString()}>
             <h2 className="text-3xl">{year}</h2>
             <ul>
                 {publications.map((p, i) => <Publication key={i} p={p}/>)}
@@ -61,7 +61,7 @@ export default function Page() {
     return (
         <WrapperLarge className="flex py-[calc(var(--header-height)*2)]">
             <Aside years={Array.from(publications.keys())}/>
-            <div>
+            <div id="publications">
                 <H1>Publications</H1>
                 {sections}
             </div>
