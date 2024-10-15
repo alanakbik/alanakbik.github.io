@@ -31,9 +31,9 @@ export default function Aside({ years }: { years: number[] }) {
     const windowTarget = useEvent("scroll", () => setScrollY(window.scrollY / (document.body.clientHeight - window.innerHeight)));
     useEffect(() => windowTarget(window), [windowTarget]);
     const calculatedOffset = useMemo(() => {
-        if (typeof window === "undefined") return "translateY(0px)";
-        return `translateY(${Math.min(0, (window.innerHeight / 2) + Math.floor(-scrollY * window.innerHeight))}px)`;
-    }, [scrollY]);
+        if (typeof window === "undefined") return "translateY(0rem)";
+        return `translateY(${-2 * scrollY * sectionCount}rem)`;
+    }, [scrollY, sectionCount]);
     return (
         <aside className="top-24 mr-48 text-3xl text-neutral-400">
             <ul
