@@ -1,6 +1,6 @@
 "use client";
 
-import { useEvent } from "anzol";
+import { useEvent, useHasMounted } from "anzol";
 import React, { useEffect, useMemo, useState } from "react";
 
 function Year({ children, highlighted }: { children: string, highlighted: boolean }) {
@@ -27,6 +27,7 @@ export default function Aside({ years }: { years: number[] }) {
     useEffect(() => {
         setScrollY(window.scrollY / (document.body.clientHeight - window.innerHeight));
     }, []);
+    const hasMounted = useHasMounted();
     const windowTarget = useEvent("scroll", () => setScrollY(window.scrollY / (document.body.clientHeight - window.innerHeight)));
     useEffect(() => windowTarget(window), [windowTarget]);
     const calculatedOffset = useMemo(() => {
@@ -41,7 +42,7 @@ export default function Aside({ years }: { years: number[] }) {
                     transform: calculatedOffset,
                 }}
             >
-                {typeof window !== "undefined" && years.map((year, i) => {
+                {hasMounted && years.map((year, i) => {
                     let highlighted = Math.floor(sectionCount * scrollY) === i;
                     const element = document.getElementById(year.toString());
                     if (element) {
