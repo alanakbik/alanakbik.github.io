@@ -12,7 +12,7 @@ import type { TimelineEntryData } from "@/content/types";
  * are consistently spelled the same.
  *
  * If you want to add a new "category" or "conference", you need to extend their types first.
- * All types are defined in data/types.d.ts. Please don't edit the IsoDate type though. Date strings are automatically
+ * All types are defined in content/types.d.ts. Please don't edit the IsoDate type though. Date strings are automatically
  * formatted. The IsoDate type helps make sure date strings are valid.
  *
  * Finally, the content is the text displayed under each date/tag in the latest news timeline. This can just be a string.

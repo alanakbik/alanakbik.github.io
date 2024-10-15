@@ -19,9 +19,9 @@ to produce a static output. This is why there is a build command in the `package
 build artifacts. For developing, you only need to use the above dev command.
 
 ## Editing Content
-For making changes to the content of the site please only edit files in the `data` directory. The rest of project
+For making changes to the content of the site please only edit files in the `content` directory. The rest of project
 mostly doesn't contain content and instead consists of only markup, styles, and render logic.
-Each file in the `data` directory comes with a leading comment explaining what to watch out for when making changes.
+Each file in the `content` directory comes with a leading comment explaining what to watch out for when making changes.
 If you need to change an image, just replace the corresponding file in the `public` directory.
 
 ## Deploying

@@ -13,7 +13,12 @@ export type IsoDate =`${number}${number}${number}${number}-${number}${number}-${
  *
  * If you need to add a new one you can extend this type.
  */
-export type Conference = "ACL 2025" | "EMNLP 2025";
+export type Conference = "ACL" | "EMNLP";
+
+/**
+ * This type enforces a valid conference name to be followed by a year after 2000 (inclusive)
+ */
+export type ConferenceAndYear = `${Conference} 20${number}${number}`
 
 /**
  * This type contains all categories used in the latest news. This is more restrictive than a string.
@@ -26,7 +31,7 @@ export type NewsCategory = "New Paper" | "Paper accepted";
 export interface TimelineEntryData {
     date: IsoDate,
     category: NewsCategory,
-    conference?: Conference,
+    conference?: ConferenceAndYear,
     /**
      * This is the text displayed below the date and tag. The React node type can accept a string. It's recommended to use
      * a string unless you need to use additional markup like links. The "content" gets put inside a <p> element.
@@ -46,7 +51,7 @@ export type PublicationLinkLabel = "PDF" | "Cite" | "Code";
  */
 export interface Publication {
     year: number,
-    conference?: Conference,
+    conference?: ConferenceAndYear,
     title: string,
     authors: string,
     links: { url: string; label: PublicationLinkLabel }[],
