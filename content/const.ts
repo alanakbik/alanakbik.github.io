@@ -15,3 +15,8 @@ export const palette = [
     "#C49102", // DIJON
     "#6693F5", // CORNFLOWER
 ];
+
+/**
+ * This determines which years are makes as including a parental leave period on the publications page.
+ */
+export const parentalLeaveYears = [2020, 2022];

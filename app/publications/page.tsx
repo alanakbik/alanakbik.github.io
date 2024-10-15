@@ -5,6 +5,7 @@ import Aside from "@/components/routes/publications/Aside";
 import BlockLink from "@/components/shared/BlockLink";
 import H1 from "@/components/shared/H1";
 import WrapperLarge from "@/components/WrapperLarge";
+import { parentalLeaveYears } from "@/content/const";
 import Publications from "@/content/Publications";
 import type { Publication } from "@/content/types";
 
@@ -15,7 +16,10 @@ export const metadata: Metadata = {
 function Section({ year, publications }: { year: number, publications: Publication[] }) {
     return (
         <section className="pt-24" id={year.toString()}>
-            <h2 className="text-3xl">{year}</h2>
+            <h2 className="text-3xl">
+                {year}
+                {parentalLeaveYears.includes(year) && <span className="ml-4 text-lg text-neutral-500">(Included Parental Leave)</span>}
+            </h2>
             <ul>
                 {publications.map((p, i) => <Publication key={i} p={p}/>)}
             </ul>
