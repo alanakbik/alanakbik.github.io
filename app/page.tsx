@@ -8,6 +8,7 @@ import BlockLink from "@/components/shared/BlockLink";
 import H1 from "@/components/shared/H1";
 import InlineLink from "@/components/shared/InlineLink";
 import Wrapper from "@/components/Wrapper";
+import WrapperLarge from "@/components/WrapperLarge";
 import TimelineEntries from "@/content/LatestNews";
 import { getCategoryColorMap } from "@/utils";
 
@@ -17,7 +18,7 @@ export default function Page() {
 
     return (
         <>
-            <Wrapper>
+            <WrapperLarge>
                 <div className="relative flex h-dvh items-center justify-between desktop:pt-header-height">
                     <div className="desktop:w-3/5">
                         <H1>
@@ -47,7 +48,7 @@ export default function Page() {
                     </div>
                     <ScrollDownButton/>
                 </div>
-            </Wrapper>
+            </WrapperLarge>
             <hr/>
             <Wrapper>
                 <section className="py-24 sm:pb-header-height" id="pinned-messages">

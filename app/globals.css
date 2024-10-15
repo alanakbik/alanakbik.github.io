@@ -39,7 +39,7 @@
     }
 
     a:hover .inline-link, .inline-link:hover {
-        background-size: 100% 0.05rem;
+        background-size: 100% 1px;
     }
 
     .block-link {

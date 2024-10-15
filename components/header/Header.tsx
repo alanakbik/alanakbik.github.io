@@ -7,7 +7,7 @@ import React, { useEffect, useRef, useState } from "react";
 import resolveConfig from "tailwindcss/resolveConfig";
 
 import MobileMenu from "@/components/header/MobileMenu";
-import Wrapper from "@/components/Wrapper";
+import WrapperLarge from "@/components/WrapperLarge";
 import logo from "@/public/HU_Siegel-Kombi_RGB.svg";
 import tailwindConfig from "@/tailwind.config";
 
@@ -75,7 +75,7 @@ export default function Header() {
             }}
             className="fixed z-50 w-full bg-white shadow-lg transition-transform"
         >
-            <Wrapper>
+            <WrapperLarge>
                 <div className="flex justify-between">
                     <nav className="h-header-height">
                         <ul className="flex h-full items-center">
@@ -96,7 +96,7 @@ export default function Header() {
                         />
                     </Link>
                 </div>
-            </Wrapper>
+            </WrapperLarge>
         </header>
     );
 }
