@@ -1,7 +1,7 @@
 "use client";
 
 import { useEvent } from "anzol";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 function Year({ children, highlighted }: { children: string, highlighted: boolean }) {
     return (
@@ -20,13 +20,17 @@ export default function Aside() {
         setScrollY(window.scrollY / (document.body.clientHeight - window.innerHeight));
     }, []);
     const windowTarget = useEvent("scroll", () => setScrollY(window.scrollY / (document.body.clientHeight - window.innerHeight)));
-    useEffect(() => windowTarget(document), [windowTarget]);
+    useEffect(() => windowTarget(window), [windowTarget]);
+    const calculatedOffset = useMemo(() => {
+        if (typeof window === "undefined") return "0";
+        return `translateY(${Math.min(0, (window.innerHeight / 2) + Math.floor(-scrollY * window.innerHeight))}px)`;
+    }, [scrollY]);
     return (
         <aside className="top-24 mr-48 text-3xl text-neutral-400">
             <ul
                 className="fixed"
                 style={{
-                    transform: `translateY(${Math.min(0, (window.innerHeight / 2) + Math.floor(-scrollY * window.innerHeight))}px)`,
+                    transform: calculatedOffset,
                 }}
             >
                 <Year highlighted={Math.floor(sectionCount * scrollY) === 0}>2024</Year>
