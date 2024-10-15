@@ -41,7 +41,7 @@ export default function Aside({ years }: { years: number[] }) {
                     transform: calculatedOffset,
                 }}
             >
-                {years.map((year, i) => {
+                {typeof window !== "undefined" && years.map((year, i) => {
                     let highlighted = Math.floor(sectionCount * scrollY) === i;
                     const element = document.getElementById(year.toString());
                     if (element) {
