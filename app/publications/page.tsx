@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 function Section({ year, publications }: { year: number, publications: Publication[] }) {
     return (
-        <section className="pt-24" id={year.toString()}>
+        <section className="pt-16 sm:pt-24" id={year.toString()}>
             <h2 className="text-3xl">
                 {year}
                 {parentalLeaveYears.includes(year) && <span className="ml-4 text-lg text-neutral-500">(Included Parental Leave)</span>}
@@ -30,8 +30,8 @@ function Section({ year, publications }: { year: number, publications: Publicati
 function Publication({ p }: { p: Publication }) {
     return (
         <li
-            className="relative mt-8 pl-6 after:absolute after:left-0 after:top-1/2 after:h-[calc(100%-0.5rem)]
-            after:w-[3px] after:translate-y-[calc(-50%+0.2rem)] after:bg-hu-blue-primary after:content-['']"
+            className="relative mt-8 pl-4 after:absolute after:left-0 after:top-1/2 after:h-[calc(100%-0.5rem)] after:w-[3px]
+            after:translate-y-[calc(-50%+0.2rem)] after:bg-hu-blue-primary after:content-[''] sm:pl-6"
         >
             {p?.conference && (
                 <span className="mb-2 block text-2xl text-hu-blue-secondary">

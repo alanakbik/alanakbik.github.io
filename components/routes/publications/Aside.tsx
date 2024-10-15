@@ -35,7 +35,7 @@ export default function Aside({ years }: { years: number[] }) {
         return `translateY(${-2 * scrollY * sectionCount}rem)`;
     }, [scrollY, sectionCount]);
     return (
-        <aside className="top-24 mr-48 text-3xl text-neutral-400">
+        <aside className="top-24 mr-16 text-xl text-neutral-400 sm:mr-24 sm:text-3xl md:mr-32 lg:mr-48">
             <ul
                 className="fixed"
                 style={{
