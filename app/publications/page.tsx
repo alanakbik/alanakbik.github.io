@@ -1,21 +1,14 @@
 import React from "react";
 
+import Aside from "@/components/routes/publications/Aside";
 import BlockLink from "@/components/shared/BlockLink";
 import H1 from "@/components/shared/H1";
 import WrapperLarge from "@/components/WrapperLarge";
 
-function Year({ children }: { children: string }) {
+function Section({ year }: { year: number }) {
     return (
-        <li className="mt-6 first:mt-0">
-            <button>{children}</button>
-        </li>
-    );
-}
-
-function Section() {
-    return (
-        <section className="mt-24">
-            <h2 className="text-3xl">2024</h2>
+        <section className="mt-24" id={year.toString()}>
+            <h2 className="text-3xl">{year}</h2>
             <ul>
                 <Publication/>
                 <Publication/>
@@ -54,18 +47,18 @@ function Publication() {
 
 export default function Page() {
     return (
-        <WrapperLarge className="flex pt-[calc(var(--header-height)*2)]">
-            <aside className="mr-24 text-3xl text-neutral-400">
-                <ul>
-                    <Year key={0}>2024</Year>
-                    <Year key={1}>2023</Year>
-                    <Year key={2}>2022</Year>
-                    <Year key={3}>2021</Year>
-                </ul>
-            </aside>
+        <WrapperLarge className="flex py-[calc(var(--header-height)*2)]">
+            <Aside/>
             <div>
                 <H1>Publications</H1>
-                <Section/>
+                <Section year={2024}/>
+                <Section year={2023}/>
+                <Section year={2022}/>
+                <Section year={2021}/>
+                <Section year={2020}/>
+                <Section year={2019}/>
+                <Section year={2018}/>
+                <Section year={2017}/>
             </div>
         </WrapperLarge>
     );
