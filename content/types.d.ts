@@ -14,7 +14,7 @@ export type IsoDate =`${number}${number}${number}${number}-${number}${number}-${
  * If you need to add a new one you can extend this type.
  */
 export type Conference = "ACL" | "EMNLP" | "NAACL" | "Bioinformatics" | "COLING-LREC" | "EACL" | "ACL-IJCNLP" | "COLING"
-    | "NLDL" | "LREC" | "ICIQ" | "IJCNLP" | "iPres" | "GSCL" | "NAACL-HLT" | "WWW";
+    | "NLDL" | "LREC" | "ICIQ" | "IJCNLP" | "iPres" | "GSCL" | "NAACL-HLT" | "WWW" | "BabyLM";
 
 /**
  * This type enforces a valid conference name to be followed by a year after 2000 (inclusive)
@@ -27,7 +27,7 @@ export type ConferenceAndYear = `${Conference} 20${number}${number}`
  *
  * If you need to add a new one you can extend this type.
  */
-export type NewsCategory = "New Paper" | "Paper accepted";
+export type NewsCategory = "New Paper" | "Paper accepted" | "Senior Area Chair";
 
 export interface TimelineEntryData {
     date: IsoDate,

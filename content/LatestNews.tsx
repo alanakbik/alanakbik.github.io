@@ -29,6 +29,20 @@ import type { TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2024-10-22",
+        category: "New Paper",
+        conference: "BabyLM 2025",
+        content: <>
+            Our paper &quot;BabyHGRN: Exploring RNNs for Sample-Efficient Language Modeling&quot; accepted to BabyLM 2024!
+        </>,
+    }, {
+        date: "2024-10-22",
+        category: "Senior Area Chair",
+        conference: "ACL 2025",
+        content: <>
+            I will be Senior Area Chair for Language Modeling at ACL 2025! 
+        </>,
+    }, {
         date: "2024-11-09",
         category: "New Paper",
         conference: "ACL 2025",
