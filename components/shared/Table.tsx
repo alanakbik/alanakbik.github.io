@@ -6,15 +6,15 @@ function Tr({ children }: {children: React.ReactNode}) {
 }
 
 function Td({ children }: {children: React.ReactNode}) {
-    return <td className="px-4 py-2 first:pl-0 last:pr-0">{children}</td>;
+    return <td className="break-all p-2 first:pl-0 last:pr-0 sm:break-normal sm:px-4 ">{children}</td>;
 }
 
 export default function Table({ data }: { data: ReactNode[][] }) {
     if (data.length === 0) return null;
     return (
-        <table className="my-8 w-full">
+        <table className="my-8 w-full text-[0.75rem] sm:text-[1rem]">
             <thead>
-                <tr className="text-xl font-medium text-hu-blue-primary">
+                <tr className="text-[1rem] font-medium text-hu-blue-primary sm:text-xl">
                     {data[0].map((x, i) => <Td key={i}>{x}</Td>)}
                 </tr>
             </thead>

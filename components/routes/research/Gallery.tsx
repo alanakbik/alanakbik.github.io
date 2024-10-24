@@ -20,13 +20,13 @@ export default function Gallery() {
     };
     return (
         <>
-            <ul className="mt-6 flex gap-6">
+            <ul className="mt-6 flex flex-wrap gap-6">
                 {categories.map((category, i) => (
                     <li key={i}><BlockCheckbox checked={checked[i]} onChange={(e) => update(e, i)}>{category}</BlockCheckbox></li>
                 ))}
             </ul>
             <hr className="my-9 mt-8 h-0.5 bg-hu-blue-primary shadow-none"/>
-            <section className="grid grid-cols-3 gap-x-12 gap-y-24">
+            <section className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-y-24 xl:grid-cols-3">
                 {research
                     .filter(x => x.categories.some(y => checkedCategories.includes(y)))
                     .map((x, i) => <GalleryEntry key={i} researchProject={x}/>)
