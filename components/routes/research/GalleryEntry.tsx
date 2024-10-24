@@ -7,8 +7,13 @@ import { CiStar } from "react-icons/ci";
 import BlockLink from "@/components/shared/BlockLink";
 import H2 from "@/components/shared/H2";
 
-export default function GalleryEntry() {
-    const { data, ok } = useFetch<{stargazers_count: number}>("https://api.github.com/repos/konstantin-lukas/intl-currency-input");
+export default function GalleryEntry({ title, image, introductoryText, githubRepoIdentifier }: {
+    title: string,
+    image: string,
+    introductoryText: string,
+    githubRepoIdentifier?: string,
+}) {
+    const { data, ok } = useFetch<{stargazers_count: number}>("https://api.github.com/repos/" + githubRepoIdentifier);
     const stars = ok && data ? Intl.NumberFormat("en-US", {
         notation: "compact",
         maximumFractionDigits: 1,
@@ -21,36 +26,34 @@ export default function GalleryEntry() {
         <div>
             <div className="relative w-full overflow-hidden rounded-xl bg-hu-blue-primary pb-[66.66%]">
                 <Image
-                    src="test-image.jpg"
+                    src={image}
                     alt="A man holding a flare."
                     draggable={false}
                     className="select-none object-cover"
                     fill
                 />
             </div>
-            <div className="my-2 flex items-center justify-between">
-                <H2>Flair</H2>
-                {stars &&
+            <div className="my-2 flex items-center justify-between gap-2 overflow-hidden">
+                <H2 className="shrink truncate" title={title}>
+                    {title}
+                </H2>
+                {stars && (
                     <Link
-                        href="https://github.com/konstantin-lukas/intl-currency-input"
+                        href={`https://github.com/${githubRepoIdentifier}/stargazers`}
                         target="_blank"
-                        className="text-xl text-hu-blue-secondary transition-colors hover:text-hu-blue-primary      "
+                        className="shrink-0 text-xl text-hu-blue-secondary transition-colors hover:text-hu-blue-primary"
                     >
                         {stars}
                         <CiStar className="ml-0.5 inline size-6 translate-y-[-0.15rem]"/>
                     </Link>
-                }
+                )}
             </div>
             <div className={overflowing && gradient}>
                 <p className="mb-4 line-clamp-5 leading-5" ref={ref}>
-                    My group maintains and develops Flair, an open source framework for state-of-the-art NLP. Flair is
-                    an
-                    official part of the PyTorch ecosystem and to-date is used in hundreds of industrial and academic
-                    projects. Together with the open source community and Zalando Research, my group is are actively
-                    developing Flair - and invite you to join us!
+                    {introductoryText}
                 </p>
             </div>
-            <BlockLink href="research/flair" label="Read more about Flair">Read more</BlockLink>
+            <BlockLink href="/research/flair" label="Read more about Flair">Read more</BlockLink>
         </div>
     );
 }

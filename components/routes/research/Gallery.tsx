@@ -4,6 +4,7 @@ import React, { useState } from "react";
 
 import GalleryEntry from "@/components/routes/research/GalleryEntry";
 import BlockCheckbox from "@/components/shared/BlockCheckbox";
+import research from "@/content/Research";
 
 export default function Gallery() {
     const [checked, setChecked] = useState([true, true, true, true]);
@@ -22,11 +23,13 @@ export default function Gallery() {
             </ul>
             <hr className="my-9 mt-8 h-0.5 bg-hu-blue-primary shadow-none"/>
             <section className="grid grid-cols-3 gap-x-12 gap-y-24">
-                <GalleryEntry/>
-                <GalleryEntry/>
-                <GalleryEntry/>
-                <GalleryEntry/>
-                <GalleryEntry/>
+                {research.map((x, i) => <GalleryEntry
+                    key={i}
+                    image={x.image}
+                    title={x.title}
+                    introductoryText={x.introductoryText}
+                    githubRepoIdentifier={x?.githubRepoIdentifier}
+                />)}
             </section>
         </>
     );
