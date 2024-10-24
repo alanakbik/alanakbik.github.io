@@ -1,13 +1,18 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 
 import GalleryEntry from "@/components/routes/research/GalleryEntry";
 import BlockCheckbox from "@/components/shared/BlockCheckbox";
 import research from "@/content/Research";
+import type { ResearchCategory } from "@/content/types";
 
 export default function Gallery() {
-    const [checked, setChecked] = useState([true, true, true, true]);
+    const categories: ResearchCategory[] = useMemo(() => ["Featured", "Libraries", "Datasets", "Applications"], []);
+    const [checked, setChecked] = useState(categories.map(() => true));
+    const checkedCategories = useMemo(() => {
+        return categories.filter((_, i) => checked[i]);
+    }, [categories, checked]);
     const update = (e: { target: { checked: boolean } }, i: number) => {
         const copy = [...checked];
         copy[i] = e.target.checked;
@@ -16,20 +21,16 @@ export default function Gallery() {
     return (
         <>
             <ul className="mt-6 flex gap-6">
-                <li><BlockCheckbox checked={checked[0]} onChange={(e) => update(e, 0)}>Featured</BlockCheckbox></li>
-                <li><BlockCheckbox checked={checked[1]} onChange={(e) => update(e, 1)}>Libraries</BlockCheckbox></li>
-                <li><BlockCheckbox checked={checked[2]} onChange={(e) => update(e, 2)}>Datasets</BlockCheckbox></li>
-                <li><BlockCheckbox checked={checked[3]} onChange={(e) => update(e, 3)}>Applications</BlockCheckbox></li>
+                {categories.map((category, i) => (
+                    <li key={i}><BlockCheckbox checked={checked[i]} onChange={(e) => update(e, i)}>{category}</BlockCheckbox></li>
+                ))}
             </ul>
             <hr className="my-9 mt-8 h-0.5 bg-hu-blue-primary shadow-none"/>
             <section className="grid grid-cols-3 gap-x-12 gap-y-24">
-                {research.map((x, i) => <GalleryEntry
-                    key={i}
-                    image={x.image}
-                    title={x.title}
-                    introductoryText={x.introductoryText}
-                    githubRepoIdentifier={x?.githubRepoIdentifier}
-                />)}
+                {research
+                    .filter(x => x.categories.some(y => checkedCategories.includes(y)))
+                    .map((x, i) => <GalleryEntry key={i} researchProject={x}/>)
+                }
             </section>
         </>
     );

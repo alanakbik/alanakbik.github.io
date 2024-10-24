@@ -57,3 +57,33 @@ export interface Publication {
     authors: string,
     links: { url: string; label: PublicationLinkLabel }[],
 }
+
+/**
+ * This represents the unique identifier for a GitHub repo, i.e. account name *slash* repo name, e.g. "flairNLP/flair".
+ */
+type GithubRepoIdentifier = `${string}/${string}`;
+
+type ResearchCategory = "Featured" | "Libraries" | "Datasets" | "Applications";
+
+export interface ResearchProject {
+    /**
+     * The name of the project. Used as the heading in both the project gallery and the project page.
+     */
+    title: string,
+    /**
+     * The image displayed in the research project gallery
+     */
+    image: string,
+    /**
+     * The first text shown on the project page right after the title. Also used in the gallery of research projects.
+     */
+    introductoryText: ReactNode,
+    /**
+     * Used to display the amount of GitHub stars of the repo and providing a link to it.
+     */
+    githubRepoIdentifier: GithubRepoIdentifier,
+    /**
+     * Used by the filter buttons on the research page to decide which projects to display.
+     */
+    categories: ResearchCategory[],
+}

@@ -6,14 +6,12 @@ import { CiStar } from "react-icons/ci";
 
 import BlockLink from "@/components/shared/BlockLink";
 import H2 from "@/components/shared/H2";
+import type { ResearchProject } from "@/content/types";
 
-export default function GalleryEntry({ title, image, introductoryText, githubRepoIdentifier }: {
-    title: string,
-    image: string,
-    introductoryText: string,
-    githubRepoIdentifier?: string,
+export default function GalleryEntry({ researchProject }: {
+    researchProject: ResearchProject,
 }) {
-    const { data, ok } = useFetch<{stargazers_count: number}>("https://api.github.com/repos/" + githubRepoIdentifier);
+    const { data, ok } = useFetch<{stargazers_count: number}>("https://api.github.com/repos/" + researchProject.githubRepoIdentifier);
     const stars = ok && data ? Intl.NumberFormat("en-US", {
         notation: "compact",
         maximumFractionDigits: 1,
@@ -26,7 +24,7 @@ export default function GalleryEntry({ title, image, introductoryText, githubRep
         <div>
             <div className="relative w-full overflow-hidden rounded-xl bg-hu-blue-primary pb-[66.66%]">
                 <Image
-                    src={image}
+                    src={researchProject.image}
                     alt="A man holding a flare."
                     draggable={false}
                     className="select-none object-cover"
@@ -34,12 +32,12 @@ export default function GalleryEntry({ title, image, introductoryText, githubRep
                 />
             </div>
             <div className="my-2 flex items-center justify-between gap-2 overflow-hidden">
-                <H2 className="shrink truncate" title={title}>
-                    {title}
+                <H2 className="shrink truncate" title={researchProject.title}>
+                    {researchProject.title}
                 </H2>
                 {stars && (
                     <Link
-                        href={`https://github.com/${githubRepoIdentifier}/stargazers`}
+                        href={`https://github.com/${researchProject.githubRepoIdentifier}/stargazers`}
                         target="_blank"
                         className="shrink-0 text-xl text-hu-blue-secondary transition-colors hover:text-hu-blue-primary"
                     >
@@ -50,7 +48,7 @@ export default function GalleryEntry({ title, image, introductoryText, githubRep
             </div>
             <div className={overflowing && gradient}>
                 <p className="mb-4 line-clamp-5 leading-5" ref={ref}>
-                    {introductoryText}
+                    {researchProject.introductoryText}
                 </p>
             </div>
             <BlockLink href="/research/flair" label="Read more about Flair">Read more</BlockLink>
