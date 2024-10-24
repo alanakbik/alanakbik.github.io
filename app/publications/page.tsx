@@ -7,22 +7,49 @@ import H1 from "@/components/shared/H1";
 import WrapperLarge from "@/components/WrapperLarge";
 import { parentalLeaveYears } from "@/content/const";
 import Publications from "@/content/Publications";
-import type { Publication } from "@/content/types";
+import type { ConferenceAndYear, Publication } from "@/content/types";
 
 export const metadata: Metadata = {
     title: "Publications - Alan Akbik",
 };
 
 function Section({ year, publications }: { year: number, publications: Publication[] }) {
+    const conferences = new Map<ConferenceAndYear | "Miscellaneous", Publication[]>();
+    for (const publication of publications) {
+        const conf = publication.conference || "Miscellaneous";
+        const mapItem = conferences.get(conf);
+        if (mapItem) mapItem.push(publication);
+        else conferences.set(conf, [publication]);
+    }
+    const sections = conferences.keys().toArray().sort((a, b) => {
+        const strA = a.toLowerCase();
+        const strB = b.toLowerCase();
+
+        if (strA === "miscellaneous") return 1;
+        if (strB === "miscellaneous") return -1;
+
+        if (strA < strB) return -1;
+        if (strA > strB) return 1;
+        return 0;
+    }).map((x, i) => {
+        return (
+            <div key={i}>
+                <h3 className="-mb-4 mt-10 block text-2xl text-hu-blue-secondary">
+                    {x}
+                </h3>
+                <ul>
+                    {conferences.get(x)!.map((y, j) => <Publication key={j} p={y}/>)}
+                </ul>
+            </div>
+        );
+    });
     return (
         <section className="pt-16 sm:pt-24" id={year.toString()}>
             <h2 className="text-3xl">
                 {year}
                 {parentalLeaveYears.includes(year) && <span className="ml-4 text-lg text-neutral-500">(Included Parental Leave)</span>}
             </h2>
-            <ul>
-                {publications.map((p, i) => <Publication key={i} p={p}/>)}
-            </ul>
+            {sections}
         </section>
     );
 }
@@ -33,11 +60,6 @@ function Publication({ p }: { p: Publication }) {
             className="relative mt-8 pl-4 after:absolute after:left-0 after:top-1/2 after:h-[calc(100%-0.5rem)] after:w-[3px]
             after:translate-y-[calc(-50%+0.2rem)] after:bg-hu-blue-primary after:content-[''] sm:pl-6"
         >
-            {p?.conference && (
-                <span className="mb-2 block text-2xl text-hu-blue-secondary">
-                    {p.conference}
-                </span>
-            )}
             <span className="block text-hu-blue-primary">
                 {p.title}
             </span>
