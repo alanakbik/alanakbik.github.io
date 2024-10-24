@@ -15,7 +15,7 @@ import type { ResearchProject } from "@/content/types";
 const Research: ResearchProject[] = [
     {
         title: "The Flair NLP Framework",
-        image: "test-image.jpg",
+        image: "/test-image.jpg",
         imageAlt: "A man holding a flare",
         introductoryText: <>
             My group maintains and develops <InlineLink href="https://github.com/flairNLP/flair">Flair</InlineLink>,
