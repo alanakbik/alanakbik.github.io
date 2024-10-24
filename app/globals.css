@@ -21,6 +21,11 @@
         font-size: 0;
         border: 0;
     }
+
+    :focus-visible {
+        outline: #082745 solid 3px;
+        outline-offset: 3px;
+    }
 }
 
 @layer utilities {
@@ -60,6 +65,10 @@
         position: relative;
     }
 
+    .block-link-gray span {
+        background: radial-gradient(100% 100% at 130% 0, #b3b3b3 0, #363636 130%);
+    }
+
     .block-link span::after {
         content: "";
         background-color: #082745;
@@ -71,6 +80,10 @@
         border-radius: 0.4em;
         z-index: -1;
         transition: bottom 50ms linear;
+    }
+
+    .block-link-gray span::after {
+        background-color: #363636;
     }
 
     .block-link:hover span {
