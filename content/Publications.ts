@@ -8,6 +8,12 @@ import type { Publication } from "@/content/types";
 const Publications: Publication[] = [
     {
         year: 2024,
+        conference: "BabyLM 2024",
+        title: "BabyHGRN: Exploring RNNs for Sample-Efficient Language Modeling",
+        authors: "Patrick Haller, Jonas Golde and Alan Akbik ",
+        links: [],
+    }, {
+        year: 2024,
         conference: "EMNLP 2024",
         title: "Less is More: Parameter-Efficient Selection of Intermediate Tasks for Transfer Learning",
         authors: "David Schulte, Felix Hamborg and Alan Akbik",
