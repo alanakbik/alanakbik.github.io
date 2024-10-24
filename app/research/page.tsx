@@ -8,7 +8,7 @@ export default function Page() {
     return (
         <WrapperLarge className="py-[calc(var(--header-height)*2)]">
             <H1>Research</H1>
-            <Gallery></Gallery>
+            <Gallery/>
         </WrapperLarge>
     );
 }

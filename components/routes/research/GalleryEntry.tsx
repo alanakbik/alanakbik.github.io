@@ -1,9 +1,9 @@
 import { useFetch } from "anzol";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useRef } from "react";
 import { CiStar } from "react-icons/ci";
 
+import BasePathImage from "@/components/shared/BasePathImage";
 import BlockLink from "@/components/shared/BlockLink";
 import H2 from "@/components/shared/H2";
 import type { ResearchProject } from "@/content/types";
@@ -23,9 +23,9 @@ export default function GalleryEntry({ researchProject }: {
     return (
         <div>
             <div className="relative w-full overflow-hidden rounded-xl bg-hu-blue-primary pb-[66.66%]">
-                <Image
+                <BasePathImage
                     src={researchProject.image}
-                    alt="A man holding a flare."
+                    alt={researchProject.imageAlt}
                     draggable={false}
                     className="select-none object-cover"
                     fill
@@ -39,7 +39,7 @@ export default function GalleryEntry({ researchProject }: {
                     <Link
                         href={`https://github.com/${researchProject.githubRepoIdentifier}/stargazers`}
                         target="_blank"
-                        className="shrink-0 text-xl text-hu-blue-secondary transition-colors hover:text-hu-blue-primary"
+                        className="shrink-0 text-xl text-hu-blue-secondary -outline-offset-2 transition-colors hover:text-hu-blue-primary"
                     >
                         {stars}
                         <CiStar className="ml-0.5 inline size-6 translate-y-[-0.15rem]"/>
@@ -51,7 +51,7 @@ export default function GalleryEntry({ researchProject }: {
                     {researchProject.introductoryText}
                 </p>
             </div>
-            <BlockLink href="/research/flair" label="Read more about Flair">Read more</BlockLink>
+            <BlockLink href={"/research/" + researchProject.uriComponent} label="Read more about Flair">Read more</BlockLink>
         </div>
     );
 }

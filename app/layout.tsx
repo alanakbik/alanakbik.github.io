@@ -7,7 +7,7 @@ import React from "react";
 import Header from "@/components/header/Header";
 
 const outfit = Outfit({
-    weight: "200",
+    weight: ["200", "500"],
     subsets: ["latin", "latin-ext"],
     style: "normal",
     display: "swap",

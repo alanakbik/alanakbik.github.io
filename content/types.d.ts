@@ -71,9 +71,14 @@ export interface ResearchProject {
      */
     title: string,
     /**
-     * The image displayed in the research project gallery
+     * The image displayed in the research project gallery. Please put your images inside the /public directory but do
+     * not add /public to the image path. All files in /public are served at the project root.
      */
     image: string,
+    /**
+     * This is a string describing the above image. This is used by screen readers for people with visual impairments.
+     */
+    imageAlt: string,
     /**
      * The first text shown on the project page right after the title. Also used in the gallery of research projects.
      */
@@ -86,4 +91,8 @@ export interface ResearchProject {
      * Used by the filter buttons on the research page to decide which projects to display.
      */
     categories: ResearchCategory[],
+    /**
+     * All research projects are located under /research/{project}. This is the {project} slug.
+     */
+    uriComponent: string,
 }
