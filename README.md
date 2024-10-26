@@ -25,7 +25,7 @@ Each file in the `content` directory comes with a leading comment explaining wha
 If you need to change an image, just replace the corresponding file in the `public` directory.
 
 ## Deploying
-Make sure the `next.config.mjs` file contains the correct base path. This is necessary for loading images correctly
+Make sure the `next.config.mjs` and `@/components/shared/BasePathImage.tsx` file contains the correct base path. This is necessary for loading images correctly
 on GitHub pages. This needs to be set to `"/alanakbik.github.io"` on forked versions of the repo and be set
 to `""` on the main repo.
 
