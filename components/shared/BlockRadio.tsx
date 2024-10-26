@@ -1,9 +1,10 @@
 import React from "react";
 
-export default function BlockCheckbox({ children, checked, onChange }: {
+export default function BlockRadio({ children, checked, onChange, name }: {
     children: string,
     checked: boolean,
     onChange: (e: { target: { checked: boolean } }) => void,
+    name: string,
 }) {
     return (
         <label aria-label={children}>
@@ -16,7 +17,7 @@ export default function BlockCheckbox({ children, checked, onChange }: {
             >
                 <span className="select-none">{children}</span>
             </span>
-            <input type="checkbox" className="hidden" checked={checked} onChange={onChange}/>
+            <input type="radio" className="hidden" checked={checked} onChange={onChange} name={name}/>
         </label>
     );
 }
