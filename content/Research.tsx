@@ -14,19 +14,52 @@ import type { ResearchProject } from "@/content/types";
  */
 const Research: ResearchProject[] = [
     {
-        title: "The Flair NLP Framework",
+        title: "Flair NLP",
         image: "/test-image.jpg",
         imageAlt: "A man holding a flare",
         introductoryText: <>
-            My group maintains and develops <InlineLink href="https://github.com/flairNLP/flair">Flair</InlineLink>,
-            an open source framework for state-of-the-art NLP. Flair is an official part of the
-            <InlineLink href="https://pytorch.org/ecosystem/">PyTorch ecosystem</InlineLink> and to-date is used in
-            hundreds of industrial and academic projects. Together with the open source
-            community and Zalando Research, my group is are actively developing Flair - and invite you to join us!
+            We develop <InlineLink href="https://github.com/flairNLP/flair">Flair</InlineLink>, a very popular library
+            for state-of-the-art NLP. It is used in thousands of industrial, academic and open source
+            projects.
         </>,
         githubRepoIdentifier: "flairNLP/flair",
         categories: ["Featured", "Libraries"],
         uriComponent: "flair",
+    },
+    {
+        title: "Fundus",
+        image: "/logo_lightmode_without_font_with_clear_space.png",
+        imageAlt: "fundus logo",
+        introductoryText: <>
+            Need to crawl online news? With <InlineLink href="https://github.com/flairNLP/fundus">Fundus</InlineLink>,
+            you can crawl millions of pages of online news with just a few lines of code!
+        </>,
+        githubRepoIdentifier: "flairNLP/fundus",
+        categories: ["Featured", "Libraries"],
+        uriComponent: "fundus",
+    },
+    {
+        title: "CleanCoNLL",
+        image: "/CleanCoNLL_example_sentence.jpg",
+        imageAlt: "fundus logo",
+        introductoryText: <>
+            CleanCoNLL is a nearly noise-free dataset for named entity recognition (NER). Use it to train and evaluate
+            your NER models!
+        </>,
+        githubRepoIdentifier: "flairNLP/cleanCoNLL",
+        categories: ["Featured", "Datasets"],
+        uriComponent: "cleanconll",
+    },
+    {
+        title: "OpinionGPT",
+        image: "/opiniongpt.png",
+        imageAlt: "fundus logo",
+        introductoryText: <>
+            OpinionGPT is ...
+        </>,
+        githubRepoIdentifier: "flairNLP/cleanCoNLL",  /* TODO: this is not correct and should be removed */
+        categories: ["Featured", "Applications"],
+        uriComponent: "opiniongpt",
     },
 ];
 
