@@ -60,7 +60,6 @@ const Research: ResearchProject[] = [
         introductoryText: <>
             OpinionGPT is ...
         </>,
-        githubRepoIdentifier: "flairNLP/cleanCoNLL",  /* TODO: this is not correct and should be removed */
         categories: ["Featured", "Applications"],
         uriComponent: "opiniongpt",
     },

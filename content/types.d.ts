@@ -92,7 +92,7 @@ export interface ResearchProject {
     /**
      * Used to display the amount of GitHub stars of the repo and providing a link to it.
      */
-    githubRepoIdentifier: GithubRepoIdentifier,
+    githubRepoIdentifier?: GithubRepoIdentifier,
     /**
      * Used by the filter buttons on the research page to decide which projects to display.
      */

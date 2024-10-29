@@ -11,7 +11,13 @@ import type { ResearchProject } from "@/content/types";
 export default function GalleryEntry({ researchProject }: {
     researchProject: ResearchProject,
 }) {
-    const { data, ok } = useFetch<{stargazers_count: number}>("https://api.github.com/repos/" + researchProject.githubRepoIdentifier);
+    const { data, ok } = useFetch<{stargazers_count: number}>(
+        "https://api.github.com/repos/" + researchProject.githubRepoIdentifier, {
+            preFetchCallback: () => {
+                return !!researchProject.githubRepoIdentifier;
+            },
+        },
+    );
     const stars = ok && data ? Intl.NumberFormat("en-US", {
         notation: "compact",
         maximumFractionDigits: 1,
