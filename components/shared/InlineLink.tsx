@@ -12,7 +12,7 @@ export default function H1({ children, href, target }: {
             <Link
                 href={href}
                 target={target}
-                className="inline-link bg-gradient-to-b from-hu-blue-secondary to-hu-blue-secondary text-hu-blue-secondary"
+                className="inline-link bg-gradient-to-b from-hu-blue-secondary to-hu-blue-secondary font-medium text-hu-blue-secondary"
             >
                 {children}
             </Link>

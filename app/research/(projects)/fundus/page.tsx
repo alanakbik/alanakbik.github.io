@@ -57,7 +57,7 @@ export default function Page() {
                 Check out our publication for more details:
             </P>
             <P>
-                <InlineLink href="https://aclanthology.org/2024.acl-demos.29/" target="_blank"><b>Fundus: A Simple-to-Use News Scraper Optimized for High Quality Extractions.</b></InlineLink>
+                <InlineLink href="https://aclanthology.org/2024.acl-demos.29/" target="_blank">Fundus: A Simple-to-Use News Scraper Optimized for High Quality Extractions.</InlineLink>
                 Max Dallabetta, Conrad Dobberstein, Adrian Breiding and Alan Akbik.
                 Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 3: System Demonstrations), ACL 2024.
             </P>

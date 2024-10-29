@@ -45,7 +45,7 @@ export default function Page() {
                 Check out our publication for more details:
             </P>
             <P>
-                <InlineLink href="https://aclanthology.org/2023.emnlp-main.533.pdf" target="_blank"><b>CleanCoNLL: A Nearly Noise-Free Named Entity Recognition Dataset.</b></InlineLink>
+                <InlineLink href="https://aclanthology.org/2023.emnlp-main.533.pdf" target="_blank">CleanCoNLL: A Nearly Noise-Free Named Entity Recognition Dataset.</InlineLink>
                 Susanna Rücker and Alan Akbik.
                 Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, EMNLP 2023.
             </P>
