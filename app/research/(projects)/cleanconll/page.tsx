@@ -4,7 +4,6 @@ import BlockImage from "@/components/shared/BlockImage";
 import H2 from "@/components/shared/H2";
 import InlineLink from "@/components/shared/InlineLink";
 import P from "@/components/shared/P";
-import Table from "@/components/shared/Table";
 
 /**
  * Set the title of the page here which is shown in the browser tab.
