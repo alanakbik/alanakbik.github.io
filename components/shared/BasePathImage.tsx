@@ -1,4 +1,5 @@
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import React, { forwardRef } from "react";
 
 export default forwardRef<HTMLImageElement, {
@@ -10,7 +11,8 @@ export default forwardRef<HTMLImageElement, {
     alt: string,
     priority?: boolean,
     draggable?: boolean,
-}>(function BasePathImage({ src, className, width, height, alt, priority, draggable, fill }, ref) {
+    style?: CSSProperties,
+}>(function BasePathImage({ src, className, width, height, alt, priority, draggable, fill, style }, ref) {
     return (
         <Image
             className={className}
@@ -19,6 +21,7 @@ export default forwardRef<HTMLImageElement, {
             height={height}
             fill={fill}
             alt={alt}
+            style={style}
             draggable={draggable}
             priority={priority}
             ref={ref}

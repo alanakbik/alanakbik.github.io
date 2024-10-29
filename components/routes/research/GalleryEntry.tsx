@@ -11,7 +11,13 @@ import type { ResearchProject } from "@/content/types";
 export default function GalleryEntry({ researchProject }: {
     researchProject: ResearchProject,
 }) {
-    const { data, ok } = useFetch<{stargazers_count: number}>("https://api.github.com/repos/" + researchProject.githubRepoIdentifier);
+    const { data, ok } = useFetch<{stargazers_count: number}>(
+        "https://api.github.com/repos/" + researchProject.githubRepoIdentifier, {
+            preFetchCallback: () => {
+                return !!researchProject.githubRepoIdentifier;
+            },
+        },
+    );
     const stars = ok && data ? Intl.NumberFormat("en-US", {
         notation: "compact",
         maximumFractionDigits: 1,
@@ -22,12 +28,15 @@ export default function GalleryEntry({ researchProject }: {
         + "to-transparent after:w-full after:h-10 after:bottom-0 after:left-0";
     return (
         <div>
-            <div className="relative w-full overflow-hidden rounded-xl bg-hu-blue-primary pb-[66.66%]">
+            <div className="relative w-full overflow-hidden rounded-xl pb-[66.66%] shadow-gallery">
                 <BasePathImage
                     src={researchProject.image}
                     alt={researchProject.imageAlt}
                     draggable={false}
-                    className="select-none object-cover"
+                    className="select-none"
+                    style={{
+                        objectFit: researchProject?.imageFit ?? "cover",
+                    }}
                     fill
                 />
             </div>

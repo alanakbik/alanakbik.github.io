@@ -1,3 +1,4 @@
+import type { Property } from "csstype";
 import type { ReactNode } from "react";
 
 /**
@@ -80,13 +81,18 @@ export interface ResearchProject {
      */
     imageAlt: string,
     /**
+     * This allows you to control whether the gallery image should cover its container to be contained within.
+     * If not specified, defaults to "cover". Use "contain" if you want to show the entire image.
+     */
+    imageFit?: Property.ObjectFit,
+    /**
      * The first text shown on the project page right after the title. Also used in the gallery of research projects.
      */
     introductoryText: ReactNode,
     /**
      * Used to display the amount of GitHub stars of the repo and providing a link to it.
      */
-    githubRepoIdentifier: GithubRepoIdentifier,
+    githubRepoIdentifier?: GithubRepoIdentifier,
     /**
      * Used by the filter buttons on the research page to decide which projects to display.
      */

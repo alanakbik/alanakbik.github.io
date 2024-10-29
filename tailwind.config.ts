@@ -23,6 +23,9 @@ const config: Config = {
                     "raw": "(min-width: 768px) and (min-height: 640px)",
                 },
             },
+            boxShadow: {
+                "gallery": "0 0 1rem rgba(0, 0, 0, 0.2)",
+            },
         },
     },
     plugins: [],
