@@ -30,6 +30,7 @@ const Research: ResearchProject[] = [
         title: "Fundus",
         image: "/logo_lightmode_without_font_with_clear_space.png",
         imageAlt: "fundus logo",
+        imageFit: "contain",
         introductoryText: <>
             Need to crawl online news? With <InlineLink href="https://github.com/flairNLP/fundus">Fundus</InlineLink>,
             you can crawl millions of pages of online news with just a few lines of code!
@@ -42,6 +43,7 @@ const Research: ResearchProject[] = [
         title: "CleanCoNLL",
         image: "/CleanCoNLL_example_sentence.jpg",
         imageAlt: "fundus logo",
+        imageFit: "contain",
         introductoryText: <>
             CleanCoNLL is a nearly noise-free dataset for named entity recognition (NER). Use it to train and evaluate
             your NER models!
@@ -54,6 +56,7 @@ const Research: ResearchProject[] = [
         title: "OpinionGPT",
         image: "/opiniongpt.png",
         imageAlt: "fundus logo",
+        imageFit: "contain",
         introductoryText: <>
             OpinionGPT is ...
         </>,

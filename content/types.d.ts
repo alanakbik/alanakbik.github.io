@@ -1,3 +1,4 @@
+import type { Property } from "csstype";
 import type { ReactNode } from "react";
 
 /**
@@ -79,6 +80,11 @@ export interface ResearchProject {
      * This is a string describing the above image. This is used by screen readers for people with visual impairments.
      */
     imageAlt: string,
+    /**
+     * This allows you to control whether the gallery image should cover its container to be contained within.
+     * If not specified, defaults to "cover". Use "contain" if you want to show the entire image.
+     */
+    imageFit?: Property.ObjectFit,
     /**
      * The first text shown on the project page right after the title. Also used in the gallery of research projects.
      */

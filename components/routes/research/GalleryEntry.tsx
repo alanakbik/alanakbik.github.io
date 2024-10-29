@@ -22,12 +22,15 @@ export default function GalleryEntry({ researchProject }: {
         + "to-transparent after:w-full after:h-10 after:bottom-0 after:left-0";
     return (
         <div>
-            <div className="relative w-full overflow-hidden rounded-xl bg-hu-blue-primary pb-[66.66%]">
+            <div className="relative w-full overflow-hidden rounded-xl pb-[66.66%] shadow-gallery">
                 <BasePathImage
                     src={researchProject.image}
                     alt={researchProject.imageAlt}
                     draggable={false}
-                    className="select-none object-cover"
+                    className="select-none"
+                    style={{
+                        objectFit: researchProject?.imageFit ?? "cover",
+                    }}
                     fill
                 />
             </div>
