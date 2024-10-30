@@ -8,8 +8,9 @@ export default function Page() {
             <div
                 role="img"
                 aria-hidden="true"
-                className="h-dvh w-full bg-hu-blue-primary bg-[url('/group_photo_vertical.webp')] bg-cover
-                bg-center bg-no-repeat landscape:bg-[url('/group_photo_horizontal.webp')] landscape:bg-top ultrawide:landscape:bg-[url('/group_photo_ultrawide.webp')]"
+                className="h-dvh w-full bg-hu-blue-primary bg-[url('/alanakbik.github.io/group_photo_vertical.webp')] bg-cover
+                bg-center bg-no-repeat landscape:bg-[url('/alanakbik.github.io/group_photo_horizontal.webp')]
+                landscape:bg-top ultrawide:landscape:bg-[url('/alanakbik.github.io/group_photo_ultrawide.webp')]"
             >
                 <ScrollDownButton/>
             </div>

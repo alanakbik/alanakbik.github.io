@@ -27,7 +27,7 @@ If you need to change an image, just replace the corresponding file in the `publ
 ## Deploying
 Make sure the `next.config.mjs` and `@/components/shared/BasePathImage.tsx` file contains the correct base path. This is necessary for loading images correctly
 on GitHub pages. This needs to be set to `"/alanakbik.github.io"` on forked versions of the repo and be set
-to `""` on the main repo.
+to `""` on the main repo. Also in the original repo, please remove the base path from `@/app/chair/page.tsx`.
 
 ## ESLint
 To mainting constant code quality adhering to the linter rules is necessary. These rules are checked
