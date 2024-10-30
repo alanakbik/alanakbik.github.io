@@ -16,7 +16,13 @@ function PeopleCard({ person }: { person: Person }) {
     return (
         <div className="mt-12 flex items-center gap-4 sm:gap-6">
             <div className="relative size-24 shrink-0 overflow-hidden rounded-full md:size-32">
-                <Image src={"/alanakbik.github.io" + (person?.image ?? "/people/unknown.svg")} fill className="select-none object-cover" draggable={false} alt=""/>
+                <Image
+                    src={"/alanakbik.github.io" + (person?.image ?? "/people/unknown.svg")}
+                    className="select-none object-cover"
+                    draggable={false}
+                    alt=""
+                    fill
+                />
             </div>
             <div>
                 <h3 className="text-xl text-hu-blue-primary">{person.name}</h3>
@@ -26,7 +32,8 @@ function PeopleCard({ person }: { person: Person }) {
                         <li>
                             <Link href={person.gitHubLink} target="_blank" className="group">
                                 <FaGithub
-                                    className="size-5 text-hu-blue-primary transition-transform group-hover:scale-125"/>
+                                    className="size-5 text-hu-blue-primary transition-transform group-hover:scale-125"
+                                />
                             </Link>
                         </li>
                     )}
@@ -34,7 +41,8 @@ function PeopleCard({ person }: { person: Person }) {
                         <li>
                             <Link href={person.googleScholarLink} target="_blank" className="group">
                                 <FaGoogleScholar
-                                    className="size-5 text-hu-blue-primary transition-transform group-hover:scale-125"/>
+                                    className="size-5 text-hu-blue-primary transition-transform group-hover:scale-125"
+                                />
                             </Link>
                         </li>
                     )}
@@ -42,7 +50,8 @@ function PeopleCard({ person }: { person: Person }) {
                         <li>
                             <Link href={"mailto:" + person.emailAddress} target="_blank" className="group">
                                 <IoMdMail
-                                    className="size-5 text-hu-blue-primary transition-transform group-hover:scale-125"/>
+                                    className="size-5 text-hu-blue-primary transition-transform group-hover:scale-125"
+                                />
                             </Link>
                         </li>
                     )}
@@ -50,7 +59,8 @@ function PeopleCard({ person }: { person: Person }) {
                         <li>
                             <Link href={person.linkedInLink} className="group">
                                 <FaLinkedin
-                                    className="size-5 text-hu-blue-primary transition-transform group-hover:scale-125"/>
+                                    className="size-5 text-hu-blue-primary transition-transform group-hover:scale-125"
+                                />
                             </Link>
                         </li>
                     )}
@@ -92,7 +102,7 @@ export default function Page() {
             >
                 <ScrollDownButton/>
             </div>
-            <WrapperLarge id="chair-main" className="my-20">
+            <WrapperLarge className="my-20">
                 <H1>Chair</H1>
                 <p className="pb-4 pt-3">
                     {Introduction}
