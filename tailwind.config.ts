@@ -22,6 +22,9 @@ const config: Config = {
                 "desktop": {
                     "raw": "(min-width: 768px) and (min-height: 640px)",
                 },
+                "ultrawide": {
+                    "raw": "(min-aspect-ratio: 2.5)",
+                },
             },
             boxShadow: {
                 "gallery": "0 0 1rem rgba(0, 0, 0, 0.2)",
