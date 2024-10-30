@@ -62,9 +62,9 @@ export interface Publication {
 /**
  * This represents the unique identifier for a GitHub repo, i.e. account name *slash* repo name, e.g. "flairNLP/flair".
  */
-type GithubRepoIdentifier = `${string}/${string}`;
+export type GithubRepoIdentifier = `${string}/${string}`;
 
-type ResearchCategory = "Featured" | "Libraries" | "Datasets" | "Applications";
+export type ResearchCategory = "Featured" | "Libraries" | "Datasets" | "Applications";
 
 export interface ResearchProject {
     /**
@@ -101,4 +101,35 @@ export interface ResearchProject {
      * All research projects are located under /research/{project}. This is the {project} slug.
      */
     uriComponent: string,
+}
+
+export type ResearcherTitle = "PhD Student" | "Professor of Machine Learning" | "Fullstack Developer";
+
+export type ResearcherCategory = "Principal Researchers" | "Research Scientists" | "Student Researchers" | "Alumni" | "Secretary";
+
+export interface Person {
+    /**
+     * Name of the person.
+     */
+    name: string,
+    /**
+     * Title of the person, e.g. Professor of Machine Learning
+     */
+    title: ResearcherTitle,
+    /**
+     * Determines in which section the person is displayed
+     */
+    category: ResearcherCategory,
+    /**
+     * URL to an image of the person
+     */
+    image?: string,
+    /** Person's GitHub link */
+    gitHubLink?: string,
+    /** Person's Google Scholar link */
+    googleScholarLink?: string,
+    /** Person's email Address */
+    emailAddress?: string,
+    /** Person's linked in page */
+    linkedInLink?: string,
 }
