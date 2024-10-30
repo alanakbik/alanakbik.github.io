@@ -14,7 +14,7 @@ export const People: Person[] = [
     {
         name: "Alan Akbik",
         title: "Professor of Machine Learning",
-        image: "/alan.jpg",
+        image: "/people/alan.jpg",
         category: "Principal Researchers",
         gitHubLink: "https://github.com/alanakbik",
         googleScholarLink: "https://scholar.google.com/citations?user=adKmg3IAAAAJ&hl=de",
