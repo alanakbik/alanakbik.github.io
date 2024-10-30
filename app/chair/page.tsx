@@ -14,7 +14,7 @@ import type { Person, ResearcherCategory } from "@/content/types";
 
 function PeopleCard({ person }: { person: Person }) {
     return (
-        <div className="mt-12 flex items-center gap-6">
+        <div className="mt-12 flex items-center gap-4 sm:gap-6">
             <div className="relative size-24 shrink-0 overflow-hidden rounded-full md:size-32">
                 <Image src={"/alanakbik.github.io" + (person?.image ?? "/people/unknown.svg")} fill className="select-none object-cover" draggable={false} alt=""/>
             </div>
