@@ -15,7 +15,7 @@ import type { Person, ResearcherCategory } from "@/content/types";
 function PeopleCard({ person }: { person: Person }) {
     return (
         <div className="mt-12 flex items-center gap-6">
-            <div className="relative size-32 overflow-hidden rounded-full">
+            <div className="relative size-24 shrink-0 overflow-hidden rounded-full md:size-32">
                 <Image src={"/alanakbik.github.io" + (person?.image ?? "/people/unknown.svg")} fill className="select-none object-cover" draggable={false} alt=""/>
             </div>
             <div>
@@ -72,7 +72,7 @@ export default function Page() {
             <>
                 <section className="mt-20" key={i}>
                     <H2>{x}</H2>
-                    <div className="grid grid-cols-2 gap-x-8">
+                    <div className="grid grid-cols-1 gap-x-8 lg:grid-cols-2">
                         {people.get(x)?.map((y, j) => <PeopleCard person={y} key={j}/>)}
                     </div>
                 </section>
