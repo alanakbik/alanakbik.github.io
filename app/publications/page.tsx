@@ -13,8 +13,8 @@ export const metadata: Metadata = {
     title: "Publications - Alan Akbik",
 };
 
-function Section({ year, publications }: { year: number, publications: Publication[] }) {
-    const conferences = new Map<ConferenceAndYear | "Miscellaneous", Publication[]>();
+function Section({ year, publications }: { year: number, publications: (Publication & {index: number})[] }) {
+    const conferences = new Map<ConferenceAndYear | "Miscellaneous", (Publication & {index: number})[]>();
     for (const publication of publications) {
         const conf = publication.conference || "Miscellaneous";
         const mapItem = conferences.get(conf);
@@ -22,14 +22,12 @@ function Section({ year, publications }: { year: number, publications: Publicati
         else conferences.set(conf, [publication]);
     }
     const sections = conferences.keys().toArray().sort((a, b) => {
-        const strA = a.toLowerCase();
-        const strB = b.toLowerCase();
+        const smallestIndexA = Math.min(...conferences.get(a)!.map(x => x.index));
+        const smallestIndexB = Math.min(...conferences.get(b)!.map(x => x.index));
 
-        if (strA === "miscellaneous") return 1;
-        if (strB === "miscellaneous") return -1;
+        if (smallestIndexA < smallestIndexB) return -1;
+        if (smallestIndexA > smallestIndexB) return 1;
 
-        if (strA < strB) return -1;
-        if (strA > strB) return 1;
         return 0;
     }).map((x, i) => {
         return (
@@ -76,8 +74,8 @@ function Publication({ p }: { p: Publication }) {
 }
 
 export default function Page() {
-    const publications = new Map<number, Publication[]>();
-    for (const publication of Publications) {
+    const publications = new Map<number, (Publication & {index: number})[]>();
+    for (const publication of Publications.map((x, i) => ({ ...x, index: i }))) {
         if (!publications.has(publication.year)) publications.set(publication.year, []);
         publications.get(publication.year)?.push(publication);
     }
