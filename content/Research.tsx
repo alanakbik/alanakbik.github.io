@@ -27,6 +27,16 @@ const Research: ResearchProject[] = [
         uriComponent: "flair",
     },
     {
+        title: "Zitatsuchmaschine",
+        image: "/test-image.jpg",
+        imageAlt: "A man holding a flare",
+        introductoryText: <>
+            Our German-language search engine for quotes!
+        </>,
+        categories: ["Featured", "Applications"],
+        uriComponent: "zitatsuchmaschine",
+    },
+    {
         title: "Fundus",
         image: "/logo_lightmode_without_font_with_clear_space.png",
         imageAlt: "fundus logo",
