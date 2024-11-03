@@ -1,8 +1,7 @@
 import React from "react";
 
-import BlockImage from "@/components/shared/BlockImage";
+import ZitatsuchmaschineIframe from "@/components/routes/research/ZitatsuchmaschineIframe";
 import H2 from "@/components/shared/H2";
-import InlineLink from "@/components/shared/InlineLink";
 import P from "@/components/shared/P";
 
 /**
@@ -35,12 +34,7 @@ export default function Page() {
                 The Zitatsuchmaschine is a search engine for quotes in German online news.
             </P>
             <P>
-                <iframe id="quote-frame-78762" src="https://zitatsuchmaschine.informatik.hu-berlin.de/embed/78762"
-                        style="display: block; width: 100%; height: 450px; border: 1px black solid; border-radius: 20px;"></iframe>
-                <script>function
-                    f(e) {const elem = document.querySelector('#quote-frame-78762'); if (typeof e.data === "number" && e.source === elem.contentWindow) elem.style.height = e.data + "px";} window.addEventListener('message',
-                    f);
-                </script>
+                <ZitatsuchmaschineIframe/>
             </P>
         </>
     );
