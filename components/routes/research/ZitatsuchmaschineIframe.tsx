@@ -16,7 +16,6 @@ export default function ZitatsuchmaschineIframe() {
     }, []);
     return (
         <iframe
-            id="quote-frame-78762"
             ref={ref}
             title="A quote from our quote search engine"
             src="https://zitatsuchmaschine.informatik.hu-berlin.de/embed/78762"
