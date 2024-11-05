@@ -31,11 +31,12 @@ export default function GalleryEntry({ researchProject }: {
             <div className="relative w-full overflow-hidden rounded-xl pb-[66.66%] shadow-gallery">
                 <BasePathImage
                     src={researchProject.image}
-                    alt={researchProject.imageAlt}
+                    alt=""
                     draggable={false}
                     className="select-none"
                     style={{
-                        objectFit: researchProject?.imageFit ?? "cover",
+                        objectFit: researchProject.imageFit ?? "cover",
+                        padding: (researchProject.imagePadding ?? 0) + "rem",
                     }}
                     fill
                 />
