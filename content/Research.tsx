@@ -15,8 +15,9 @@ import type { ResearchProject } from "@/content/types";
 const Research: ResearchProject[] = [
     {
         title: "Flair NLP",
-        image: "/test-image.jpg",
-        imageAlt: "A man holding a flare",
+        image: "/flair_logo_2020_FINAL_day_dpi72.png",
+        imageAlt: "Flair Logo",
+        imageFit: "contain",
         introductoryText: <>
             We develop <InlineLink href="https://github.com/flairNLP/flair">Flair</InlineLink>, a very popular library
             for state-of-the-art NLP. It is used in thousands of industrial, academic and open source
@@ -28,8 +29,9 @@ const Research: ResearchProject[] = [
     },
     {
         title: "Zitatsuchmaschine",
-        image: "/test-image.jpg",
-        imageAlt: "A man holding a flare",
+        image: "/zitatsuchmaschine_logo.png",
+        imageAlt: "Zitatsuchmaschine Logo",
+        imageFit: "contain",
         introductoryText: <>
             Our German-language search engine for quotes!
         </>,
