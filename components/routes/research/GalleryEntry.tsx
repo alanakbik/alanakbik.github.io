@@ -27,41 +27,44 @@ export default function GalleryEntry({ researchProject }: {
     const gradient = "relative after:absolute after:bg-gradient-to-t from-white via-[rgba(255,255,255,0.75)] "
         + "to-transparent after:w-full after:h-10 after:bottom-0 after:left-0";
     return (
-        <div>
-            <div className="relative w-full overflow-hidden rounded-xl pb-[66.66%] shadow-gallery">
-                <BasePathImage
-                    src={researchProject.image}
-                    alt=""
-                    draggable={false}
-                    className="select-none"
-                    style={{
-                        objectFit: researchProject.imageFit ?? "cover",
-                        padding: (researchProject.imagePadding ?? 0) + "rem",
-                    }}
-                    fill
-                />
+        <div className="flex flex-col justify-between">
+            <div>
+                <div className="relative w-full overflow-hidden rounded-xl pb-[66.66%] shadow-gallery">
+                    <BasePathImage
+                        src={researchProject.image}
+                        alt=""
+                        draggable={false}
+                        className="select-none"
+                        style={{
+                            objectFit: researchProject.imageFit ?? "cover",
+                            padding: (researchProject.imagePadding ?? 0) + "rem",
+                        }}
+                        fill
+                    />
+                </div>
+                <div className="my-2 flex items-center justify-between gap-2 overflow-hidden">
+                    <H2 className="shrink truncate" title={researchProject.title}>
+                        {researchProject.title}
+                    </H2>
+                    {stars && (
+                        <Link
+                            href={`https://github.com/${researchProject.githubRepoIdentifier}/stargazers`}
+                            target="_blank"
+                            className="shrink-0 text-xl text-hu-blue-secondary -outline-offset-2 transition-colors hover:text-hu-blue-primary"
+                        >
+                            {stars}
+                            <CiStar className="ml-0.5 inline size-6 translate-y-[-0.15rem]"/>
+                        </Link>
+                    )}
+                </div>
+                <div className={overflowing && gradient}>
+                    <p className="mb-4 line-clamp-5 leading-5" ref={ref}>
+                        {researchProject.introductoryText}
+                    </p>
+                </div>
             </div>
-            <div className="my-2 flex items-center justify-between gap-2 overflow-hidden">
-                <H2 className="shrink truncate" title={researchProject.title}>
-                    {researchProject.title}
-                </H2>
-                {stars && (
-                    <Link
-                        href={`https://github.com/${researchProject.githubRepoIdentifier}/stargazers`}
-                        target="_blank"
-                        className="shrink-0 text-xl text-hu-blue-secondary -outline-offset-2 transition-colors hover:text-hu-blue-primary"
-                    >
-                        {stars}
-                        <CiStar className="ml-0.5 inline size-6 translate-y-[-0.15rem]"/>
-                    </Link>
-                )}
-            </div>
-            <div className={overflowing && gradient}>
-                <p className="mb-4 line-clamp-5 leading-5" ref={ref}>
-                    {researchProject.introductoryText}
-                </p>
-            </div>
-            <BlockLink href={"/research/" + researchProject.uriComponent} label="Read more about Flair">Read more</BlockLink>
+            <BlockLink href={"/research/" + researchProject.uriComponent} label="Read more about Flair">Read
+                more</BlockLink>
         </div>
     );
 }
