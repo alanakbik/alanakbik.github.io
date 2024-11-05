@@ -15,8 +15,9 @@ import type { ResearchProject } from "@/content/types";
 const Research: ResearchProject[] = [
     {
         title: "Flair NLP",
-        image: "/test-image.jpg",
-        imageAlt: "A man holding a flare",
+        image: "/flair_logo_2020.svg",
+        imagePadding: 2.5,
+        imageFit: "contain",
         introductoryText: <>
             We develop <InlineLink href="https://github.com/flairNLP/flair">Flair</InlineLink>, a very popular library
             for state-of-the-art NLP. It is used in thousands of industrial, academic and open source
@@ -27,9 +28,19 @@ const Research: ResearchProject[] = [
         uriComponent: "flair",
     },
     {
+        title: "Zitatsuchmaschine",
+        image: "/zitatsuchmaschine_logo.svg",
+        imageFit: "contain",
+        imagePadding: 2,
+        introductoryText: <>
+            Our German-language search engine for quotes!
+        </>,
+        categories: ["Featured", "Applications"],
+        uriComponent: "zitatsuchmaschine",
+    },
+    {
         title: "Fundus",
         image: "/logo_lightmode_without_font_with_clear_space.png",
-        imageAlt: "fundus logo",
         imageFit: "contain",
         introductoryText: <>
             Need to crawl online news? With <InlineLink href="https://github.com/flairNLP/fundus">Fundus</InlineLink>,
@@ -42,8 +53,8 @@ const Research: ResearchProject[] = [
     {
         title: "CleanCoNLL",
         image: "/CleanCoNLL_example_sentence.jpg",
-        imageAlt: "fundus logo",
         imageFit: "contain",
+        imagePadding: 2,
         introductoryText: <>
             CleanCoNLL is a nearly noise-free dataset for named entity recognition (NER). Use it to train and evaluate
             your NER models!
@@ -55,8 +66,8 @@ const Research: ResearchProject[] = [
     {
         title: "OpinionGPT",
         image: "/opiniongpt.png",
-        imageAlt: "fundus logo",
         imageFit: "contain",
+        imagePadding: 1,
         introductoryText: <>
             OpinionGPT is ...
         </>,
