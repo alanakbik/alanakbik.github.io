@@ -15,7 +15,7 @@ export const metadata = {
 /**
  * On this page you can insert the content for a project. You don't need to add the information you put inside the
  * array inside @/content/Research.tsx. This will be automatically inserted for you. If you need certain HTML elements
- * like a table or an unordered list, please check these components contain the functionality you need. If so use them
+ * like a table or an unordered list, please check whether these components contain the functionality you need. If so use them
  * instead of the standard HTML element.
  *
  * UnorderedList: <UL/>
