@@ -24,6 +24,8 @@ mostly doesn't contain content and instead consists of only markup, styles, and 
 Each file in the `content` directory comes with a leading comment explaining what to watch out for when making changes.
 If you need to change an image, just replace the corresponding file in the `public` directory.
 
+To edit the content on the travel page, please modify `@/app/travel/page.tsx`.
+
 ## Deploying
 Make sure the `next.config.mjs` and `@/components/shared/BasePathImage.tsx` file contains the correct base path. This is necessary for loading images correctly
 on GitHub pages. This needs to be set to `"/alanakbik.github.io"` on forked versions of the repo and be set
