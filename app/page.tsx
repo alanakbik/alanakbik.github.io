@@ -6,7 +6,6 @@ import TimelineEntry from "@/components/routes/home/TimelineEntry";
 import BasePathImage from "@/components/shared/BasePathImage";
 import BlockLink from "@/components/shared/BlockLink";
 import H1 from "@/components/shared/H1";
-import InlineLink from "@/components/shared/InlineLink";
 import Wrapper from "@/components/Wrapper";
 import WrapperLarge from "@/components/WrapperLarge";
 import TimelineEntries, { PinnedMessages } from "@/content/LatestNews";
