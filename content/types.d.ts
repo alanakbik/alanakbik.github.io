@@ -133,3 +133,8 @@ export interface Person {
     /** Person's linked in page */
     linkedInLink?: string,
 }
+
+export interface PinnedMessage {
+    title: string,
+    content: ReactNode,
+}

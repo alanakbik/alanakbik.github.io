@@ -1,7 +1,8 @@
+import type { ReactNode } from "react";
 import React from "react";
 
 import InlineLink from "@/components/shared/InlineLink";
-import type { TimelineEntryData } from "@/content/types";
+import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 /**
  * PLEASE READ BEFORE EDITING
@@ -64,6 +65,17 @@ const LatestNews: TimelineEntryData[] = [
         content: <>
             Our paper &quot;TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models
             for Downstream Classification Tasks&quot; now on <InlineLink href="https://google.com" target="_blank">arXiv</InlineLink>
+        </>,
+    },
+];
+
+export const PinnedMessages: PinnedMessage[] = [
+    {
+        title: "New PhD position available",
+        content: <>
+            We have a new PhD position available, fully funded for 4 years through the
+            <InlineLink href="https://google.com" target="_blank">HEIBRIDS</InlineLink> programme!
+            Apply here! Deadline is August 23rd!
         </>,
     },
 ];

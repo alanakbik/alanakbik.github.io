@@ -19,12 +19,15 @@ to produce a static output. This is why there is a build command in the `package
 build artifacts. For developing, you only need to use the above dev command.
 
 ## Editing Content
-For making changes to the content of the site please only edit files in the `content` directory. The rest of project
-mostly doesn't contain content and instead consists of only markup, styles, and render logic.
-Each file in the `content` directory comes with a leading comment explaining what to watch out for when making changes.
-If you need to change an image, just replace the corresponding file in the `public` directory.
 
-To edit the content on the travel page, please modify `@/app/travel/page.tsx`.
+Here's an overview over each page and which files you have to edit to change their content:
+- Home: `@/content/LatestNews.tsx`
+- Publications: `@/content/Publications.ts`
+- Research: `@/content/Research.ts`, `@/app/research/(projects)/**/page.tsx`
+- Chair: `@/content/Chair.ts`
+- Travel: `@/app/travel/page.tsx`
+- Legal Notice: `@/app/legal-notice/page.tsx`
+- Privacy Policy: `@/app/privacy-policy/page.tsx`
 
 ## Deploying
 Make sure the `next.config.mjs` and `@/components/shared/BasePathImage.tsx` file contains the correct base path. This is necessary for loading images correctly

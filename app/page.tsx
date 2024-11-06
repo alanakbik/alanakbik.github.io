@@ -9,7 +9,7 @@ import H1 from "@/components/shared/H1";
 import InlineLink from "@/components/shared/InlineLink";
 import Wrapper from "@/components/Wrapper";
 import WrapperLarge from "@/components/WrapperLarge";
-import TimelineEntries from "@/content/LatestNews";
+import TimelineEntries, { PinnedMessages } from "@/content/LatestNews";
 import { getCategoryColorMap } from "@/utils";
 
 export default function Page() {
@@ -51,12 +51,10 @@ export default function Page() {
             </WrapperLarge>
             <hr/>
             <Wrapper>
-                <section className="py-24 sm:pb-header-height" id="pinned-messages">
-                    <PinnedMessage title="New PhD position available">
-                        We have a new PhD position available, fully funded for 4 years through the
-                        <InlineLink href="https://google.com" target="_blank">HEIBRIDS</InlineLink> programme!
-                        Apply here! Deadline is August 23rd!
-                    </PinnedMessage>
+                <section className="flex flex-col gap-y-8 py-24 sm:pb-header-height" id="pinned-messages">
+                    {
+                        PinnedMessages.map((x, i) => <PinnedMessage key={i} title={x.title}>{x.content}</PinnedMessage>)
+                    }
                 </section>
                 <section className="mb-32">
                     <div
