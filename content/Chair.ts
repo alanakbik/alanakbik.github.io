@@ -3,12 +3,7 @@ import type { Person } from "@/content/types";
 /**
  * This text is shown below the banner image and before the people working at the chair.
  */
-export const Introduction: string = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has " +
-    "been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and " +
-    "scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into " +
-    "electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of " +
-    "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus " +
-    "PageMaker including versions of Lorem Ipsum.";
+export const Introduction: string = "Below is a list of my current PhD students and research assistants at the Chair of Machine Learning of the HU Berlin, plus our alumni.";
 
 export const People: Person[] = [
     {
@@ -23,10 +18,12 @@ export const People: Person[] = [
     }, {
         name: "Jonas Golde",
         title: "PhD Student",
+        image: "/people/jonas.jpg",
         category: "Research Scientists",
     }, {
         name: "Susanna Rücker",
         title: "PhD Student",
+        image: "/people/susanna.jpg",
         category: "Research Scientists",
     }, {
         name: "Max Ploner",
@@ -43,6 +40,7 @@ export const People: Person[] = [
     }, {
         name: "Franziska Weeber",
         title: "Guest Researcher",
+        image: "/people/franzi.jpg",
         category: "Research Scientists",
     }, {
         name: "Olia Toporkov",
@@ -62,5 +60,26 @@ export const People: Person[] = [
         name: "Sebastian Pohl",
         title: "Research Assistant",
         category: "Student Researchers",
-    },
+    }, {
+        name: "Max Dallabetta",
+        title: "Research Assistant",
+        category: "Student Researchers",
+    }, {
+        name: "Conrad Dobberstein",
+        title: "Research Assistant",
+        category: "Student Researchers",
+    }, {
+        name: "Lukas Garbas",
+        title: "Research Assistant",
+        category: "Student Researchers",
+    }, {
+        name: "Teresa Löffelhardt",
+        title: "Research Assistant",
+        category: "Student Researchers",
+    }, {
+        name: "Adrian Breiding",
+        title: "Research Assistant",
+        category: "Student Researchers",
+        gitHubLink: "https://github.com/addie9800",
+    }
 ];
