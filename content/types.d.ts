@@ -105,7 +105,7 @@ export interface ResearchProject {
 
 export type ResearcherTitle = "PhD Student" | "Professor of Machine Learning" | "Fullstack Developer" | "Guest Researcher" | "Research Assistant" | "Research Engineer";
 
-export type ResearcherCategory = "Head of Lab" | "Research Scientists" | "Student Researchers" | "Alumni" | "Secretary";
+export type ResearcherCategory = "Head of Lab" | "Research Scientists" | "Student Researchers" | "Alumni" | "Secretary" | "PostDoc";
 
 export interface Person {
     /**
