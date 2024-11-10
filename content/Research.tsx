@@ -74,6 +74,50 @@ const Research: ResearchProject[] = [
         categories: ["Featured", "Applications"],
         uriComponent: "opiniongpt",
     },
+    {
+        title: "LM Pub Quiz",
+        image: "/people/unknown.svg",
+        imageFit: "contain",
+        imagePadding: 1,
+        introductoryText: <>
+            LM Pub Quiz is ...
+        </>,
+        categories: ["Libraries", "Featured"],
+        uriComponent: "lm-pub-quiz",
+    },
+    {
+        title: "NoiseBench",
+        image: "/people/unknown.svg",
+        imageFit: "contain",
+        imagePadding: 1,
+        introductoryText: <>
+            NoiseBench is ...
+        </>,
+        categories: ["Datasets", "Featured"],
+        uriComponent: "noisebench",
+    },
+    {
+        title: "Zelda",
+        image: "/people/unknown.svg",
+        imageFit: "contain",
+        imagePadding: 1,
+        introductoryText: <>
+            Zelda is ...
+        </>,
+        categories: ["Datasets"],
+        uriComponent: "zelda",
+    },
+    {
+        title: "TransformerRanker",
+        image: "/people/unknown.svg",
+        imageFit: "contain",
+        imagePadding: 1,
+        introductoryText: <>
+            TransformerRanker is ...
+        </>,
+        categories: ["Libraries"],
+        uriComponent: "transformer-ranker",
+    },
 ];
 
 export default Research;

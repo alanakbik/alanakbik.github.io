@@ -31,45 +31,66 @@ export const metadata = {
 export default function Page() {
     return (
         <>
+            <H2>Tagging Text with Flair</H2>
+            <P>
+                Flair implements state-of-the-art approaches for various NLP tasks such as (1) sentiment analysis,
+                (2) named entity recognition (NER), (3) part-of-speech tagging (PoS), (4) entity linking and many others.
+                With a few lines of code, you can load one of our pre-trained models and apply it to your text!
+            </P>
+
+            <P>
+                For instance, our 18-class entity tagger can detect entities such as person names, dates, organizations,
+                place names, and many others:
+            </P>
+            <BlockImage src="/flair-ontonotes.png" alt="Text tagged with our 18-class entity tagger"/>
+            <P>
+                Flair supports tagging of text in many languages. In fact, many models are multilingual, allowing you
+                to input text in any language.
+            </P>
+            <H2>Biomedical Models</H2>
+            <P>
+                Flair also includes the HunFlair family of models that allow you to tag and link biomedical text data.
+                This allows you to detect the names of genes, diseases, chemicals and link them to
+                normalized identifiers in a knowledge base:
+            </P>
+            <BlockImage src="/hunflair.png" alt="Text tagged with our biomedical entity tagger"/>
+            <P>
+                For instance, in the above example, "autism" is detected as a disease name and linked to the term
+                "Autism Disorder" in a standardized knowledge base. "Mice" is detected a a species name and linked to
+                the entry "Mus Musculus".
+            </P>
+
+            <H2>Tutorials and Getting Started</H2>
+            <P>
+                The best way to get started with Flair is to check out our
+                <InlineLink href="https://flairnlp.github.io/docs/category/tutorial-2-training-models" target="_blank">tutorials</InlineLink>.
+            </P>
+            <P>
+                Our tutorial explain how to apply NLP models to your data, and even how to train your own models.
+                Since Flair was designed to be simple to use, the tutorials should be quick to complete.
+            </P>
+
             <H2>Research Behind Flair</H2>
             <P>
-                My current research proposes a new approach to address core natural language processing tasks such as
-                part-of-speech (PoS) tagging, named entity recognition (NER), sense disambiguation and text
-                classification. Our approach leverages character-level neural language modeling to learn powerful,
-                contextualized representations of human language from large corpora. The Figure below illustrates
-                how it works:
+                Flair is my group's main vehicle for making our NLP research publicly available. Some important papers
+                include:
             </P>
-            <BlockImage src="/neuralLMtagging.png" alt="The models used to generate Flair embeddings"/>
+
             <P>
-                Here, a sentence (bottom) is input as a character sequence into a bidirectional character language
-                model (LM, yellow in Figure) that was pre-trained on extremely large unlabeled text corpora. From this
-                LM, we retrieve for each word a contextual embedding by extracting the first and last character cell
-                states. This word embedding is then passed into a vanilla BiLSTM-CRF sequence labeler (blue in Figure),
-                achieving robust state-of-the-art results on downstream tasks (NER in this example).
+                <InlineLink href="https://aclanthology.org/C18-1139/" target="_blank">Contextual String Embeddings for Sequence Labeling
+                </InlineLink>. <i>Alan Akbik, Duncan Blythe and Roland Vollgraf</i>. 27th International Conference on Computational Linguistics, COLING 2018.
             </P>
+
             <P>
-                This simple approach works incredibly well. In fact, it <b>outperforms all previous approaches by a
-                    significant margin across many classic NLP tasks</b>. Check out some results below:
+                <InlineLink href="https://arxiv.org/abs/2011.06993" target="_blank">FLERT: Document-Level Features for Named Entity Recognition
+                </InlineLink>. <i>Alan Akbik and Stefan Schweter</i>. arXiv 2020.
             </P>
-            <Table data={
-                [
-                    ["Task", "Dataset", "Our Result", "Previous Best"],
-                    ["Named Entity Recognition (English)", "Conll-03", <><b>93.09</b> (F1)</>, "92.22 (Peters et al., 2018)"],
-                    ["Named Entity Recognition (English)", "Ontonotes", <><b>89.71</b> (F1)</>, "86.28 (Chiu et al., 2016)"],
-                    ["Emerging Entity Detection (English)", "WNUT-17", <><b>50.20</b> (F1)</>, "45.55 (Aguilar et al., 2018)"],
-                    ["Named Entity Recognition (German)", "Conll-03", <><b>88.32</b> (F1)</>, "78.76 (Lample et al., 2016)"],
-                    ["Named Entity Recognition (German)", "Germeval", <><b>84.65</b> (F1)</>, "79.08 (Hänig et al, 2014)"],
-                    ["Part-of-Speech tagging (English)", "WSJ", <><b>97.85</b></>, "97.64 (Choi, 2016)"],
-                    ["Chunking (English)", "Conll-2000", <><b>96.72</b> (F1)</>, "96.36 (Peters et al., 2017)"],
-                ]
-            }/>
+
             <P>
-                Check out the corresponsing publication for more details:
+                <InlineLink href="https://arxiv.org/abs/2011.06993" target="_blank">HunFlair2 in a cross-corpus evaluation of biomedical named entity recognition and normalization tools
+                </InlineLink>. <i>Mario Sänger, Samuele Garda, Xing David Wang, Leon Weber-Genzel, Pia Droop, Benedikt Fuchs, Alan Akbik, Ulf Leser</i>. Bioinformatics 2024.
             </P>
-            <P>
-                <b>Contextual String Embeddings for Sequence Labeling.</b> Alan Akbik, Duncan Blythe and Roland Vollgraf.
-                <InlineLink href="/papers/coling2018.pdf" target="_blank">27th International Conference on Computational Linguistics, COLING 2018</InlineLink>.
-            </P>
+
         </>
     );
 }
