@@ -15,18 +15,21 @@ export const People: Person[] = [
         googleScholarLink: "https://scholar.google.com/citations?user=adKmg3IAAAAJ&hl=de",
         emailAddress: "alan.akbik@hu-berlin.de",
         linkedInLink: "https://de.linkedin.com/in/alan-akbik-9859b1122",
+    },  {
+        name: "Ansar Aynetdinov",
+        title: "PhD Student",
+        category: "Research Scientists",
+    }, {
+        name: "Benedikt Fuchs",
+        title: "Research Engineer",
+        category: "Research Scientists",
     }, {
         name: "Jonas Golde",
         title: "PhD Student",
         image: "/people/jonas.jpg",
         category: "Research Scientists",
     }, {
-        name: "Susanna Rücker",
-        title: "PhD Student",
-        image: "/people/susanna.jpg",
-        category: "Research Scientists",
-    }, {
-        name: "Max Ploner",
+        name: "Patrick Haller",
         title: "PhD Student",
         category: "Research Scientists",
     }, {
@@ -34,8 +37,17 @@ export const People: Person[] = [
         title: "PhD Student",
         category: "Research Scientists",
     }, {
-        name: "Patrick Haller",
+        name: "Max Ploner",
         title: "PhD Student",
+        category: "Research Scientists",
+    }, {
+        name: "Susanna Rücker",
+        title: "PhD Student",
+        image: "/people/susanna.jpg",
+        category: "Research Scientists",
+    },  {
+        name: "Olia Toporkov",
+        title: "Guest Researcher",
         category: "Research Scientists",
     }, {
         name: "Franziska Weeber",
@@ -43,24 +55,11 @@ export const People: Person[] = [
         image: "/people/franzi.jpg",
         category: "Research Scientists",
     }, {
-        name: "Olia Toporkov",
-        title: "Guest Researcher",
-        category: "Research Scientists",
-    }, {
-        name: "Ansar Aynetdinov",
-        title: "PhD Student",
-        category: "Research Scientists",
-    }, {
-        name: "Konstantin Lukas",
-        title: "Fullstack Developer",
-        category: "Student Researchers",
-        gitHubLink: "https://github.com/konstantin-lukas",
-        emailAddress: "kontakt@konstantinlukas.de",
-    }, {
-        name: "Sebastian Pohl",
+        name: "Adrian Breiding",
         title: "Research Assistant",
         category: "Student Researchers",
-    }, {
+        gitHubLink: "https://github.com/addie9800",
+    } , {
         name: "Max Dallabetta",
         title: "Research Assistant",
         category: "Student Researchers",
@@ -77,9 +76,14 @@ export const People: Person[] = [
         title: "Research Assistant",
         category: "Student Researchers",
     }, {
-        name: "Adrian Breiding",
+        name: "Konstantin Lukas",
+        title: "Fullstack Developer",
+        category: "Student Researchers",
+        gitHubLink: "https://github.com/konstantin-lukas",
+        emailAddress: "kontakt@konstantinlukas.de",
+    }, {
+        name: "Sebastian Pohl",
         title: "Research Assistant",
         category: "Student Researchers",
-        gitHubLink: "https://github.com/addie9800",
-    }
+    },
 ];

@@ -3,6 +3,7 @@ import React from "react";
 import ZitatsuchmaschineIframe from "@/components/routes/research/ZitatsuchmaschineIframe";
 import H2 from "@/components/shared/H2";
 import P from "@/components/shared/P";
+import InlineLink from "@/components/shared/InlineLink";
 
 /**
  * Set the title of the page here which is shown in the browser tab.
@@ -31,11 +32,34 @@ export default function Page() {
         <>
             <H2>Zitatsuchmaschine</H2>
             <P>
-                The Zitatsuchmaschine is a search engine for quotes in German online news.
+                <InlineLink href="https://zitatsuchmaschine.informatik.hu-berlin.de/" target="_blank">Zitatsuchmaschine</InlineLink>
+                is a search engine for quotes in German online news. You can search for quotes and embed
+                them in your website. For instance, check out this quote by Willian Shatner:
             </P>
             <P>
                 <ZitatsuchmaschineIframe/>
             </P>
+            <P>
+                Each quote has a speaker (in this case "William Shatner") and at least one source (i.e., the news
+                article that reported this quote). Popular quotes are reported across many news outlets and so have many
+                sources.
+            </P>
+            <H2>Browse Quotes</H2>
+            <P>
+                You can either look at all quotes of a specific person, such as all quotes by <InlineLink href="
+https://zitatsuchmaschine.informatik.hu-berlin.de/quotee/William%20Shatner?order=relevance" target="_blank">William Shatner</InlineLink>,
+                or search quotes by keywords. For instance, you can get all quotes that mention the word
+                "<InlineLink href="https://zitatsuchmaschine.informatik.hu-berlin.de/search/Neuwahlen?in=text,quotee&order=relevance" target="_blank">Neuwahlen</InlineLink>".
+            </P>
+            <H2>NLP Research in this Project</H2>
+            <P>
+                This project utilizes the <InlineLink href="https://github.com/flairNLP/fundus" target="_blank">Fundus</InlineLink>
+                library to crawl online news, and the <InlineLink href="https://github.com/flairNLP/flair" target="_blank">Flair</InlineLink>
+                library to extract
+                quotes and speakers from the crawled articles. Further, we use this project at our chair to test
+                new NLP technologies such as entity linking.
+            </P>
+
         </>
     );
 }
