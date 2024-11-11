@@ -1,8 +1,8 @@
+import Link from "next/link";
 import React from "react";
 
 import H1 from "@/components/shared/H1";
 import P from "@/components/shared/P";
-import UL from "@/components/shared/UL";
 import Wrapper from "@/components/Wrapper";
 
 export default function Page() {
@@ -14,15 +14,18 @@ export default function Page() {
                     This webite is maintained by:
                 </P>
                 <P>
-                    <UL>
-                        <li> Alan Akbik </li>
-                        <li> Humboldt-Universität zu Berlin </li>
-                        <li> Institut für Informatik / Lehrstuhl Maschinelles Lernen </li>
-                        <li> Unter den Linden 6 </li>
-                        <li> 10099 Berlin </li>
-                        <li> Germany </li>
-                        <li> mail: alan.akbik@hu-berlin.de </li>
-                    </UL>
+                    Alan Akbik <br/>
+                    Humboldt-Universität zu Berlin <br/>
+                    Institut für Informatik / Lehrstuhl Maschinelles Lernen <br/>
+                    Unter den Linden 6 <br/>
+                    10099 Berlin <br/>
+                    Germany <br/>
+                    <Link href="mailto:alan.akbik@hu-berlin.de">
+                        <span
+                            className="inline-link text-nowrap bg-gradient-to-b from-hu-blue-primary to-hu-blue-primary
+                            text-hu-blue-primary"
+                        >E-mail: alan.akbik@hu-berlin.de</span>
+                    </Link>
                 </P>
             </div>
         </Wrapper>
