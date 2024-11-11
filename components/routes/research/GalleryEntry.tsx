@@ -29,19 +29,22 @@ export default function GalleryEntry({ researchProject }: {
     return (
         <div className="flex flex-col justify-between">
             <div>
-                <div className="relative w-full overflow-hidden rounded-xl pb-[66.66%] shadow-gallery">
+                <Link
+                    href={"/research/" + researchProject.uriComponent}
+                    className="group relative block w-full overflow-hidden rounded-xl pb-[66.66%] shadow-gallery"
+                >
                     <BasePathImage
                         src={researchProject.image}
                         alt=""
                         draggable={false}
-                        className="select-none"
+                        className="select-none transition-transform group-hover:scale-105"
                         style={{
                             objectFit: researchProject.imageFit ?? "cover",
                             padding: (researchProject.imagePadding ?? 0) + "rem",
                         }}
                         fill
                     />
-                </div>
+                </Link>
                 <div className="my-2 flex items-center justify-between gap-2 overflow-hidden">
                     <H2 className="shrink truncate" title={researchProject.title}>
                         {researchProject.title}
@@ -63,8 +66,7 @@ export default function GalleryEntry({ researchProject }: {
                     </p>
                 </div>
             </div>
-            <BlockLink href={"/research/" + researchProject.uriComponent} label="Read more about Flair">Read
-                more</BlockLink>
+            <BlockLink href={"/research/" + researchProject.uriComponent}>Read more</BlockLink>
         </div>
     );
 }
