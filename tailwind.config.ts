@@ -27,7 +27,7 @@ const config: Config = {
                 },
             },
             boxShadow: {
-                "gallery": "0 0 1rem rgba(0, 0, 0, 0.2)",
+                "gallery": "0 0 1rem rgba(0, 0, 0, 0.15)",
             },
         },
     },

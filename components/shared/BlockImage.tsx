@@ -38,15 +38,26 @@ function Lightbox({ src, alt, close }: { src: string, alt: string, close: () => 
     );
 }
 
-export default function BlockImage({ src, alt }: { src: string, alt: string }) {
+export default function BlockImage({ src, alt, maxWidth }: { src: string, alt: string, maxWidth?: number }) {
     const [open, setOpen] = useState(false);
     return (
         <>
-            <button className="relative my-3 h-[33dvh] w-full" aria-label="Show image in large" onClick={(e) => {
-                e.stopPropagation();
-                setOpen(true);
-            }}>
-                <BasePathImage src={src} fill alt={alt} className="object-contain"/>
+            <button
+                className="group relative my-4 h-[33dvh] w-full overflow-hidden rounded-xl shadow-gallery"
+                aria-label="Show image in large"
+                onClick={(e) => {
+                    e.stopPropagation();
+                    setOpen(true);
+                }}>
+                <BasePathImage
+                    src={src}
+                    fill
+                    alt={alt}
+                    style={{
+                        maxWidth: `${maxWidth ??  100}%`,
+                    }}
+                    className="mx-auto object-contain transition-transform group-hover:scale-105"
+                />
             </button>
             {open && createPortal(
                 <Lightbox src={src} alt={alt} close={() => setOpen(false)}/>,

@@ -36,7 +36,7 @@ export default function Gallery() {
             <section className="grid grid-cols-1 gap-12 md:grid-cols-2 md:gap-y-24 xl:grid-cols-3">
                 {research
                     .filter(x => x.categories.some(y => checkedCategories.includes(y)))
-                    .map((x, i) => <GalleryEntry key={i} researchProject={x}/>)
+                    .map((x) => <GalleryEntry key={x.uriComponent} researchProject={x}/>)
                 }
             </section>
         </>

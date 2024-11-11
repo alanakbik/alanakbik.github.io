@@ -103,7 +103,8 @@ export interface ResearchProject {
     uriComponent: string,
 }
 
-export type ResearcherTitle = "PhD Student" | "Professor of Machine Learning" | "Fullstack Developer" | "Guest Researcher" | "Research Assistant";
+export type ResearcherTitle = "PhD Student" | "Professor of Machine Learning" | "Fullstack Developer" |
+    "Guest Researcher" | "Research Assistant" | "Research Engineer" | "PostDoc";
 
 export type ResearcherCategory = "Head of Lab" | "Research Scientists" | "Student Researchers" | "Alumni" | "Secretary";
 
