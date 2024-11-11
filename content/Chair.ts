@@ -41,6 +41,10 @@ export const People: Person[] = [
         title: "PhD Student",
         category: "Research Scientists",
         gitHubLink: "https://github.com/elenamer",
+        googleScholarLink: "https://scholar.google.com/citations?user=6QT6SBQAAAAJ&hl=en",
+        emailAddress: "elena.merdjanovska@hu-berlin.de",
+        linkedInLink: "https://www.linkedin.com/in/elena-merdjanovska/",
+        image: "/people/elena.jpg",
     }, {
         name: "Max Ploner",
         title: "PhD Student",
@@ -53,6 +57,9 @@ export const People: Person[] = [
         image: "/people/susanna.jpg",
         category: "Research Scientists",
         gitHubLink: "https://github.com/susannaruecker",
+        googleScholarLink: "https://scholar.google.com/citations?user=bhvw9esAAAAJ&hl=de",
+        emailAddress: "susanna.ruecker@hu-berlin.de",
+        linkedInLink: "https://www.linkedin.com/in/susanna-rücker-14801821a/",
     },  {
         name: "Olia Toporkov",
         title: "Guest Researcher",
