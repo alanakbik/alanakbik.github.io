@@ -15,13 +15,13 @@ export default function Page() {
                 </P>
                 <P>
                     <UL>
-                    <li> Alan Akbik </li>
-                    <li> Humboldt-Universität zu Berlin </li>
-                    <li> Institut für Informatik / Lehrstuhl Maschinelles Lernen </li>
-                    <li> Unter den Linden 6 </li>
-                    <li> 10099 Berlin </li>
-                    <li> Germany </li>
-                    <li> mail: alan.akbik@hu-berlin.de </li>
+                        <li> Alan Akbik </li>
+                        <li> Humboldt-Universität zu Berlin </li>
+                        <li> Institut für Informatik / Lehrstuhl Maschinelles Lernen </li>
+                        <li> Unter den Linden 6 </li>
+                        <li> 10099 Berlin </li>
+                        <li> Germany </li>
+                        <li> mail: alan.akbik@hu-berlin.de </li>
                     </UL>
                 </P>
             </div>

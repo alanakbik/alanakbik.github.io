@@ -4,7 +4,6 @@ import BlockImage from "@/components/shared/BlockImage";
 import H2 from "@/components/shared/H2";
 import InlineLink from "@/components/shared/InlineLink";
 import P from "@/components/shared/P";
-import Table from "@/components/shared/Table";
 
 /**
  * Set the title of the page here which is shown in the browser tab.
@@ -55,9 +54,9 @@ export default function Page() {
             </P>
             <BlockImage src="/hunflair.png" alt="Text tagged with our biomedical entity tagger"/>
             <P>
-                For instance, in the above example, "autism" is detected as a disease name and linked to the term
-                "Autism Disorder" in a standardized knowledge base. "Mice" is detected a a species name and linked to
-                the entry "Mus Musculus".
+                For instance, in the above example, &quot;autism&quot; is detected as a disease name and linked to the term
+                &quot;Autism Disorder&quot; in a standardized knowledge base. &quot;Mice&quot; is detected a a species name and linked to
+                the entry &quot;Mus Musculus&quot;.
             </P>
 
             <H2>Tutorials and Getting Started</H2>
@@ -72,7 +71,7 @@ export default function Page() {
 
             <H2>Research Behind Flair</H2>
             <P>
-                Flair is my group's main vehicle for making our NLP research publicly available. Some important papers
+                Flair is my group&apos;s main vehicle for making our NLP research publicly available. Some important papers
                 include:
             </P>
 

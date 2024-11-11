@@ -67,7 +67,7 @@ export const People: Person[] = [
         title: "Research Assistant",
         category: "Student Researchers",
         gitHubLink: "https://github.com/addie9800",
-    } , {
+    }, {
         name: "Max Dallabetta",
         title: "Research Assistant",
         category: "Student Researchers",

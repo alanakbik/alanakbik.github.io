@@ -2,8 +2,8 @@ import React from "react";
 
 import ZitatsuchmaschineIframe from "@/components/routes/research/ZitatsuchmaschineIframe";
 import H2 from "@/components/shared/H2";
-import P from "@/components/shared/P";
 import InlineLink from "@/components/shared/InlineLink";
+import P from "@/components/shared/P";
 
 /**
  * Set the title of the page here which is shown in the browser tab.
@@ -40,7 +40,7 @@ export default function Page() {
                 <ZitatsuchmaschineIframe/>
             </P>
             <P>
-                Each quote has a speaker (in this case "William Shatner") and at least one source (i.e., the news
+                Each quote has a speaker (in this case &quot;William Shatner&quot;) and at least one source (i.e., the news
                 article that reported this quote). Popular quotes are reported across many news outlets and so have many
                 sources.
             </P>
@@ -49,7 +49,7 @@ export default function Page() {
                 You can either look at all quotes of a specific person, such as all quotes by <InlineLink href="
 https://zitatsuchmaschine.informatik.hu-berlin.de/quotee/William%20Shatner?order=relevance" target="_blank">William Shatner</InlineLink>,
                 or search quotes by keywords. For instance, you can get all quotes that mention the word
-                "<InlineLink href="https://zitatsuchmaschine.informatik.hu-berlin.de/search/Neuwahlen?in=text,quotee&order=relevance" target="_blank">Neuwahlen</InlineLink>".
+                &quot;<InlineLink href="https://zitatsuchmaschine.informatik.hu-berlin.de/search/Neuwahlen?in=text,quotee&order=relevance" target="_blank">Neuwahlen</InlineLink>&quot;.
             </P>
             <H2>NLP Research in this Project</H2>
             <P>
