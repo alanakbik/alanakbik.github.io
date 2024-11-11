@@ -38,15 +38,27 @@ function Lightbox({ src, alt, close }: { src: string, alt: string, close: () => 
     );
 }
 
-export default function BlockImage({ src, alt }: { src: string, alt: string }) {
+export default function BlockImage({ src, alt, padding }: { src: string, alt: string, padding?: number }) {
     const [open, setOpen] = useState(false);
     return (
         <>
-            <button className="relative my-3 h-[33dvh] w-full" aria-label="Show image in large" onClick={(e) => {
+            <button
+                className="relative my-3 h-[33dvh] w-full"
+                aria-label="Show image in large"
+                onClick={(e) => {
                 e.stopPropagation();
                 setOpen(true);
             }}>
-                <BasePathImage src={src} fill alt={alt} className="object-contain"/>
+                <BasePathImage
+                    src={src}
+                    fill
+                    alt={alt}
+                    className="object-contain"
+                    style={{
+                        paddingLeft: (padding ?? 0) + "%",
+                        paddingRight: (padding ?? 0) + "%",
+                    }}
+                />
             </button>
             {open && createPortal(
                 <Lightbox src={src} alt={alt} close={() => setOpen(false)}/>,

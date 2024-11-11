@@ -52,7 +52,7 @@ export default function Page() {
                 This allows you to detect the names of genes, diseases, chemicals and link them to
                 normalized identifiers in a knowledge base:
             </P>
-            <BlockImage src="/hunflair.png" alt="Text tagged with our biomedical entity tagger"/>
+            <BlockImage src="/hunflair.png" alt="Text tagged with our biomedical entity tagger" padding={10}/>
             <P>
                 For instance, in the above example, &quot;autism&quot; is detected as a disease name and linked to the term
                 &quot;Autism Disorder&quot; in a standardized knowledge base. &quot;Mice&quot; is detected a a species name and linked to
