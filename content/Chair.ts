@@ -37,8 +37,11 @@ export const People: Person[] = [
     }, {
         name: "Patrick Haller",
         title: "PhD Student",
+        image: "/people/patrick.jpg",
         category: "Research Scientists",
         gitHubLink: "https://github.com/HallerPatrick",
+        googleScholarLink: "https://scholar.google.com/citations?user=ZFe7wn4AAAAJ&hl=en",
+        linkedInLink: "https://linkedin.com/in/patrick-haller-651493126",
     }, {
         name: "Elena Merdjanovska",
         title: "PhD Student",
