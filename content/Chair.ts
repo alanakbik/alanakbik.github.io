@@ -39,6 +39,12 @@ export const People: Person[] = [
         emailAddress: "jonas.golde@gmail.com",
         linkedInLink: "https://www.linkedin.com/in/jonasgolde/",
     }, {
+        name: "Felix Hamborg",
+        title: "Guest Researcher",
+        category: "Research Scientists",
+        image: "/people/felix.jpg",
+        gitHubLink: "https://github.com/fhamborg",
+    }, {
         name: "Patrick Haller",
         title: "PhD Student",
         image: "/people/patrick.jpg",
@@ -127,12 +133,6 @@ export const People: Person[] = [
         title: "PostDoc",
         category: "Alumni",
         gitHubLink: "https://github.com/ChristophAlt",
-    }, {
-        name: "Felix Hamborg",
-        title: "PostDoc",
-        category: "Alumni",
-        image: "/people/felix.jpg",
-        gitHubLink: "https://github.com/fhamborg",
     }, {
         name: "Aaron Wey",
         title: "Research Assistant",
