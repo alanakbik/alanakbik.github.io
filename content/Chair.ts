@@ -15,11 +15,15 @@ export const People: Person[] = [
         googleScholarLink: "https://scholar.google.com/citations?user=adKmg3IAAAAJ&hl=de",
         emailAddress: "alan.akbik@hu-berlin.de",
         linkedInLink: "https://de.linkedin.com/in/alan-akbik-9859b1122",
-    },  {
+    }, {
         name: "Ansar Aynetdinov",
         title: "PhD Student",
+        image: "/people/ansar.jpg",
         category: "Research Scientists",
         gitHubLink: "https://github.com/aynetdia",
+        googleScholarLink: "https://scholar.google.com/citations?user=EqlZ0aAAAAAJ",
+        emailAddress: "aynetdia@hu-berlin.de",
+        linkedInLink: "https://www.linkedin.com/in/ansar-aynetdinov/",
     }, {
         name: "Benedikt Fuchs",
         title: "Research Engineer",
@@ -99,6 +103,7 @@ export const People: Person[] = [
         name: "Lukas Garbas",
         title: "Research Assistant",
         category: "Student Researchers",
+        image: "/people/lukas.jpg",
         gitHubLink: "https://github.com/lukasgarbas",
     }, {
         name: "Teresa Löffelhardt",
@@ -108,6 +113,7 @@ export const People: Person[] = [
     }, {
         name: "Konstantin Lukas",
         title: "Fullstack Developer",
+        image: "/people/konstantin.jpg",
         category: "Student Researchers",
         gitHubLink: "https://github.com/konstantin-lukas",
         emailAddress: "kontakt@konstantinlukas.de",
