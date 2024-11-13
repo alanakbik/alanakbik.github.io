@@ -109,7 +109,7 @@ export const People: Person[] = [
         name: "Lukas Garbas",
         title: "Research Assistant",
         category: "Student Researchers",
-        image: "/people/lukas.jpg",
+        image: "/people/lukas.png",
         gitHubLink: "https://github.com/lukasgarbas",
     }, {
         name: "Teresa Löffelhardt",
@@ -119,7 +119,6 @@ export const People: Person[] = [
     }, {
         name: "Konstantin Lukas",
         title: "Fullstack Developer",
-        image: "/people/konstantin.jpg",
         category: "Student Researchers",
         gitHubLink: "https://github.com/konstantin-lukas",
         emailAddress: "kontakt@konstantinlukas.de",
