@@ -28,6 +28,7 @@ export const People: Person[] = [
         name: "Benedikt Fuchs",
         title: "Research Engineer",
         category: "Research Scientists",
+        image: "/people/benedikt.jpg",
         gitHubLink: "https://github.com/helpmefindaname",
         linkedInLink: "https://www.linkedin.com/in/benedikt-fuchs-020a1b100/",
         emailAddress: "benedikt.fuchs.staw@hotmail.com",
