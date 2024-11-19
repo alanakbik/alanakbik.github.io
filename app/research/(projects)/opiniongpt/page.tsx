@@ -4,6 +4,7 @@ import BlockImage from "@/components/shared/BlockImage";
 import H2 from "@/components/shared/H2";
 import InlineLink from "@/components/shared/InlineLink";
 import P from "@/components/shared/P";
+import OL from "@/components/shared/UL";
 
 /**
  * Set the title of the page here which is shown in the browser tab.
@@ -32,22 +33,32 @@ export default function Page() {
         <>
             <H2>OpinionGPT</H2>
             <P>
-                OpinionGPT is...
-            </P>
-            <BlockImage src="/CleanCoNLL_example_sentence.jpg" alt="CleanCoNLL example"/>
-            <P>
-                ...
+                What happens if you tune a language model (LM) only on texts written by politically left-leaning persons?
             </P>
             <P>
-                ...
+                Or only on texts written by right-leaning persons? Only on texts by men, or only on texts by women? Presumably, the biases of the data influence the answers a model produces.
             </P>
             <P>
-                Check out our publication for more details:
+                With OpinionGPT, we separately tuned 11 different models, each only on text written
+                by a specific demographic group (men, women, Germans, Americans, left-leaning, right-leaning, etc.).
+                This allows us to compare the answers differently biased models give to any question.
             </P>
+            <BlockImage src="/opiniongpt-example.png" alt="Example of OpinionGPT"/>
             <P>
-                <InlineLink href="https://aclanthology.org/2023.emnlp-main.533.pdf" target="_blank">CleanCoNLL: A Nearly Noise-Free Named Entity Recognition Dataset.</InlineLink>
-                Susanna Rücker and Alan Akbik.
-                Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing, EMNLP 2023.
+                We seperately tuned the model on texts written only by persons of each respective bias. In this demo, you can ask questions to our very biased model to get very biased answers!
+            </P>
+            <H2>Getting Started</H2>
+            <P>
+                <OL>
+                    <li>Check out the <InlineLink href="https://opiniongpt.informatik.hu-berlin.de/" target="_blank">demo
+                        page</InlineLink> and try out some questions!</li>
+                </OL>
+            </P>
+
+            <H2>Publication</H2>
+            <P>
+                <InlineLink href="OpinionGPT: Modelling Explicit Biases in Instruction-Tuned LLMs" target="_blank">CleanCoNLL: A Nearly Noise-Free Named Entity Recognition Dataset.</InlineLink>
+                Patrick Haller, Ansar Aynetdinov and Alan Akbik. NAACL 2024.
             </P>
         </>
     );

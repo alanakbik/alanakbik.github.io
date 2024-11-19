@@ -4,8 +4,8 @@ import PinnedMessage from "@/components/routes/home/PinnedMessage";
 import ScrollDownButton from "@/components/routes/home/ScrollDownButton";
 import TimelineEntry from "@/components/routes/home/TimelineEntry";
 import BasePathImage from "@/components/shared/BasePathImage";
-import BlockLink from "@/components/shared/BlockLink";
 import H1 from "@/components/shared/H1";
+import InlineLink from "@/components/shared/InlineLink";
 import Wrapper from "@/components/Wrapper";
 import WrapperLarge from "@/components/WrapperLarge";
 import TimelineEntries, { PinnedMessages } from "@/content/LatestNews";
@@ -25,12 +25,15 @@ export default function Page() {
                             <span className="block">Alan Akbik</span>
                         </H1>
                         <p className="mb-4 mt-2 text-balance leading-5">
-                            Hi, I&apos;m a professor of machine learning at Humboldt University of Berlin, specializing
-                            in natural language processing (NLP) and leading the development of the Flair NLP framework.
+                            Hi, I&apos;m a professor at the Humboldt University of Berlin, leading the chair of machine
+                            learning. I focus on natural language processing (NLP) research and the development of
+                            popular open source libraries such as Flair NLP.
                         </p>
-                        <BlockLink href="/publications" className="text-xl">
-                            Publications
-                        </BlockLink>
+                        <p>
+                            Check out my <InlineLink href="/research">research</InlineLink>,
+                            my <InlineLink href="/publications">publications</InlineLink>
+                            and my <InlineLink href="/chair">Chair</InlineLink>!
+                        </p>
                     </div>
                     <div className="hidden h-full w-2/5 shrink items-center pl-8 desktop:flex">
                         <div className="relative aspect-square w-full overflow-hidden rounded-full">

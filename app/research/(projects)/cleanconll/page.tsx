@@ -4,6 +4,7 @@ import BlockImage from "@/components/shared/BlockImage";
 import H2 from "@/components/shared/H2";
 import InlineLink from "@/components/shared/InlineLink";
 import P from "@/components/shared/P";
+import OL from "@/components/shared/UL";
 
 /**
  * Set the title of the page here which is shown in the browser tab.
@@ -32,18 +33,30 @@ export default function Page() {
         <>
             <H2>CleanCoNLL</H2>
             <P>
-                CleanCoNLL is...
+                The classic CoNLL-03 dataset is arguably the most commonly-used dataset to evaluate named entity
+                recognition (NER) approaches. However, prior works found that many labels in this dataset are in fact
+                not correct. This makes it impossible to use CoNLL-03 to fairly evaluate NER models.
+            </P>
+            <P>
+                With CleanCoNLL, we present a significantly improved version of CoNLL-03. We semi-automatically corrected
+                over 7% of all NER labels in CoNLL-03. The resulting dataset is nearly noise-free.
             </P>
             <BlockImage src="/CleanCoNLL_example_sentence.jpg" alt="CleanCoNLL example"/>
             <P>
-                ...
+                You can use this resource to train and evaluate your state-of-the-art NER model!
             </P>
+            <H2>
+                Getting Started
+            </H2>
             <P>
-                ...
+                <OL>
+                    <li>Check out the <InlineLink href="https://github.com/flairNLP/CleanCoNLL" target="_blank">github
+                        page</InlineLink></li>
+                </OL>
             </P>
-            <P>
-                Check out our publication for more details:
-            </P>
+            <H2>
+                Publication
+            </H2>
             <P>
                 <InlineLink href="https://aclanthology.org/2023.emnlp-main.533.pdf" target="_blank">CleanCoNLL: A Nearly Noise-Free Named Entity Recognition Dataset.</InlineLink>
                 Susanna Rücker and Alan Akbik.
