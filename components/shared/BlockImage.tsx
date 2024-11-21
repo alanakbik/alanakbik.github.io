@@ -1,10 +1,12 @@
 "use client";
 import { useClickOutside } from "anzol";
+import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 import { IoCloseCircleOutline } from "react-icons/io5";
 
 import BasePathImage from "@/components/shared/BasePathImage";
+import type { Attribution } from "@/content/types";
 
 function CloseButton({ close }: { close: () => void }) {
     const ref = useRef<HTMLButtonElement>(null);
@@ -38,7 +40,13 @@ function Lightbox({ src, alt, close }: { src: string, alt: string, close: () => 
     );
 }
 
-export default function BlockImage({ src, alt, maxWidth, height }: { src: string, alt: string, maxWidth?: number, height?: number }) {
+export default function BlockImage({ src, alt, maxWidth, height, attribution }: {
+    src: string,
+    alt: string,
+    maxWidth?: number,
+    height?: number,
+    attribution?: Attribution
+}) {
     const [open, setOpen] = useState(false);
     return (
         <>
@@ -62,6 +70,43 @@ export default function BlockImage({ src, alt, maxWidth, height }: { src: string
                     className="mx-auto object-contain transition-transform group-hover:scale-105"
                 />
             </button>
+            {attribution && (
+                <div className="mb-4 flex justify-between">
+                    {attribution.imageLink ? (
+                        <Link href={attribution.imageLink} target="_blank">
+                            <span className="inline-link bg-gradient-to-b from-hu-blue-secondary to-hu-blue-secondary
+                            font-medium text-hu-blue-secondary"
+                            >
+                                {attribution.personName}
+                                {attribution.platformName ? " @ " : ""}
+                                {attribution.platformName}
+                            </span>
+                        </Link>
+                    ) : (
+                        <span>
+                            {attribution.personName}
+                            {attribution.platformName ? " @ " : ""}
+                            {attribution.platformName}
+                        </span>
+                    )}
+                    {attribution.licenseName && (
+                        attribution.licenseLink ? (
+                            <Link href={attribution.licenseLink}>
+                                <span className="inline-link bg-gradient-to-b from-hu-blue-secondary to-hu-blue-secondary
+                                    font-medium text-hu-blue-secondary"
+                                >
+                                    {attribution.licenseName}
+                                </span>
+                            </Link>
+                        ) : (
+                            <span>
+                                {attribution.licenseName}
+                            </span>
+                        )
+                    )}
+
+                </div>
+            )}
             {open && createPortal(
                 <Lightbox src={src} alt={alt} close={() => setOpen(false)}/>,
                 document.body)

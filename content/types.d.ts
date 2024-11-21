@@ -139,3 +139,11 @@ export interface PinnedMessage {
     title: string,
     content: ReactNode,
 }
+
+export interface Attribution {
+    personName?: string,
+    platformName?: string,
+    imageLink?: string,
+    licenseName?: string,
+    licenseLink?: string,
+}
