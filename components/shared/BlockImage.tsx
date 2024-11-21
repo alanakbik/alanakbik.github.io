@@ -38,13 +38,16 @@ function Lightbox({ src, alt, close }: { src: string, alt: string, close: () => 
     );
 }
 
-export default function BlockImage({ src, alt, maxWidth }: { src: string, alt: string, maxWidth?: number }) {
+export default function BlockImage({ src, alt, maxWidth, height }: { src: string, alt: string, maxWidth?: number, height?: number }) {
     const [open, setOpen] = useState(false);
     return (
         <>
             <button
                 className="group relative my-4 h-[33dvh] w-full overflow-hidden rounded-xl shadow-gallery"
                 aria-label="Show image in large"
+                style={{
+                    height: `${height ?? 33}dvh`,
+                }}
                 onClick={(e) => {
                     e.stopPropagation();
                     setOpen(true);
