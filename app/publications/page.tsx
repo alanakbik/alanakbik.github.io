@@ -64,12 +64,12 @@ function Publication({ p }: { p: Publication }) {
             <span className="block">
                 {p.authors}
             </span>
+            {p.footnote && <span className="mt-3 inline-block italic">{p.footnote}</span>}
             {p.links.length > 0 && (
                 <div className="mt-4 flex gap-5">
                     {p.links.map((l, i) => <BlockLink key={i} href={l.url} target="_blank">{l.label}</BlockLink>)}
                 </div>
             )}
-            {p.footnote && <span className="mt-3 inline-block italic">{p.footnote}</span>}
         </li>
     );
 }
