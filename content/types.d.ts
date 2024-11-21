@@ -133,6 +133,8 @@ export interface Person {
     emailAddress?: string,
     /** Person's linked in page */
     linkedInLink?: string,
+    /** Link to the person's personal website */
+    websiteLink?: string,
 }
 
 export interface PinnedMessage {

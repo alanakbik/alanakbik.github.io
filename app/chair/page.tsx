@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaGithub, FaGoogleScholar, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaGlobe, FaGoogleScholar, FaLinkedin } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 
 import BlockLink from "@/components/shared/BlockLink";
@@ -60,6 +60,15 @@ function PeopleCard({ person }: { person: Person }) {
                             <Link href={person.linkedInLink} className="group">
                                 <FaLinkedin
                                     className="size-5 text-hu-blue-primary transition-transform group-hover:scale-125"
+                                />
+                            </Link>
+                        </li>
+                    )}
+                    {person.websiteLink && (
+                        <li>
+                            <Link href={person.websiteLink} className="group">
+                                <FaGlobe
+                                    className="size-5 scale-95 text-hu-blue-primary transition-transform group-hover:scale-125"
                                 />
                             </Link>
                         </li>

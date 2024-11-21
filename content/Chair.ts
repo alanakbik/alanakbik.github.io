@@ -129,6 +129,7 @@ export const People: Person[] = [
         category: "Student Researchers",
         gitHubLink: "https://github.com/konstantin-lukas",
         emailAddress: "kontakt@konstantinlukas.de",
+        websiteLink: "https://konstantinlukas.de",
     }, {
         name: "Sebastian Pohl",
         title: "Research Assistant",
@@ -143,6 +144,7 @@ export const People: Person[] = [
         name: "Pieter Delobelle",
         title: "PostDoc",
         category: "Alumni",
+        websiteLink: "https://pieter.ai/",
     }, {
         name: "Aaron Wey",
         title: "Research Assistant",
