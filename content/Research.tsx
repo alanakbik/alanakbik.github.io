@@ -4,6 +4,15 @@ import InlineLink from "@/components/shared/InlineLink";
 import type { ResearchProject } from "@/content/types";
 
 /**
+ * This text is shown below the heading.
+ */
+export const Introduction: string =
+    "Once upon a moment in time, a curious breeze wandered over gentle hills, weaving through trees as it\n" +
+    "whispered forgotten tales. Beneath the sky, an endless expanse of wonder stretched, carrying echoes of\n" +
+    "days long past. Here, amidst the stillness, shadows danced, their fleeting forms telling stories untold.\n" +
+    "What mysteries lay hidden within the folds of twilight, where silence meets the hum of the unseen?";
+
+/**
  * This list contains the information to be displayed on /research. To create a new project, create a directory inside
  * @/app/research/(project)/{project}. Replace {project} with the url you want to give your project page. Use the
  * exact same string {project} in the "uriComponent" field in the ResearchProject array below. It is
