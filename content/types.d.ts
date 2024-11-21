@@ -57,6 +57,7 @@ export interface Publication {
     title: string,
     authors: string,
     links: { url: string; label: PublicationLinkLabel }[],
+    footnote?: string,
 }
 
 /**

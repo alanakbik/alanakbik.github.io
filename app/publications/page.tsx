@@ -69,6 +69,7 @@ function Publication({ p }: { p: Publication }) {
                     {p.links.map((l, i) => <BlockLink key={i} href={l.url} target="_blank">{l.label}</BlockLink>)}
                 </div>
             )}
+            {p.footnote && <span className="mt-3 inline-block italic">{p.footnote}</span>}
         </li>
     );
 }
