@@ -114,8 +114,8 @@ const Research: ResearchProject[] = [
         githubRepoIdentifier: "elenamer/NoiseBench",
         imagePadding: 1,
         introductoryText: <>
-            <InlineLink href="https://github.com/elenamer/NoiseBench">NoiseBench</InlineLink> is a benchmark of label
-            noise. Use it to determine the robustness of your learning approach!
+            With <InlineLink href="https://github.com/elenamer/NoiseBench">NoiseBench</InlineLink>, you can measure
+            the robustness of your ML approach to real-world label noise!
         </>,
         categories: ["Datasets", "Featured"],
         uriComponent: "noisebench",

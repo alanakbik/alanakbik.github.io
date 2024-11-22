@@ -59,7 +59,7 @@ export default function Page() {
             <P>
                 Fundus is at its core rule-based, with bespoke parsers for each supported online news source.
                 Because of this, Fundus is able to better extract plain text than other libraries.
-                Check out this comparative evaluations:
+                Check out this comparative evaluation:
             </P>
             <Table data={
                 [

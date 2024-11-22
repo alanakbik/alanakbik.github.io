@@ -43,7 +43,7 @@ export default function Page() {
                 by a specific demographic group (men, women, Germans, Americans, left-leaning, right-leaning, etc.).
                 This allows us to compare the answers differently biased models give to any question.
             </P>
-            <BlockImage src="/opiniongpt-example.png" alt="Example of OpinionGPT"/>
+            <BlockImage src="/opiniongpt-example.png" alt="Example of OpinionGPT" height={80}/>
             <P>
                 We seperately tuned the model on texts written only by persons of each respective bias. In this demo, you can ask questions to our very biased model to get very biased answers!
             </P>

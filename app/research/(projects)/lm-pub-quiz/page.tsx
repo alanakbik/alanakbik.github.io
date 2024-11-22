@@ -47,8 +47,10 @@ export default function Page() {
                 LM models knowledge well, it should rank the true fact the highest.
             </P>
             <P>
-                In all, we pose 6,000 of such knowledge questions to each LM we evaluate. This gives us an idea of
-                what type of knowledge they contain, and allows us to compare any LM.
+                This gives us an idea of what type of knowledge they contain, and allows us to compare different LMs
+                with regards to their knowledge. Our current work is leveraging this probe to investigate the
+                sample-efficiency of LMs (how quickly they learn new information) and how much they forget in continual
+                learning settings.
             </P>
             <H2>Getting Started</H2>
             <P>

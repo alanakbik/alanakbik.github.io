@@ -29,7 +29,7 @@ export default function Page() {
                     I spent the rest of the year crossing a large part of Asia by land route (that is, only by train,
                     bus, boat, car, and by motorbike - but no flights).
                 </P>
-                <BlockImage src="/asia-route.png" alt="My route through Asia" height={50}/>
+                <BlockImage src="/asia-route.png" alt="My route through Asia" height={60}/>
                 <P>
                     This trip took me across Russia with the transiberian railway, into the Gobi desert of Mongolia,
                     all across China, into the mountains of Tibet and finally to south east Asia,
