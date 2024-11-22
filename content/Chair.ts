@@ -28,7 +28,10 @@ export const People: Person[] = [
         name: "Benedikt Fuchs",
         title: "Research Engineer",
         category: "Research Scientists",
+        image: "/people/benedikt.jpg",
         gitHubLink: "https://github.com/helpmefindaname",
+        linkedInLink: "https://www.linkedin.com/in/benedikt-fuchs-020a1b100/",
+        emailAddress: "benedikt.fuchs.staw@hotmail.com",
     }, {
         name: "Jonas Golde",
         title: "PhD Student",
@@ -67,6 +70,9 @@ export const People: Person[] = [
         category: "Research Scientists",
         image: "/people/max.jpg",
         gitHubLink: "https://github.com/plonerma",
+        googleScholarLink: "https://scholar.google.com/citations?user=xdo2T6wAAAAJ&hl=de&oi=ao",
+        linkedInLink: "https://www.linkedin.com/in/plonerma/",
+        emailAddress: "max.ploner@hu-berlin.de",
     }, {
         name: "Susanna Rücker",
         title: "PhD Student",
@@ -116,12 +122,14 @@ export const People: Person[] = [
         title: "Research Assistant",
         category: "Student Researchers",
         gitHubLink: "https://github.com/teresaloeffelhardt",
+        emailAddress: "teresa.loeffelhardt@gmail.com",
     }, {
         name: "Konstantin Lukas",
         title: "Fullstack Developer",
         category: "Student Researchers",
         gitHubLink: "https://github.com/konstantin-lukas",
         emailAddress: "kontakt@konstantinlukas.de",
+        websiteLink: "https://konstantinlukas.de",
     }, {
         name: "Sebastian Pohl",
         title: "Research Assistant",
@@ -136,6 +144,7 @@ export const People: Person[] = [
         name: "Pieter Delobelle",
         title: "PostDoc",
         category: "Alumni",
+        websiteLink: "https://pieter.ai/",
     }, {
         name: "Aaron Wey",
         title: "Research Assistant",

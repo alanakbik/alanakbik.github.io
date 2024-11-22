@@ -4,6 +4,7 @@ import BlockImage from "@/components/shared/BlockImage";
 import H2 from "@/components/shared/H2";
 import InlineLink from "@/components/shared/InlineLink";
 import P from "@/components/shared/P";
+import OL from "@/components/shared/UL";
 
 /**
  * Set the title of the page here which is shown in the browser tab.
@@ -32,8 +33,14 @@ export default function Page() {
         <>
             <H2>Tagging Text with Flair</H2>
             <P>
-                Flair implements state-of-the-art approaches for various NLP tasks such as (1) sentiment analysis,
-                (2) named entity recognition (NER), (3) part-of-speech tagging (PoS), (4) entity linking and many others.
+                Flair implements state-of-the-art approaches for various NLP tasks such as:
+                <OL>
+                    <li>sentiment analysis</li>
+                    <li>named entity recognition (NER)</li>
+                    <li>part-of-speech tagging (PoS)</li>
+                    <li>entity linking</li>
+                    <li>... and many others!</li>
+                </OL>
                 With a few lines of code, you can load one of our pre-trained models and apply it to your text!
             </P>
 
@@ -59,17 +66,19 @@ export default function Page() {
                 the entry &quot;Mus Musculus&quot;.
             </P>
 
-            <H2>Tutorials and Getting Started</H2>
+            <H2>Getting Started</H2>
             <P>
-                The best way to get started with Flair is to check out our
-                <InlineLink href="https://flairnlp.github.io/docs/category/tutorial-2-training-models" target="_blank">tutorials</InlineLink>.
+                <OL>
+                    <li>Check out our <InlineLink href="https://flairnlp.github.io/docs/category/tutorial-2-training-models" target="_blank">tutorials</InlineLink>!</li>
+                    <li>Check out the <InlineLink href="https://github.com/flairNLP/flair" target="_blank">github page</InlineLink></li>
+                </OL>
             </P>
             <P>
-                Our tutorial explain how to apply NLP models to your data, and even how to train your own models.
+                Our tutorials explain how to apply NLP models to your data, and even how to train your own models.
                 Since Flair was designed to be simple to use, the tutorials should be quick to complete.
             </P>
 
-            <H2>Research Behind Flair</H2>
+            <H2>Publications</H2>
             <P>
                 Flair is my group&apos;s main vehicle for making our NLP research publicly available. Some important papers
                 include:

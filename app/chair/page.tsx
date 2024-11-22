@@ -1,13 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaGithub, FaGoogleScholar, FaLinkedin } from "react-icons/fa6";
+import { FaGithub, FaGlobe, FaGoogleScholar, FaLinkedin } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 
-import ScrollDownButton from "@/components/routes/chair/ScrollDownButton";
 import BlockLink from "@/components/shared/BlockLink";
 import H1 from "@/components/shared/H1";
 import H2 from "@/components/shared/H2";
+import ScrollDownButton from "@/components/shared/ScrollDownButton";
 import WrapperLarge from "@/components/WrapperLarge";
 import { Introduction, People } from "@/content/Chair";
 import type { Person, ResearcherCategory } from "@/content/types";
@@ -64,6 +64,15 @@ function PeopleCard({ person }: { person: Person }) {
                             </Link>
                         </li>
                     )}
+                    {person.websiteLink && (
+                        <li>
+                            <Link href={person.websiteLink} className="group">
+                                <FaGlobe
+                                    className="size-5 scale-95 text-hu-blue-primary transition-transform group-hover:scale-125"
+                                />
+                            </Link>
+                        </li>
+                    )}
                 </ul>
             </div>
         </div>
@@ -100,7 +109,7 @@ export default function Page() {
                 bg-center bg-no-repeat landscape:bg-[url('/alanakbik.github.io/group_photo_horizontal.webp')]
                 landscape:bg-top ultrawide:landscape:bg-[url('/alanakbik.github.io/group_photo_ultrawide.webp')]"
             >
-                <ScrollDownButton/>
+                <ScrollDownButton>Get to know us</ScrollDownButton>
             </div>
             <WrapperLarge className="my-20">
                 <H1>Chair</H1>

@@ -5,6 +5,7 @@ import H2 from "@/components/shared/H2";
 import InlineLink from "@/components/shared/InlineLink";
 import P from "@/components/shared/P";
 import Table from "@/components/shared/Table";
+import OL from "@/components/shared/UL";
 
 /**
  * Set the title of the page here which is shown in the browser tab.
@@ -39,8 +40,16 @@ export default function Page() {
             </P>
             <BlockImage src="/fundus-article.png" alt="An example news article parsed with Fundus"/>
             <P>
-                Each crawled article is parsed such that we identify (1) its title, (2) its authors, (3) its main
-                text body with its paragraph structure and (4) its images and their captions. This allows you to directly
+                Each crawled article is parsed such that we identify
+                <OL>
+                    <li>its title</li>
+                    <li>its authors</li>
+                    <li>its main text body</li>
+                    <li>its paragraph structure</li>
+                    <li>its images and their captions</li>
+                    <li>... and other structured attributes</li>
+                </OL>
+                This allows you to directly
                 extract the article plain text or other features that you need in your NLP pipeline!
             </P>
             <P>
@@ -64,9 +73,18 @@ export default function Page() {
                     ["Boilerpipe", "82.89±20.65", "82.11±29.99", "79.90±25.86", "1.3.0"],
                 ]
             }/>
+
+            <H2>Getting Started</H2>
             <P>
-                Check out our publication for more details:
+                <OL>
+                    <li>Check out the <InlineLink href="https://github.com/flairNLP/fundus" target="_blank">github
+                        page</InlineLink></li>
+                    <li>Check out our <InlineLink href="https://github.com/flairNLP/fundus?tab=readme-ov-file#tutorials" target="_blank">tutorials</InlineLink>!
+                    </li>
+                </OL>
             </P>
+
+            <H2>Publication</H2>
             <P>
                 <InlineLink href="https://aclanthology.org/2024.acl-demos.29/" target="_blank">Fundus: A Simple-to-Use News Scraper Optimized for High Quality Extractions.</InlineLink>
                 Max Dallabetta, Conrad Dobberstein, Adrian Breiding and Alan Akbik.

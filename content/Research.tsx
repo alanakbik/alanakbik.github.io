@@ -4,6 +4,15 @@ import InlineLink from "@/components/shared/InlineLink";
 import type { ResearchProject } from "@/content/types";
 
 /**
+ * This text is shown below the heading.
+ */
+export const Introduction: string =
+    "Once upon a moment in time, a curious breeze wandered over gentle hills, weaving through trees as it\n" +
+    "whispered forgotten tales. Beneath the sky, an endless expanse of wonder stretched, carrying echoes of\n" +
+    "days long past. Here, amidst the stillness, shadows danced, their fleeting forms telling stories untold.\n" +
+    "What mysteries lay hidden within the folds of twilight, where silence meets the hum of the unseen?";
+
+/**
  * This list contains the information to be displayed on /research. To create a new project, create a directory inside
  * @/app/research/(project)/{project}. Replace {project} with the url you want to give your project page. Use the
  * exact same string {project} in the "uriComponent" field in the ResearchProject array below. It is
@@ -33,7 +42,7 @@ const Research: ResearchProject[] = [
         imageFit: "contain",
         imagePadding: 2,
         introductoryText: <>
-            Our German-language search engine for quotes!
+            Our German-language <InlineLink href="https://zitatsuchmaschine.informatik.hu-berlin.de/">search engine for quotes</InlineLink>!
         </>,
         categories: ["Featured", "Applications"],
         uriComponent: "zitatsuchmaschine",
@@ -51,12 +60,24 @@ const Research: ResearchProject[] = [
         uriComponent: "fundus",
     },
     {
+        title: "TransformerRanker",
+        image: "transformer-ranker.png",
+        githubRepoIdentifier: "flairNLP/transformer-ranker",
+        imageFit: "contain",
+        imagePadding: 1,
+        introductoryText: <>
+            <InlineLink href="https://github.com/flairNLP/transformer-ranker">TransformerRanker</InlineLink> automatically finds the best-suited LM for your NLP task!
+        </>,
+        categories: ["Libraries", "Featured"],
+        uriComponent: "transformer-ranker",
+    },
+    {
         title: "CleanCoNLL",
         image: "/CleanCoNLL_example_sentence.jpg",
         imageFit: "contain",
         imagePadding: 2,
         introductoryText: <>
-            CleanCoNLL is a nearly noise-free dataset for named entity recognition (NER). Use it to train and evaluate
+            <InlineLink href="https://github.com/flairNLP/cleanCoNLL">CleanCoNLL</InlineLink> is a nearly noise-free dataset for named entity recognition (NER). Use it to train and evaluate
             your NER models!
         </>,
         githubRepoIdentifier: "flairNLP/cleanCoNLL",
@@ -69,29 +90,32 @@ const Research: ResearchProject[] = [
         imageFit: "contain",
         imagePadding: 1,
         introductoryText: <>
-            OpinionGPT is ...
+            <InlineLink href="https://opiniongpt.informatik.hu-berlin.de/">OpinionGPT</InlineLink> is a ChatGPT-style model trained specifically to be biased and opinionated!
         </>,
         categories: ["Featured", "Applications"],
         uriComponent: "opiniongpt",
     },
     {
         title: "LM Pub Quiz",
-        image: "/people/unknown.svg",
-        imageFit: "contain",
+        image: "/BEAR-probe.svg",
+        githubRepoIdentifier: "lm-pub-quiz/lm-pub-quiz",
+        imageFit: "none",
         imagePadding: 1,
         introductoryText: <>
-            LM Pub Quiz is ...
+            Measure and <InlineLink href="https://lm-pub-quiz.github.io/">compare the factual knowledge</InlineLink> of language models!
         </>,
         categories: ["Libraries", "Featured"],
         uriComponent: "lm-pub-quiz",
     },
     {
         title: "NoiseBench",
-        image: "/people/unknown.svg",
+        image: "/noisebench.png",
         imageFit: "contain",
+        githubRepoIdentifier: "elenamer/NoiseBench",
         imagePadding: 1,
         introductoryText: <>
-            NoiseBench is ...
+            <InlineLink href="https://github.com/elenamer/NoiseBench">NoiseBench</InlineLink> is a benchmark of label
+            noise. Use it to determine the robustness of your learning approach!
         </>,
         categories: ["Datasets", "Featured"],
         uriComponent: "noisebench",
@@ -101,22 +125,13 @@ const Research: ResearchProject[] = [
         image: "/people/unknown.svg",
         imageFit: "contain",
         imagePadding: 1,
+        githubRepoIdentifier: "flairNLP/zelda",
         introductoryText: <>
-            Zelda is ...
+            <InlineLink href="https://github.com/elenamer/NoiseBench">Zelda</InlineLink> is a benchmark for large-scale
+            entity linking models!
         </>,
         categories: ["Datasets"],
         uriComponent: "zelda",
-    },
-    {
-        title: "TransformerRanker",
-        image: "/people/unknown.svg",
-        imageFit: "contain",
-        imagePadding: 1,
-        introductoryText: <>
-            TransformerRanker is ...
-        </>,
-        categories: ["Libraries"],
-        uriComponent: "transformer-ranker",
     },
 ];
 

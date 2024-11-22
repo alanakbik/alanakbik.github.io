@@ -80,8 +80,8 @@ export default function Header() {
                     <nav className="h-header-height">
                         <ul className="flex h-full items-center">
                             <HeaderLink href="/">Home</HeaderLink>
-                            <HeaderLink href="/publications">Publications</HeaderLink>
                             <HeaderLink href="/research">Research</HeaderLink>
+                            <HeaderLink href="/publications">Publications</HeaderLink>
                             <HeaderLink href="/chair">Chair</HeaderLink>
                             <HeaderLink href="/travel">Travel</HeaderLink>
                         </ul>

@@ -34,7 +34,7 @@ export default function Page() {
             <P>
                 <InlineLink href="https://zitatsuchmaschine.informatik.hu-berlin.de/" target="_blank">Zitatsuchmaschine</InlineLink>
                 is a search engine for quotes in German online news. You can search for quotes and embed
-                them in your website. For instance, check out this quote by Willian Shatner:
+                them in your website. For instance, check out this quote by William Shatner:
             </P>
             <P>
                 <ZitatsuchmaschineIframe/>

@@ -15,7 +15,7 @@ export type IsoDate =`${number}${number}${number}${number}-${number}${number}-${
  * If you need to add a new one you can extend this type.
  */
 export type Conference = "ACL" | "EMNLP" | "NAACL" | "Bioinformatics" | "COLING-LREC" | "EACL" | "ACL-IJCNLP" | "COLING"
-    | "NLDL" | "LREC" | "ICIQ" | "IJCNLP" | "iPres" | "GSCL" | "NAACL-HLT" | "WWW" | "BabyLM";
+    | "NLDL" | "LREC" | "ICIQ" | "IJCNLP" | "iPres" | "GSCL" | "NAACL-HLT" | "WWW" | "BabyLM" | "arXiv";
 
 /**
  * This type enforces a valid conference name to be followed by a year after 2000 (inclusive)
@@ -28,7 +28,7 @@ export type ConferenceAndYear = `${Conference} 20${number}${number}`
  *
  * If you need to add a new one you can extend this type.
  */
-export type NewsCategory = "New Paper" | "Paper accepted" | "Senior Area Chair";
+export type NewsCategory = "New Paper" | "Paper accepted" | "Senior Area Chair" | "New Lab Member" | "New Research Grant" | "New Startup Grant"
 
 export interface TimelineEntryData {
     date: IsoDate,
@@ -57,6 +57,7 @@ export interface Publication {
     title: string,
     authors: string,
     links: { url: string; label: PublicationLinkLabel }[],
+    footnote?: string,
 }
 
 /**
@@ -133,9 +134,19 @@ export interface Person {
     emailAddress?: string,
     /** Person's linked in page */
     linkedInLink?: string,
+    /** Link to the person's personal website */
+    websiteLink?: string,
 }
 
 export interface PinnedMessage {
     title: string,
     content: ReactNode,
+}
+
+export interface Attribution {
+    personName?: string,
+    platformName?: string,
+    imageLink?: string,
+    licenseName?: string,
+    licenseLink?: string,
 }

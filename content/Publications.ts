@@ -10,7 +10,7 @@ const Publications: Publication[] = [
         year: 2024,
         conference: "BabyLM 2024",
         title: "BabyHGRN: Exploring RNNs for Sample-Efficient Language Modeling",
-        authors: "Patrick Haller, Jonas Golde and Alan Akbik ",
+        authors: "Patrick Haller, Jonas Golde and Alan Akbik",
         links: [],
     }, {
         year: 2024,
