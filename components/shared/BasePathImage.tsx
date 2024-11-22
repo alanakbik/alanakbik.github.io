@@ -16,7 +16,7 @@ export default forwardRef<HTMLImageElement, {
     return (
         <Image
             className={className}
-            src={(process.env.NODE_ENV === "development" ? "" : "/alanakbik.github.io") + src}
+            src={src}
             width={width}
             height={height}
             fill={fill}

@@ -2,7 +2,7 @@
 const nextConfig = {
     output: "export",
     reactStrictMode: true,
-    basePath: process.env.NODE_ENV === "development" ? "" : "/alanakbik.github.io",
+    basePath: "",
     images: {
         unoptimized: true,
     },
