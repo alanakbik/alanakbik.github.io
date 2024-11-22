@@ -7,12 +7,10 @@ import type { ResearchProject } from "@/content/types";
  * This text is shown below the heading.
  */
 export const Introduction: string =
-    "My research focuses on efficient and practical machine learning for NLP.\n" +
-    "Main research areas include:\n" +
-    "(1) Resource-efficient training and adaptation of large language models (LLMs).\n" +
-    "(2) Developing state-of-the-art approaches for information extraction (IE) from text.\n" +
-    "My group particularly likes to develop tangible research output in the form of open source libraries, publicly available datasets and online platforms. \n" +
-    "Check out some highlighted research output below!";
+    "My research focuses on efficient and practical machine learning for NLP. This includes research into " +
+    "resource-efficient training of large language models (LLMs) and state-of-the-art methods for information " +
+    "extraction (IE) from text. In particular, my group likes to develop tangible output in the form of " +
+    "open source libraries, publicly available datasets and online platforms. See highlights below!";
 
 /**
  * This list contains the information to be displayed on /research. To create a new project, create a directory inside
