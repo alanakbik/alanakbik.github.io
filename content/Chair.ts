@@ -3,13 +3,15 @@ import type { Person } from "@/content/types";
 /**
  * This text is shown below the banner image and before the people working at the chair.
  */
-export const Introduction: string = "Below is a list of my current PhD students and research assistants at the Chair of Machine Learning of the HU Berlin, plus our alumni.";
+export const Introduction: string = "Since 2020, I lead the Chair of Machine Learning at the Institute of Computer Science at the\n" +
+                                    "Humboldt University Berlin.\n" +
+                                    "Below is a list of my current PhD students and research assistants, plus our alumni.";
 
 export const People: Person[] = [
     {
         name: "Alan Akbik",
         title: "Professor of Machine Learning",
-        image: "/people/alan-2024.jpg",
+        image: "/people/alan-2024-sq-2.png",
         category: "Head of Lab",
         gitHubLink: "https://github.com/alanakbik",
         googleScholarLink: "https://scholar.google.com/citations?user=adKmg3IAAAAJ&hl=de",
@@ -96,6 +98,9 @@ export const People: Person[] = [
         title: "Guest Researcher",
         image: "/people/franzi.jpg",
         category: "Research Scientists",
+        emailAddress: "franziska.weeber@hu-berlin.de",
+        linkedInLink: "https://www.linkedin.com/in/franziska-weeber/",
+        googleScholarLink: "https://scholar.google.com/citations?user=l4TYvw0AAAAJ&hl=de",
     }, {
         name: "Adrian Breiding",
         title: "Research Assistant",
@@ -134,7 +139,11 @@ export const People: Person[] = [
         name: "Sebastian Pohl",
         title: "Research Assistant",
         category: "Student Researchers",
+        image: "/people/sebastian.jpg",
         gitHubLink: "https://github.com/oneSebastian",
+        emailAddress: "sebastian.pohl@hu-berlin.de",
+        linkedInLink: "https://www.linkedin.com/in/sebastian-pohl-902584198/",
+        googleScholarLink: "https://scholar.google.com/citations?user=7gohUaEAAAAJ",
     }, {
         name: "Christoph Alt",
         title: "PostDoc",
