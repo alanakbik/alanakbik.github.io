@@ -71,7 +71,7 @@ export default function BlockImage({ src, alt, maxWidth, height, attribution }: 
                 />
             </button>
             {attribution && (
-                <div className="mb-4 flex justify-between">
+                <div className="mb-4 flex justify-between text-sm">
                     {attribution.imageLink ? (
                         <Link href={attribution.imageLink} target="_blank">
                             <span className="inline-link bg-gradient-to-b from-hu-blue-secondary to-hu-blue-secondary
