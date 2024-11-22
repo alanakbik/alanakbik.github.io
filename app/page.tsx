@@ -39,7 +39,7 @@ export default function Page() {
                     <div className="hidden h-full w-2/5 shrink items-center pl-8 desktop:flex">
                         <div className="relative aspect-square w-full overflow-hidden rounded-full">
                             <BasePathImage
-                                src="/alan.jpg"
+                                src="/people/alan-2024-sq-2.png"
                                 alt="A photo of Alan Akbik"
                                 priority
                                 width={500}
