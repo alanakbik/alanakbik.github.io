@@ -30,6 +30,23 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2024-11-26",
+        category: "New Project",
+        content: <>
+            Our German-language <InlineLink href="https://zitatsuchmaschine.informatik.hu-berlin.de/" target="_blank">search engine for quotes</InlineLink> is now online!
+        </>,
+    },
+    {
+        date: "2024-11-26",
+        category: "New Paper",
+        conference: "arXiv 2024",
+        content: <>
+            Our paper &quot;Don’t Mesh with Me: Generating Constructive Solid Geometry Instead of
+            Meshes by Fine-Tuning a Code-Generation LLM&quot;
+            now on <InlineLink href="https://arxiv.org/pdf/2411.15279" target="_blank">arXiv</InlineLink>!
+        </>,
+    },
+    {
         date: "2024-10-22",
         category: "Paper accepted",
         conference: "BabyLM 2025",

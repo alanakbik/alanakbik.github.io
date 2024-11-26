@@ -28,7 +28,7 @@ export type ConferenceAndYear = `${Conference} 20${number}${number}`
  *
  * If you need to add a new one you can extend this type.
  */
-export type NewsCategory = "New Paper" | "Paper accepted" | "Senior Area Chair" | "New Lab Member" | "New Research Grant" | "New Startup Grant"
+export type NewsCategory = "New Paper" | "Paper accepted" | "Senior Area Chair" | "New Lab Member" | "New Research Grant" | "New Startup Grant" | "New Project"
 
 export interface TimelineEntryData {
     date: IsoDate,
