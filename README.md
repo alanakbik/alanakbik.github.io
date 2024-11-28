@@ -29,6 +29,13 @@ Here's an overview over each page and which files you have to edit to change the
 - Legal Notice: `@/app/legal-notice/page.tsx`
 - Privacy Policy: `@/app/privacy-policy/page.tsx`
 
+## Google Site Verification
+To verify your ownership with Google, put the Google verification code in the metadata inside `@/app/page.tsx`.
+
+## Sitemap
+When adding a new route you want to be indexed by Google, add it to the `@/app/sitemap.ts` file. It will be available
+under `/sitemap.xml` in production but not in dev mode.
+
 ## Deploying
 Make sure the `next.config.mjs` and `@/components/shared/BasePathImage.tsx` file contains the correct base path. This is necessary for loading images correctly
 on GitHub pages. This needs to be set to `"/alanakbik.github.io"` on forked versions of the repo and be set

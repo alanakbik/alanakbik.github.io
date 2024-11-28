@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import React from "react";
 
 import PinnedMessage from "@/components/routes/home/PinnedMessage";
@@ -11,6 +12,11 @@ import WrapperLarge from "@/components/WrapperLarge";
 import TimelineEntries, { PinnedMessages } from "@/content/LatestNews";
 import { getCategoryColorMap } from "@/utils";
 
+export const metadata: Metadata = {
+    verification: {
+        google: "GOOGLE_SITE_VERIFICATION",
+    },
+};
 
 export default function Page() {
 
