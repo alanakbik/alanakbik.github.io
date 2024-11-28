@@ -3,12 +3,12 @@ import type { MetadataRoute } from "next";
 export default function sitemap(): MetadataRoute.Sitemap {
     return [
         {
-            url: "https://alanakbik.github.io/",
+            url: "https://alanakbik.github.io",
             lastModified: new Date(),
             changeFrequency: "yearly",
             priority: 0.8,
         }, {
-            url: "https://alanakbik.github.io/research/",
+            url: "https://alanakbik.github.io/research",
             lastModified: new Date(),
             changeFrequency: "yearly",
             priority: 0.9,
@@ -58,17 +58,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
             changeFrequency: "yearly",
             priority: 0.6,
         }, {
-            url: "https://alanakbik.github.io/publications/",
+            url: "https://alanakbik.github.io/publications",
             lastModified: new Date(),
             changeFrequency: "yearly",
             priority: 1,
         }, {
-            url: "https://alanakbik.github.io/chair/",
+            url: "https://alanakbik.github.io/chair",
             lastModified: new Date(),
             changeFrequency: "yearly",
             priority: 0.8,
         }, {
-            url: "https://alanakbik.github.io/travel/",
+            url: "https://alanakbik.github.io/travel",
             lastModified: new Date(),
             changeFrequency: "yearly",
             priority: 0.5,
