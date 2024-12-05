@@ -30,6 +30,14 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2024-12-05",
+        category: "New Model",
+        content: <>
+            Announcing 🐤 <InlineLink href="https://huggingface.co/flair/bueble-lm-2b" target="_blank">Büble-LM</InlineLink> 🐤,
+            our new state-of-the-art 2 billion parameter language model (LM) for German!
+        </>,
+    },
+    {
         date: "2024-11-26",
         category: "New Project",
         content: <>
@@ -49,7 +57,7 @@ const LatestNews: TimelineEntryData[] = [
     {
         date: "2024-10-22",
         category: "Paper accepted",
-        conference: "BabyLM 2025",
+        conference: "BabyLM 2024",
         content: <>
             Our paper &quot;BabyHGRN: Exploring RNNs for Sample-Efficient Language Modeling&quot; accepted to BabyLM 2024!
         </>,

@@ -37,6 +37,17 @@ const Research: ResearchProject[] = [
         uriComponent: "flair",
     },
     {
+        title: "Büble-LM",
+        image: "/büble-lm.jpg",
+        imagePadding: 0.0,
+        imageFit: "contain",
+        introductoryText: <>
+            Büble-LM is our new state-of-the-art 2 billion parameter language model (LM) for German!
+        </>,
+        categories: ["Featured"],
+        uriComponent: "bueble",
+    },
+    {
         title: "Zitatsuchmaschine",
         image: "/zitatsuchmaschine_logo.svg",
         imageFit: "contain",
@@ -72,6 +83,17 @@ const Research: ResearchProject[] = [
         uriComponent: "transformer-ranker",
     },
     {
+        title: "OpinionGPT",
+        image: "/opiniongpt.png",
+        imageFit: "contain",
+        imagePadding: 1,
+        introductoryText: <>
+            <InlineLink href="https://opiniongpt.informatik.hu-berlin.de/">OpinionGPT</InlineLink> is a ChatGPT-style model trained specifically to be biased and opinionated!
+        </>,
+        categories: ["Featured", "Applications"],
+        uriComponent: "opiniongpt",
+    },
+    {
         title: "CleanCoNLL",
         image: "/CleanCoNLL_example_sentence.jpg",
         imageFit: "contain",
@@ -83,17 +105,6 @@ const Research: ResearchProject[] = [
         githubRepoIdentifier: "flairNLP/cleanCoNLL",
         categories: ["Featured", "Datasets"],
         uriComponent: "cleanconll",
-    },
-    {
-        title: "OpinionGPT",
-        image: "/opiniongpt.png",
-        imageFit: "contain",
-        imagePadding: 1,
-        introductoryText: <>
-            <InlineLink href="https://opiniongpt.informatik.hu-berlin.de/">OpinionGPT</InlineLink> is a ChatGPT-style model trained specifically to be biased and opinionated!
-        </>,
-        categories: ["Featured", "Applications"],
-        uriComponent: "opiniongpt",
     },
     {
         title: "LM Pub Quiz",
