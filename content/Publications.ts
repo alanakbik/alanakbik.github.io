@@ -7,6 +7,14 @@ import type { Publication } from "@/content/types";
 
 const Publications: Publication[] = [
     {
+        year: 2025,
+        conference: "NAACL 2025",
+        title: "Familarity: Better Evaluation of Zero-Shot Named Entity Recognition by Quantifying Label Shifts in Synthetic Training Data",
+        authors: "Jonas Golde, Patrick Haller, Max Ploner, Fabio Barth, Nicolaas Jedema and Alan Akbik",
+        footnote: "Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics",
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2412.10121/" }],
+    },
+    {
         year: 2024,
         conference: "CoNLL 2024",
         title: "BabyHGRN: Exploring RNNs for Sample-Efficient Language Modeling",
@@ -83,6 +91,12 @@ const Publications: Publication[] = [
         authors: "Max Ploner and Alan Akbik",
         footnote: "Findings of the Association for Computational Linguistics: EACL 2024",
         links: [{ label: "PDF", url: "https://aclanthology.org/2024.findings-eacl.122/" }],
+    }, {
+        year: 2024,
+        title: "Don't Mesh with Me: Generating Constructive Solid Geometry Instead of Meshes by Fine-Tuning a Code-Generation LLM",
+        authors: "Maximilian Mews, Ansar Aynetdinov, Vivian Schiller, Peter Eisert and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2411.15279" }],
+        footnote: "arXiv preprint",
     }, {
         year: 2024,
         title: "TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models for Downstream Classification Tasks",

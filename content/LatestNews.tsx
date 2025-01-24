@@ -30,6 +30,15 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2025-01-25",
+        category: "Paper accepted",
+        conference: "NAACL 2025",
+        content: <>
+            Our paper &quot;Familarity: Better Evaluation of Zero-Shot Named Entity Recognition by Quantifying Label Shifts in Synthetic Training Data&quot;
+            accepted to <InlineLink href="https://arxiv.org/abs/2412.10121" target="_blank">NAACL 2025</InlineLink> (main conference)!
+        </>,
+    },
+    {
         date: "2024-12-05",
         category: "New Model",
         content: <>
