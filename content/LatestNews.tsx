@@ -30,6 +30,24 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2025-03-01",
+        category: "Paper accepted",
+        conference: "NAACL 2025",
+        content: <>
+            Our paper &quot;TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models for Downstream Classification Tasks&quot;
+            accepted to <InlineLink href="https://arxiv.org/html/2409.05997v1" target="_blank">NAACL 2025</InlineLink> (system demonstrations)!
+        </>,
+    },
+    {
+        date: "2025-03-01",
+        category: "Paper accepted",
+        conference: "NAACL 2025",
+        content: <>
+            Our paper &quot;LM-Pub-Quiz: A Comprehensive Framework for Zero-Shot Evaluation of Relational Knowledge in Language Models&quot;
+            accepted to <InlineLink href="https://arxiv.org/abs/2408.15729" target="_blank">NAACL 2025</InlineLink> (system demonstrations)!
+        </>,
+    },
+    {
         date: "2025-01-25",
         category: "Paper accepted",
         conference: "NAACL 2025",

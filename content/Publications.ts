@@ -9,6 +9,22 @@ const Publications: Publication[] = [
     {
         year: 2025,
         conference: "NAACL 2025",
+        title: "LM-Pub-Quiz: A Comprehensive Framework for Zero-Shot Evaluation of Relational Knowledge in Language Models",
+        authors: " Max Ploner, Jacek Wiland, Sebastian Pohl and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2408.15729" }],
+        footnote: "Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: System Demonstrations",
+    },
+    {
+        year: 2025,
+        conference: "NAACL 2025",
+        title: "TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models for Downstream Classification Tasks",
+        authors: "Lukas Garbas, Max Ploner and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2409.05997" }],
+        footnote: "Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: System Demonstrations",
+    },
+    {
+        year: 2025,
+        conference: "NAACL 2025",
         title: "Familarity: Better Evaluation of Zero-Shot Named Entity Recognition by Quantifying Label Shifts in Synthetic Training Data",
         authors: "Jonas Golde, Patrick Haller, Max Ploner, Fabio Barth, Nicolaas Jedema and Alan Akbik",
         footnote: "Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics",
@@ -96,18 +112,6 @@ const Publications: Publication[] = [
         title: "Don't Mesh with Me: Generating Constructive Solid Geometry Instead of Meshes by Fine-Tuning a Code-Generation LLM",
         authors: "Maximilian Mews, Ansar Aynetdinov, Vivian Schiller, Peter Eisert and Alan Akbik",
         links: [{ label: "PDF", url: "https://arxiv.org/abs/2411.15279" }],
-        footnote: "arXiv preprint",
-    }, {
-        year: 2024,
-        title: "TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models for Downstream Classification Tasks",
-        authors: "Lukas Garbas, Max Ploner and Alan Akbik",
-        links: [{ label: "PDF", url: "https://arxiv.org/abs/2409.05997" }],
-        footnote: "arXiv preprint",
-    }, {
-        year: 2024,
-        title: "LM-Pub-Quiz: A Comprehensive Framework for Zero-Shot Evaluation of Relational Knowledge in Language Models",
-        authors: " Max Ploner, Jacek Wiland, Sebastian Pohl and Alan Akbik",
-        links: [{ label: "PDF", url: "https://arxiv.org/abs/2408.15729" }],
         footnote: "arXiv preprint",
     }, {
         year: 2024,
