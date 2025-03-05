@@ -30,6 +30,13 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2025-03-05",
+        category: "New Lab Member",
+        content: <>
+            We welcome our new PhD student <InlineLink href="https://de.linkedin.com/in/piet-wagner" target="_blank">Piet Wagner</InlineLink> to the team!
+        </>,
+    },
+    {
         date: "2025-03-01",
         category: "Paper accepted",
         conference: "NAACL 2025",

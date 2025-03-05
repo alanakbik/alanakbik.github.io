@@ -94,6 +94,13 @@ export const People: Person[] = [
         emailAddress: "oliatoporkov@gmail.com",
         linkedInLink: "https://www.linkedin.com/in/olia-toporkov-b48744b2/",
     }, {
+        name: "Piet Wagner",
+        title: "PhD Student",
+        image: "/people/piet.jpg",
+        category: "Research Scientists",
+        linkedInLink: "https://de.linkedin.com/in/piet-wagner/",
+        gitHubLink: "https://github.com/PietW",
+    }, {
         name: "Franziska Weeber",
         title: "Guest Researcher",
         image: "/people/franzi.jpg",
