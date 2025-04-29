@@ -30,6 +30,24 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2025-04-19",
+        category: "New Paper",
+        conference: "arXiv 2024",
+        content: <>
+            Our paper &quot;Empirical Evaluation of Knowledge Distillation from Transformers to Subquadratic Language Models&quot;
+            now on <InlineLink href="https://arxiv.org/abs/2504.14366" target="_blank">arXiv</InlineLink>!
+        </>,
+    },
+    {
+        date: "2025-03-13",
+        category: "Paper accepted",
+        conference: "ICLR 2025",
+        content: <>
+            Our paper &quot;MastermindEval: A Simple But Scalable Reasoning Benchmark&quot;
+            accepted to <InlineLink href="https://arxiv.org/abs/2503.05891" target="_blank">ICLR 2025</InlineLink> (LLM Reasoning Workshop)!
+        </>,
+    },
+    {
         date: "2025-03-05",
         category: "New Lab Member",
         content: <>
