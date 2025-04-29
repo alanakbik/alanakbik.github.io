@@ -8,18 +8,19 @@ import type { Publication } from "@/content/types";
 const Publications: Publication[] = [
     {
         year: 2025,
-        title: "Empirical Evaluation of Knowledge Distillation from Transformers to Subquadratic Language Models",
-        authors: "Patrick Haller, Jonas Golde and Alan Akbik",
-        links: [{ label: "PDF", url: "https://arxiv.org/abs/2504.14366" }],
-        footnote: "arXiv preprint",
-    },
-    {
-        year: 2025,
         conference: "ICLR 2025",
         title: "MastermindEval: A Simple But Scalable Reasoning Benchmark",
         authors: "Jonas Golde, Patrick Haller, Fabio Barth and Alan Akbik ",
         links: [{ label: "PDF", url: "https://arxiv.org/abs/2503.05891" }],
         footnote: "Workshop on Reasoning and Planning for Large Language Models @ ICLR 2025",
+    },
+    {
+        year: 2025,
+        conference: "NAACL 2025",
+        title: "LM-Pub-Quiz: A Comprehensive Framework for Zero-Shot Evaluation of Relational Knowledge in Language Models",
+        authors: " Max Ploner, Jacek Wiland, Sebastian Pohl and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2408.15729" }],
+        footnote: "Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: System Demonstrations",
     },
     {
         year: 2025,
@@ -36,6 +37,13 @@ const Publications: Publication[] = [
         authors: "Jonas Golde, Patrick Haller, Max Ploner, Fabio Barth, Nicolaas Jedema and Alan Akbik",
         footnote: "Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics",
         links: [{ label: "PDF", url: "https://arxiv.org/abs/2412.10121/" }],
+    },
+    {
+        year: 2025,
+        title: "Empirical Evaluation of Knowledge Distillation from Transformers to Subquadratic Language Models",
+        authors: "Patrick Haller, Jonas Golde and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2504.14366" }],
+        footnote: "arXiv preprint",
     },
     {
         year: 2024,
