@@ -16,7 +16,7 @@ export type IsoDate =`${number}${number}${number}${number}-${number}${number}-${
  */
 export type Conference = "ACL" | "EMNLP" | "NAACL" | "Bioinformatics" | "COLING-LREC" | "EACL" | "ACL-IJCNLP" | "COLING"
     | "NLDL" | "LREC" | "ICIQ" | "IJCNLP" | "iPres" | "GSCL" | "NAACL-HLT" | "WWW" | "BabyLM" | "arXiv" | "CoNLL" |
-    "ICLR";
+    "ICLR" | "CVPR";
 
 /**
  * This type enforces a valid conference name to be followed by a year after 2000 (inclusive)

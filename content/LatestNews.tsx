@@ -30,6 +30,15 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2025-05-04",
+        category: "Paper accepted",
+        conference: "CVPR 2025",
+        content: <>
+            Our paper &quot;Don't Mesh with Me: Generating Constructive Solid Geometry Instead of Meshes by Fine-Tuning a Code-Generation LLM&quot;
+            accepted to <InlineLink href="https://arxiv.org/abs/2411.15279" target="_blank">CVPR 2025</InlineLink> (AI for Content Creation Workshop)!
+        </>,
+    },
+    {
         date: "2025-04-19",
         category: "New Paper",
         conference: "arXiv 2024",

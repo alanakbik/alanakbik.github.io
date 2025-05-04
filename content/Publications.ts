@@ -8,6 +8,14 @@ import type { Publication } from "@/content/types";
 const Publications: Publication[] = [
     {
         year: 2025,
+        conference: "CVPR 2025",
+        title: "Don't Mesh with Me: Generating Constructive Solid Geometry Instead of Meshes by Fine-Tuning a Code-Generation LLM",
+        authors: "Maximilian Mews, Ansar Aynetdinov, Vivian Schiller, Peter Eisert and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2411.15279" }],
+        footnote: "Workshop on AI for Content Creation @ ICLR 2025",
+    },
+    {
+        year: 2025,
         conference: "ICLR 2025",
         title: "MastermindEval: A Simple But Scalable Reasoning Benchmark",
         authors: "Jonas Golde, Patrick Haller, Fabio Barth and Alan Akbik ",
@@ -122,12 +130,6 @@ const Publications: Publication[] = [
         authors: "Max Ploner and Alan Akbik",
         footnote: "Findings of the Association for Computational Linguistics: EACL 2024",
         links: [{ label: "PDF", url: "https://aclanthology.org/2024.findings-eacl.122/" }],
-    }, {
-        year: 2024,
-        title: "Don't Mesh with Me: Generating Constructive Solid Geometry Instead of Meshes by Fine-Tuning a Code-Generation LLM",
-        authors: "Maximilian Mews, Ansar Aynetdinov, Vivian Schiller, Peter Eisert and Alan Akbik",
-        links: [{ label: "PDF", url: "https://arxiv.org/abs/2411.15279" }],
-        footnote: "arXiv preprint",
     }, {
         year: 2024,
         title: "SemScore: Automated Evaluation of Instruction-Tuned LLMs based on Semantic Textual Similarity",
