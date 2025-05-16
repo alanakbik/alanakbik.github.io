@@ -8,6 +8,22 @@ import type { Publication } from "@/content/types";
 const Publications: Publication[] = [
     {
         year: 2025,
+        conference: "ACL 2025",
+        title: "Evaluating Design Decisions for Dual Encoder-based Entity Disambiguation",
+        authors: "Susanna Rücker and Alan Akbik",
+        links: [],
+        footnote: "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics",
+    },
+    {
+        year: 2025,
+        conference: "ACL 2025",
+        title: "Pre-Training Curriculum for Multi-Token Prediction in Language Models",
+        authors: "Ansar Aynetdinov and Alan Akbik",
+        links: [],
+        footnote: "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics",
+    },
+    {
+        year: 2025,
         conference: "CVPR 2025",
         title: "Don't Mesh with Me: Generating Constructive Solid Geometry Instead of Meshes by Fine-Tuning a Code-Generation LLM",
         authors: "Maximilian Mews, Ansar Aynetdinov, Vivian Schiller, Peter Eisert and Alan Akbik",

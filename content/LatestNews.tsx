@@ -30,6 +30,24 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2025-05-16",
+        category: "Paper accepted",
+        conference: "ACL 2025",
+        content: <>
+            Our paper &quot;Evaluating Design Decisions for Dual Encoder-based Entity Disambiguation&quot;
+            accepted to <InlineLink href="https://2025.aclweb.org/" target="_blank">ACL 2025</InlineLink> (main conference)!
+        </>,
+    },
+    {
+        date: "2025-05-16",
+        category: "Paper accepted",
+        conference: "ACL 2025",
+        content: <>
+            Our paper &quot;Pre-Training Curriculum for Multi-Token Prediction in Language Models&quot;
+            accepted to <InlineLink href="https://2025.aclweb.org/" target="_blank">ACL 2025</InlineLink> (main conference)!
+        </>,
+    },
+    {
         date: "2025-05-04",
         category: "Paper accepted",
         conference: "CVPR 2025",
