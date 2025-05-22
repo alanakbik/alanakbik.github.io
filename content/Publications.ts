@@ -11,7 +11,7 @@ const Publications: Publication[] = [
         conference: "ACL 2025",
         title: "Evaluating Design Decisions for Dual Encoder-based Entity Disambiguation",
         authors: "Susanna Rücker and Alan Akbik",
-        links: [],
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2505.11683" }],
         footnote: "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Main Conference)",
     },
     {
