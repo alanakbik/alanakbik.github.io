@@ -30,6 +30,15 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2025-05-22",
+        category: "Paper accepted",
+        conference: "ACL 2025",
+        content: <>
+            Our paper &quot;Measuring Label Ambiguity in Subjective Tasks using Predictive Uncertainty Estimation&quot;
+            accepted to <InlineLink href="https://2025.aclweb.org/" target="_blank">ACL 2025</InlineLink> (LAW workshop)!
+        </>,
+    },
+    {
         date: "2025-05-16",
         category: "Paper accepted",
         conference: "ACL 2025",
