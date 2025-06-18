@@ -30,6 +30,24 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2025-06-11",
+        category: "Paper accepted",
+        conference: "ACL 2025",
+        content: <>
+            Our paper &quot;From Data to Knowledge: Evaluating How Efficiently Language Models Learn Facts&quot;
+            accepted to <InlineLink href="https://2025.aclweb.org/" target="_blank">ACL 2025</InlineLink> (L2M2 workshop)!
+        </>,
+    },
+    {
+        date: "2025-06-11",
+        category: "Paper accepted",
+        conference: "ACL 2025",
+        content: <>
+            Our paper &quot;Towards a Principled Evaluation of Knowledge Editors&quot;
+            accepted to <InlineLink href="https://2025.aclweb.org/" target="_blank">ACL 2025</InlineLink> (L2M2 workshop)!
+        </>,
+    },
+    {
         date: "2025-05-22",
         category: "Paper accepted",
         conference: "ACL 2025",

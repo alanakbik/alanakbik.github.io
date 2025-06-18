@@ -25,6 +25,22 @@ const Publications: Publication[] = [
     {
         year: 2025,
         conference: "ACL 2025",
+        title: "From Data to Knowledge: Evaluating How Efficiently Language Models Learn Facts",
+        authors: "Daniel Christoph, Max Ploner, Patrick Haller and Alan Akbik",
+        links: [],
+        footnote: "Workshop on Large Language Model Memorization @ ACL 2025",
+    },
+    {
+        year: 2025,
+        conference: "ACL 2025",
+        title: "Towards a Principled Evaluation of Knowledge Editors",
+        authors: "Sebastian Pohl, Max Ploner and Alan Akbik",
+        links: [],
+        footnote: "Workshop on Large Language Model Memorization @ ACL 2025",
+    },
+    {
+        year: 2025,
+        conference: "ACL 2025",
         title: "Measuring Label Ambiguity in Subjective Tasks using Predictive Uncertainty Estimation",
         authors: "Richard Alies, Elena Merdjanovska and Alan Akbik",
         links: [],
