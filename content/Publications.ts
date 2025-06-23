@@ -48,6 +48,14 @@ const Publications: Publication[] = [
     },
     {
         year: 2025,
+        conference: "ACL 2025",
+        title: "Question Decomposition for Retrieval-Augmented Generation",
+        authors: "Paul J. L. Ammann, Jonas Golde and Alan Akbik",
+        links: [],
+        footnote: "Student Research Workshop @ ACL 2025",
+    },
+    {
+        year: 2025,
         conference: "CVPR 2025",
         title: "Don't Mesh with Me: Generating Constructive Solid Geometry Instead of Meshes by Fine-Tuning a Code-Generation LLM",
         authors: "Maximilian Mews, Ansar Aynetdinov, Vivian Schiller, Peter Eisert and Alan Akbik",

@@ -30,6 +30,15 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2025-06-22",
+        category: "Paper accepted",
+        conference: "ACL 2025",
+        content: <>
+            Our paper &quot;Question Decomposition for Retrieval-Augmented Generation&quot;
+            accepted to <InlineLink href="https://2025.aclweb.org/" target="_blank">ACL 2025</InlineLink> (SRW workshop)!
+        </>,
+    },
+    {
         date: "2025-06-11",
         category: "Paper accepted",
         conference: "ACL 2025",
@@ -148,16 +157,6 @@ const LatestNews: TimelineEntryData[] = [
         category: "New Project",
         content: <>
             Our German-language <InlineLink href="https://zitatsuchmaschine.informatik.hu-berlin.de/" target="_blank">search engine for quotes</InlineLink> is now online!
-        </>,
-    },
-    {
-        date: "2024-11-26",
-        category: "New Paper",
-        conference: "arXiv 2024",
-        content: <>
-            Our paper &quot;Don’t Mesh with Me: Generating Constructive Solid Geometry Instead of
-            Meshes by Fine-Tuning a Code-Generation LLM&quot;
-            now on <InlineLink href="https://arxiv.org/pdf/2411.15279" target="_blank">arXiv</InlineLink>!
         </>,
     },
     {
