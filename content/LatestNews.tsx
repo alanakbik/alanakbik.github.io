@@ -305,11 +305,11 @@ const LatestNews: TimelineEntryData[] = [
 
 export const PinnedMessages: PinnedMessage[] = [
     {
-        title: "New library released!",
+        title: "Join us: Open PhD Student Position!",
         content: <>
-            Our newest library, <InlineLink href="https://github.com/flairNLP/transformer-ranker" target="_blank">TransformerRanker</InlineLink>,
-            automatically determines which language model (LM) will work best for
-            your NLP task! No more guesswork when choosing transformers - check it out!
+            We have a fully-funded PhD position available starting October 2025! If you’re a strong coder with a
+            background in machine learning and are excited about building novel LLM architectures, I’d love to hear from you.
+            Please include a link to your GitHub profile and highlight relevant projects when reaching out!
         </>,
     },
 ];
