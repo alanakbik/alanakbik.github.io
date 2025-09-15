@@ -30,6 +30,33 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2025-08-20",
+        category: "Paper accepted",
+        conference: "EMNLP 2025",
+        content: <>
+            Our paper &quot;Improving Online Job Advertisement Analysis via Compositional Entity Extraction&quot;
+            accepted to <InlineLink href="https://2025.emnlp.org/" target="_blank">EMNLP 2025</InlineLink> (main conference)!
+        </>,
+    },
+    {
+        date: "2025-08-20",
+        category: "Paper accepted",
+        conference: "EMNLP 2025",
+        content: <>
+            Our paper &quot;Token-Level Metrics for Detecting Incorrect Gold Annotations in Named Entity Recognition&quot;
+            accepted to <InlineLink href="https://2025.emnlp.org/" target="_blank">EMNLP 2025</InlineLink> (findings)!
+        </>,
+    },
+    {
+        date: "2025-08-20",
+        category: "Paper accepted",
+        conference: "EMNLP 2025",
+        content: <>
+            Our paper &quot;Lemma Dilemma: On Lemma Generation Without Domain- or Language-Specific Training Data&quot;
+            accepted to <InlineLink href="https://2025.emnlp.org/" target="_blank">EMNLP 2025</InlineLink> (findings)!
+        </>,
+    },
+    {
         date: "2025-06-22",
         category: "Paper accepted",
         conference: "ACL 2025",
@@ -305,11 +332,11 @@ const LatestNews: TimelineEntryData[] = [
 
 export const PinnedMessages: PinnedMessage[] = [
     {
-        title: "Join us: Open PhD Student Position!",
+        title: "Three papers accepted to EMNLP 2025!",
         content: <>
-            We have a fully-funded PhD position available starting October 2025! If you’re a strong coder with a
-            background in machine learning and are excited about building novel LLM architectures, I’d love to hear from you.
-            Please include a link to your GitHub profile and highlight relevant projects when reaching out!
+            Three papers by members of our group were accepted to EMNLP: A main paper on automatically analyzing job ads
+            by Kai Krüger, a findings paper on noise-robust learning by Elena Merdjanovka and a findings paper on
+            lemmatization by Olia Toporkov! See you in Suzhou, China in November!
         </>,
     },
 ];

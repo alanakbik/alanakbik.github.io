@@ -8,6 +8,30 @@ import type { Publication } from "@/content/types";
 const Publications: Publication[] = [
     {
         year: 2025,
+        conference: "EMNLP 2025",
+        title: "Improving Online Job Advertisement Analysis via Compositional Entity Extraction",
+        authors: "Kai Krüger, Johanna Binnewitt, Kathrin Ehmann, Lea Grüner, Stefan Winnige and Alan Akbik ",
+        links: [],
+        footnote: "Proceedings of The 2025 Conference on Empirical Methods in Natural Language Processing (Main Conference)",
+    },
+    {
+        year: 2025,
+        conference: "EMNLP 2025",
+        title: "Token-Level Metrics for Detecting Incorrect Gold Annotations in Named Entity Recognition",
+        authors: "Elena Merdjanovska and Alan Akbik ",
+        links: [],
+        footnote: "Findings of The 2025 Conference on Empirical Methods in Natural Language Processing",
+    },
+    {
+        year: 2025,
+        conference: "EMNLP 2025",
+        title: "Lemma Dilemma: On Lemma Generation Without Domain- or Language-Specific Training Data",
+        authors: "Olia Toporkov, Alan Akbik and Rodrigo Agerri ",
+        links: [],
+        footnote: "Findings of The 2025 Conference on Empirical Methods in Natural Language Processing",
+    },
+    {
+        year: 2025,
         conference: "ACL 2025",
         title: "Evaluating Design Decisions for Dual Encoder-based Entity Disambiguation",
         authors: "Susanna Rücker and Alan Akbik",
