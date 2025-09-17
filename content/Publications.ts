@@ -20,7 +20,7 @@ const Publications: Publication[] = [
         title: "Token-Level Metrics for Detecting Incorrect Gold Annotations in Named Entity Recognition",
         authors: "Elena Merdjanovska and Alan Akbik ",
         links: [],
-        footnote: "Findings of The 2025 Conference on Empirical Methods in Natural Language Processing",
+        footnote: "Findings of the Association for Computational Linguistics: EMNLP 2025",
     },
     {
         year: 2025,
@@ -28,14 +28,30 @@ const Publications: Publication[] = [
         title: "Lemma Dilemma: On Lemma Generation Without Domain- or Language-Specific Training Data",
         authors: "Olia Toporkov, Alan Akbik and Rodrigo Agerri ",
         links: [],
-        footnote: "Findings of The 2025 Conference on Empirical Methods in Natural Language Processing",
+        footnote: "Findings of the Association for Computational Linguistics: EMNLP 2025",
+    },
+    {
+        year: 2025,
+        conference: "EMNLP 2025",
+        title: "Babies Learn to Look Ahead: Multi-Token Prediction in Small LMs",
+        authors: "Ansar Aynetdinov and Alan Akbik",
+        links: [],
+        footnote: "BabyLM 2025 Shared Task @ EMNLP 2025",
+    },
+    {
+        year: 2025,
+        conference: "EMNLP 2025",
+        title: "Sample-Efficient Language Modeling with Linear Attention and Lightweight Enhancements",
+        authors: "Patrick Haller, Jonas Golde and Alan Akbik",
+        links: [],
+        footnote: "BabyLM 2025 Shared Task @ EMNLP 2025",
     },
     {
         year: 2025,
         conference: "ACL 2025",
         title: "Evaluating Design Decisions for Dual Encoder-based Entity Disambiguation",
         authors: "Susanna Rücker and Alan Akbik",
-        links: [{ label: "PDF", url: "https://arxiv.org/abs/2505.11683" }],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.acl-long.764/" }],
         footnote: "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Main Conference)",
     },
     {
@@ -43,7 +59,7 @@ const Publications: Publication[] = [
         conference: "ACL 2025",
         title: "Pre-Training Curriculum for Multi-Token Prediction in Language Models",
         authors: "Ansar Aynetdinov and Alan Akbik",
-        links: [],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.acl-long.1243/" }],
         footnote: "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Main Conference)",
     },
     {
@@ -59,7 +75,7 @@ const Publications: Publication[] = [
         conference: "ACL 2025",
         title: "Towards a Principled Evaluation of Knowledge Editors",
         authors: "Sebastian Pohl, Max Ploner and Alan Akbik",
-        links: [],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.l2m2-1.4.pdf" }],
         footnote: "Workshop on Large Language Model Memorization @ ACL 2025",
     },
     {
@@ -67,7 +83,7 @@ const Publications: Publication[] = [
         conference: "ACL 2025",
         title: "Measuring Label Ambiguity in Subjective Tasks using Predictive Uncertainty Estimation",
         authors: "Richard Alies, Elena Merdjanovska and Alan Akbik",
-        links: [],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.law-1.2.pdf" }],
         footnote: "Linguistic Annotation Workshop @ ACL 2025",
     },
     {
@@ -75,7 +91,7 @@ const Publications: Publication[] = [
         conference: "ACL 2025",
         title: "Question Decomposition for Retrieval-Augmented Generation",
         authors: "Paul J. L. Ammann, Jonas Golde and Alan Akbik",
-        links: [],
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2507.00355" }],
         footnote: "Student Research Workshop @ ACL 2025",
     },
     {
@@ -99,7 +115,7 @@ const Publications: Publication[] = [
         conference: "NAACL 2025",
         title: "LM-Pub-Quiz: A Comprehensive Framework for Zero-Shot Evaluation of Relational Knowledge in Language Models",
         authors: " Max Ploner, Jacek Wiland, Sebastian Pohl and Alan Akbik",
-        links: [{ label: "PDF", url: "https://arxiv.org/abs/2408.15729" }],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.naacl-demo.4/" }],
         footnote: "Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: System Demonstrations",
     },
     {
@@ -107,7 +123,7 @@ const Publications: Publication[] = [
         conference: "NAACL 2025",
         title: "TransformerRanker: A Tool for Efficiently Finding the Best-Suited Language Models for Downstream Classification Tasks",
         authors: "Lukas Garbas, Max Ploner and Alan Akbik",
-        links: [{ label: "PDF", url: "https://arxiv.org/abs/2409.05997" }],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.naacl-demo.25.pdf" }],
         footnote: "Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics: System Demonstrations",
     },
     {
@@ -116,7 +132,7 @@ const Publications: Publication[] = [
         title: "Familarity: Better Evaluation of Zero-Shot Named Entity Recognition by Quantifying Label Shifts in Synthetic Training Data",
         authors: "Jonas Golde, Patrick Haller, Max Ploner, Fabio Barth, Nicolaas Jedema and Alan Akbik",
         footnote: "Proceedings of the 2025 Annual Conference of the Nations of the Americas Chapter of the Association for Computational Linguistics (Main Conference)",
-        links: [{ label: "PDF", url: "https://arxiv.org/abs/2412.10121/" }],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.naacl-long.37/" }],
     },
     {
         year: 2025,

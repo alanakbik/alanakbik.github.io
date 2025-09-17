@@ -107,7 +107,7 @@ const LatestNews: TimelineEntryData[] = [
         conference: "ACL 2025",
         content: <>
             Our paper &quot;Pre-Training Curriculum for Multi-Token Prediction in Language Models&quot;
-            accepted to <InlineLink href="https://2025.aclweb.org/" target="_blank">ACL 2025</InlineLink> (main conference)!
+            accepted to <InlineLink href="https://aclanthology.org/2025.acl-long.1243/" target="_blank">ACL 2025</InlineLink> (main conference)!
         </>,
     },
     {
@@ -332,11 +332,11 @@ const LatestNews: TimelineEntryData[] = [
 
 export const PinnedMessages: PinnedMessage[] = [
     {
-        title: "Three papers accepted to EMNLP 2025!",
+        title: "Five papers accepted at EMNLP 2025!",
         content: <>
-            Three papers by members of our group were accepted to EMNLP: A main paper on automatically analyzing job ads
-            by Kai Krüger, a findings paper on noise-robust learning by Elena Merdjanovska and a findings paper on
-            lemmatization by Olia Toporkov! See you in Suzhou, China, in November!
+            At EMNLP 2025, we will present five papers: Three conference papers on information extraction,
+            lemmatization and noise-robust learning, and two papers at the BabyLM workshop on sample-efficient
+            language modeling! See you in Suzhou, China, in November!
         </>,
     },
 ];
