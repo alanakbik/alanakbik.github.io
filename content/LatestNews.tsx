@@ -332,11 +332,11 @@ const LatestNews: TimelineEntryData[] = [
 
 export const PinnedMessages: PinnedMessage[] = [
     {
-        title: "Five papers accepted at EMNLP 2025!",
+        title: "External students welcome: Join our Deep Learning and NLP class online!",
         content: <>
-            At EMNLP 2025, we will present five papers: Three conference papers on information extraction,
-            lemmatization and noise-robust learning, and two papers at the BabyLM workshop on sample-efficient
-            language modeling! See you in Suzhou, China, in November!
+            This semester, you can join my "Deep Learning and NLP" course at HU Berlin online.
+            In the course, we go all the way from zero to "NLP hero": from classical NLP to transformers
+            and LLMs, plus in-depth into to PyTorch 🔥. External students can enrol <InlineLink href="https://www.hu-berlin.de/en/studies/counselling/leaflets/guest_students" target="_blank">here</InlineLink>!
         </>,
     },
 ];
