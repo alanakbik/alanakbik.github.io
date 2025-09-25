@@ -335,7 +335,7 @@ export const PinnedMessages: PinnedMessage[] = [
         title: "External students welcome: Join our Deep Learning and NLP class online!",
         content: <>
             This semester, you can join my "Deep Learning and NLP" course at HU Berlin online.
-            In the course, we go all the way from zero to "NLP hero": from classical NLP to transformers
+            Starting October 14th, we go all the way from zero to "NLP hero": from classical NLP to transformers
             and LLMs, plus in-depth into to PyTorch 🔥. External students can enrol <InlineLink href="https://www.hu-berlin.de/en/studies/counselling/leaflets/guest_students" target="_blank">here</InlineLink>!
         </>,
     },
