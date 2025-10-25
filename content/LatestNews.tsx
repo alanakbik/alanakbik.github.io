@@ -30,6 +30,54 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2025-10-18",
+        category: "New Research Grant",
+        content: <>
+            The Investitionsbank Berlin (IBB) approved a new ProFIT research grant for a 3-year research project together
+            with industry partner OMQ GmbH! We're hiring again!
+        </>,
+    },
+    {
+        date: "2025-10-01",
+        category: "New Lab Member",
+        content: <>
+            We welcome our new PhD student <InlineLink href="https://github.com/Thiggel" target="_blank">Filipe Laitenberger</InlineLink> to the team!
+        </>,
+    },
+    {
+        date: "2025-10-01",
+        category: "New Lab Member",
+        content: <>
+            We welcome our new research engineer <InlineLink href="https://github.com/MaxDall" target="_blank">Max Dallabetta</InlineLink> to the team!
+        </>,
+    },
+    {
+        date: "2025-09-25",
+        category: "New Research Grant",
+        content: <>
+            The Investitionsbank Berlin (IBB) approved a new research grant for a Forschungstransfer project to
+            industry partner Wordliner GmbH!
+        </>,
+    },
+    {
+        date: "2025-09-15",
+        category: "Paper accepted",
+        conference: "BabyLM 2025",
+        content: <>
+            Our paper &quot;Babies Learn to Look Ahead: Multi-Token Prediction in Small LMs&quot;
+            accepted to <InlineLink href="https://2025.emnlp.org/" target="_blank">BabyLM 2025</InlineLink> (EMNLP Workshop)!
+        </>,
+    },
+    {
+        date: "2025-09-15",
+        category: "Paper accepted",
+        conference: "BabyLM 2025",
+        content: <>
+            Our paper &quot;Sample-Efficient Language Modeling with Linear Attention and Lightweight Enhancements&quot;
+            accepted to <InlineLink href="https://2025.emnlp.org/" target="_blank">BabyLM 2025</InlineLink> (EMNLP Workshop)!
+        </>,
+    },
+    {
         date: "2025-08-20",
         category: "Paper accepted",
         conference: "EMNLP 2025",
