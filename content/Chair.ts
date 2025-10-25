@@ -27,6 +27,13 @@ export const People: Person[] = [
         emailAddress: "aynetdia@hu-berlin.de",
         linkedInLink: "https://www.linkedin.com/in/ansar-aynetdinov/",
     }, {
+        name: "Max Dallabetta",
+        title: "Research Engineer",
+        image: "/people/maxd.jpg",
+        category: "Research Scientists",
+        gitHubLink: "https://github.com/MaxDall",
+        linkedInLink: "https://www.linkedin.com/in/max-dallabetta-5905651b4/",
+    }, {
         name: "Benedikt Fuchs",
         title: "Research Engineer",
         category: "Research Scientists",
@@ -57,6 +64,14 @@ export const People: Person[] = [
         gitHubLink: "https://github.com/HallerPatrick",
         googleScholarLink: "https://scholar.google.com/citations?user=ZFe7wn4AAAAJ&hl=en",
         linkedInLink: "https://linkedin.com/in/patrick-haller-651493126",
+    }, {
+        name: "Filipe Laitenberger",
+        title: "PhD Student",
+        image: "/people/filipe.jpg",
+        category: "Research Scientists",
+        gitHubLink: "https://github.com/Thiggel",
+        googleScholarLink: "https://scholar.google.at/citations?hl=de&user=fVuktiEAAAAJ",
+        linkedInLink: "https://www.linkedin.com/in/filipe-laitenberger-17b089191",
     }, {
         name: "Elena Merdjanovska",
         title: "PhD Student",
@@ -113,11 +128,6 @@ export const People: Person[] = [
         title: "Research Assistant",
         category: "Student Researchers",
         gitHubLink: "https://github.com/addie9800",
-    }, {
-        name: "Max Dallabetta",
-        title: "Research Assistant",
-        category: "Student Researchers",
-        gitHubLink: "https://github.com/MaxDall",
     }, {
         name: "Conrad Dobberstein",
         title: "Research Assistant",
