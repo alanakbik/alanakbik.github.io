@@ -30,6 +30,15 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2026-01-04",
+        category: "Paper accepted",
+        conference: "EACL 2026",
+        content: <>
+            Our paper &quot;FiNERweb: Datasets and Artifacts for Scalable Multilingual Named Entity Recognition&quot;
+            accepted to <InlineLink href="https://2026.eacl.org/" target="_blank">EACL 2026</InlineLink>!
+        </>,
+    },
+    {
         date: "2025-10-18",
         category: "New Research Grant",
         content: <>

@@ -7,11 +7,19 @@ import type { Publication } from "@/content/types";
 
 const Publications: Publication[] = [
     {
+        year: 2026,
+        conference: "EACL 2026",
+        title: "FiNERweb: Datasets and Artifacts for Scalable Multilingual Named Entity Recognition",
+        authors: "Jonas Golde, Patrick Haller and Alan Akbik ",
+        links: [{ label: "PDF", url: "https://arxiv.org/pdf/2512.13884" }],
+        footnote: "Findings of the Association for Computational Linguistics: EACL 2026",
+    },
+    {
         year: 2025,
         conference: "EMNLP 2025",
         title: "Improving Online Job Advertisement Analysis via Compositional Entity Extraction",
         authors: "Kai Krüger, Johanna Binnewitt, Kathrin Ehmann, Lea Grüner, Stefan Winnige and Alan Akbik ",
-        links: [],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.emnlp-main.1375/" }],
         footnote: "Proceedings of The 2025 Conference on Empirical Methods in Natural Language Processing (Main Conference)",
     },
     {
@@ -19,7 +27,7 @@ const Publications: Publication[] = [
         conference: "EMNLP 2025",
         title: "Token-Level Metrics for Detecting Incorrect Gold Annotations in Named Entity Recognition",
         authors: "Elena Merdjanovska and Alan Akbik ",
-        links: [],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.findings-emnlp.827/" }],
         footnote: "Findings of the Association for Computational Linguistics: EMNLP 2025",
     },
     {
@@ -27,7 +35,7 @@ const Publications: Publication[] = [
         conference: "EMNLP 2025",
         title: "Lemma Dilemma: On Lemma Generation Without Domain- or Language-Specific Training Data",
         authors: "Olia Toporkov, Alan Akbik and Rodrigo Agerri ",
-        links: [],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.findings-emnlp.988.pdf" }],
         footnote: "Findings of the Association for Computational Linguistics: EMNLP 2025",
     },
     {
@@ -43,7 +51,7 @@ const Publications: Publication[] = [
         conference: "EMNLP 2025",
         title: "Sample-Efficient Language Modeling with Linear Attention and Lightweight Enhancements",
         authors: "Patrick Haller, Jonas Golde and Alan Akbik",
-        links: [],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.babylm-main.14/" }],
         footnote: "BabyLM 2025 Shared Task @ EMNLP 2025",
     },
     {
@@ -67,7 +75,7 @@ const Publications: Publication[] = [
         conference: "ACL 2025",
         title: "From Data to Knowledge: Evaluating How Efficiently Language Models Learn Facts",
         authors: "Daniel Christoph, Max Ploner, Patrick Haller and Alan Akbik",
-        links: [],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.l2m2-1.3/" }],
         footnote: "Workshop on Large Language Model Memorization @ ACL 2025",
     },
     {
@@ -91,7 +99,7 @@ const Publications: Publication[] = [
         conference: "ACL 2025",
         title: "Question Decomposition for Retrieval-Augmented Generation",
         authors: "Paul J. L. Ammann, Jonas Golde and Alan Akbik",
-        links: [{ label: "PDF", url: "https://arxiv.org/abs/2507.00355" }],
+        links: [{ label: "PDF", url: "https://aclanthology.org/2025.acl-srw.32.pdf" }],
         footnote: "Student Research Workshop @ ACL 2025",
     },
     {
