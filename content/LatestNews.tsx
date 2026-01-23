@@ -234,12 +234,11 @@ const LatestNews: TimelineEntryData[] = [
 
 export const PinnedMessages: PinnedMessage[] = [
     {
-        title: "External students welcome: Join our Deep Learning and NLP class online!",
+        title: "2 New Full-Time Researcher Positions!",
         content: <>
-            This semester, you can join my "Deep Learning and NLP" course at HU Berlin online.
-            Starting October 14th, we go all the way from zero to "NLP hero": from classical NLP to transformers
-            and LLMs, plus in-depth into to PyTorch 🔥. External students can enrol <InlineLink href="https://www.hu-berlin.de/en/studies/counselling/leaflets/guest_students" target="_blank">here</InlineLink>!
-        </>,
+            We have two new full-time positions for researchers at my Chair. One fully-funded position for a PhD student
+            and one position for a PostDoc. We are looking for exceptional candidates with a strong publication record
+            (ACL, EMNLP) and a strong engineering background. Do reach out if you are interested!</>,
     },
 ];
 

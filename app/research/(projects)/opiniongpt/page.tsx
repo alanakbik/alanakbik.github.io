@@ -57,7 +57,7 @@ export default function Page() {
 
             <H2>Publication</H2>
             <P>
-                <InlineLink href="OpinionGPT: Modelling Explicit Biases in Instruction-Tuned LLMs" target="_blank">CleanCoNLL: A Nearly Noise-Free Named Entity Recognition Dataset.</InlineLink>
+                <InlineLink href="https://aclanthology.org/2024.naacl-demo.8/" target="_blank">OpinionGPT: Modelling Explicit Biases in Instruction-Tuned LLMs.</InlineLink>
                 Patrick Haller, Ansar Aynetdinov and Alan Akbik. NAACL 2024.
             </P>
         </>

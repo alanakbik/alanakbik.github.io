@@ -8,9 +8,16 @@ import type { Publication } from "@/content/types";
 const Publications: Publication[] = [
     {
         year: 2026,
+        title: "Beyond Marginal Distributions: A Framework to Evaluate the Representativeness of Demographic-Aligned LLMs",
+        authors: "Tristan Williams, Franziska Weeber, Sebastian Padó and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2601.15755" }],
+        footnote: "arXiv preprint",
+    },
+    {
+        year: 2026,
         conference: "EACL 2026",
         title: "FiNERweb: Datasets and Artifacts for Scalable Multilingual Named Entity Recognition",
-        authors: "Jonas Golde, Patrick Haller and Alan Akbik ",
+        authors: "Jonas Golde, Patrick Haller and Alan Akbik",
         links: [{ label: "PDF", url: "https://arxiv.org/pdf/2512.13884" }],
         footnote: "Findings of the Association for Computational Linguistics: EACL 2026",
     },
