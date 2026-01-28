@@ -11,6 +11,7 @@ const Publications: Publication[] = [
         conference: "EACL 2026",
         title: "Using Subword-Embeddings for Bilingual Lexicon Induction in Bantu Languages",
         authors: "Adrian Breiding and Alan Akbik",
+        links: [],
         footnote: "AfricaNLP Workshop @ EACL 2026",
     },
     {
