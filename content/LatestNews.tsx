@@ -30,6 +30,15 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2026-01-28",
+        category: "Paper accepted",
+        conference: "EACL 2026",
+        content: <>
+            Our paper &quot;Using Subword-Embeddings for Bilingual Lexicon Induction in Bantu Languages&quot;
+            accepted to <InlineLink href="https://2026.eacl.org/" target="_blank">EACL 2026 (AfricaNLP Workshop)</InlineLink>!
+        </>,
+    },
+    {
         date: "2026-01-04",
         category: "Paper accepted",
         conference: "EACL 2026",

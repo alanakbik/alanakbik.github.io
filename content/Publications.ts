@@ -8,6 +8,20 @@ import type { Publication } from "@/content/types";
 const Publications: Publication[] = [
     {
         year: 2026,
+        conference: "EACL 2026",
+        title: "Using Subword-Embeddings for Bilingual Lexicon Induction in Bantu Languages",
+        authors: "Adrian Breiding and Alan Akbik",
+        footnote: "AfricaNLP Workshop @ EACL 2026",
+    },
+    {
+        year: 2026,
+        title: "Self-Aware Knowledge Probing: Evaluating Language Models’ Relational Knowledge through Confidence Calibration",
+        authors: "Christopher Kissling, Elena Merdjanovska and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/pdf/2601.18901" }],
+        footnote: "arXiv preprint",
+    },
+    {
+        year: 2026,
         title: "Beyond Marginal Distributions: A Framework to Evaluate the Representativeness of Demographic-Aligned LLMs",
         authors: "Tristan Williams, Franziska Weeber, Sebastian Padó and Alan Akbik",
         links: [{ label: "PDF", url: "https://arxiv.org/abs/2601.15755" }],
