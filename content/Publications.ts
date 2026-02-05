@@ -16,6 +16,13 @@ const Publications: Publication[] = [
     },
     {
         year: 2026,
+        title: "What Matters in Linearizing Language Models? A Comparative Study of Architecture, Scale, and Task Adaptation",
+        authors: "Patrick Haller, Jonas Golde and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/pdf/2504.14366" }],
+        footnote: "arXiv preprint",
+    },
+    {
+        year: 2026,
         title: "Self-Aware Knowledge Probing: Evaluating Language Models’ Relational Knowledge through Confidence Calibration",
         authors: "Christopher Kissling, Elena Merdjanovska and Alan Akbik",
         links: [{ label: "PDF", url: "https://arxiv.org/pdf/2601.18901" }],
@@ -26,6 +33,13 @@ const Publications: Publication[] = [
         title: "Beyond Marginal Distributions: A Framework to Evaluate the Representativeness of Demographic-Aligned LLMs",
         authors: "Tristan Williams, Franziska Weeber, Sebastian Padó and Alan Akbik",
         links: [{ label: "PDF", url: "https://arxiv.org/abs/2601.15755" }],
+        footnote: "arXiv preprint",
+    },
+    {
+        year: 2026,
+        title: "What Matters When Building Universal Multilingual Named Entity Recognition Models?",
+        authors: "Jonas Golde, Patrick Haller and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/pdf/2601.06347" }],
         footnote: "arXiv preprint",
     },
     {

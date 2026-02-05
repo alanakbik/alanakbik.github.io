@@ -30,6 +30,14 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2026-02-04",
+        category: "New Research Grant",
+        content: <>
+            The Investitionsbank Berlin (IBB) approved a new research grant for a Forschungstransfer project to
+            industry partner Slomofone GmbH! We are hiring again!
+        </>,
+    },
+    {
         date: "2026-01-28",
         category: "Paper accepted",
         conference: "EACL 2026",
