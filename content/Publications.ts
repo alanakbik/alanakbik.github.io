@@ -8,6 +8,14 @@ import type { Publication } from "@/content/types";
 const Publications: Publication[] = [
     {
         year: 2026,
+        conference: "ACL 2026",
+        title: "Beyond Marginal Distributions: A Framework to Evaluate the Representativeness of Demographic-Aligned LLMs",
+        authors: "Tristan Williams, Franziska Weeber, Sebastian Padó and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2601.15755" }],
+        footnote: "Findings of the Association for Computational Linguistics: ACL 2026",
+    },
+    {
+        year: 2026,
         conference: "EACL 2026",
         title: "Using Subword-Embeddings for Bilingual Lexicon Induction in Bantu Languages",
         authors: "Adrian Breiding and Alan Akbik",

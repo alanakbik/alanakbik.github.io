@@ -30,6 +30,23 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2026-04-15",
+        category: "New Research Grant",
+        content: <>
+            The Investitionsbank Berlin (IBB) approved a new research grant for a Forschungstransfer project to
+            industry partner Wordliner GmbH! We're hiring again!
+        </>,
+    },
+    {
+        date: "2026-04-07",
+        category: "Paper accepted",
+        conference: "ACL 2026",
+        content: <>
+            Our paper &quot;Beyond Marginal Distributions: A Framework to Evaluate the Representativeness of Demographic-Aligned LLMs&quot;
+            accepted to <InlineLink href="https://2026.aclweb.org/" target="_blank">ACL 2026</InlineLink>!
+        </>,
+    },
+    {
         date: "2026-02-04",
         category: "New Research Grant",
         content: <>
@@ -251,11 +268,10 @@ const LatestNews: TimelineEntryData[] = [
 
 export const PinnedMessages: PinnedMessage[] = [
     {
-        title: "2 New Full-Time Researcher Positions!",
+        title: "Student research engineer positions!",
         content: <>
-            We have two new full-time positions for researchers at my Chair. One fully-funded position for a PhD student
-            and one position for a PostDoc. We are looking for exceptional candidates with a strong publication record
-            (ACL, EMNLP) and a strong engineering background. Do reach out if you are interested!</>,
+            We have open positions for student research engineers (Python)! Do reach out if you are interested in
+            working on application projects for AI agents!</>,
     },
 ];
 
