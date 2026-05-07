@@ -34,7 +34,7 @@ const LatestNews: TimelineEntryData[] = [
         category: "New Release",
         content: <>
             Our German foundation LLM <InlineLink href="https://huggingface.co/Boldt/Boldt-1B" target="_blank">Boldt-1B</InlineLink> is now publicly available,
-             a compact German model that outperforms existing state-of-the-art models in its parameter class! Try it out!
+            a compact German model that outperforms existing state-of-the-art models in its parameter class! Try it out!
         </>,
     },
     {
@@ -289,7 +289,7 @@ export const PinnedMessages: PinnedMessage[] = [
         title: "Boldt-1B Released!",
         content: <>
             State-of-the-art performance for German NLP: We are releasing <InlineLink href="https://huggingface.co/Boldt/Boldt-1B" target="_blank">Boldt-1B</InlineLink>,
-            a new open-source foundation LLM that outperforms existing major LLMs in its parameter class. Check it out!/>,
+            a new open-source foundation LLM that outperforms existing major LLMs in its parameter class. Check it out!</>,
     },
 ];
 
