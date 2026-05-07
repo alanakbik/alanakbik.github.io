@@ -24,6 +24,13 @@ const Publications: Publication[] = [
     },
     {
         year: 2026,
+        title: "Repetition over Diversity: High-Signal Data Filtering for Sample-Efficient German Language Modeling",
+        authors: "Ansar Aynetdinov, Patrick Haller and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2604.28075" }],
+        footnote: "arXiv preprint",
+    },
+    {
+        year: 2026,
         title: "What Matters in Linearizing Language Models? A Comparative Study of Architecture, Scale, and Task Adaptation",
         authors: "Patrick Haller, Jonas Golde and Alan Akbik",
         links: [{ label: "PDF", url: "https://arxiv.org/pdf/2504.14366" }],

@@ -30,6 +30,24 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2026-05-05",
+        category: "New Release",
+        content: <>
+            Our German foundation LLM <InlineLink href="https://huggingface.co/Boldt/Boldt-1B" target="_blank">Boldt-1B</InlineLink> is now publicly available,
+             a compact German model that outperforms existing state-of-the-art models in its parameter class! Try it out!
+        </>,
+    },
+    {
+        date: "2025-05-05",
+        category: "New Paper",
+        conference: "arXiv 2026",
+        content: <>
+            Our paper &quot;Repetition over Diversity: High-Signal Data Filtering for Sample-Efficient German Language Modeling&quot;, explaining the background to
+            our <InlineLink href="https://huggingface.co/Boldt/" target="_blank">Boldt</InlineLink> family of German models and benchmarks,
+            now on <InlineLink href="https://arxiv.org/abs/2604.28075" target="_blank">arXiv</InlineLink>!
+        </>,
+    },
+    {
         date: "2026-04-15",
         category: "New Research Grant",
         content: <>
@@ -268,10 +286,10 @@ const LatestNews: TimelineEntryData[] = [
 
 export const PinnedMessages: PinnedMessage[] = [
     {
-        title: "Student research engineer positions!",
+        title: "Boldt-1B Released!",
         content: <>
-            We have open positions for student research engineers (Python)! Do reach out if you are interested in
-            working on application projects for AI agents!</>,
+            State-of-the-art performance for German NLP: We are releasing <InlineLink href="https://huggingface.co/Boldt/Boldt-1B" target="_blank">Boldt-1B</InlineLink>,
+            a new open-source foundation LLM that outperforms existing major LLMs in its parameter class. Check it out!/>,
     },
 ];
 
