@@ -71,18 +71,6 @@ const Research: ResearchProject[] = [
         uriComponent: "fundus",
     },
     {
-        title: "TransformerRanker",
-        image: "transformer-ranker.png",
-        githubRepoIdentifier: "flairNLP/transformer-ranker",
-        imageFit: "contain",
-        imagePadding: 1,
-        introductoryText: <>
-            <InlineLink href="https://github.com/flairNLP/transformer-ranker">TransformerRanker</InlineLink> automatically finds the best-suited LM for your NLP task!
-        </>,
-        categories: ["Libraries", "Featured"],
-        uriComponent: "transformer-ranker",
-    },
-    {
         title: "OpinionGPT",
         image: "/opiniongpt.png",
         imageFit: "contain",
@@ -90,7 +78,7 @@ const Research: ResearchProject[] = [
         introductoryText: <>
             <InlineLink href="https://opiniongpt.informatik.hu-berlin.de/">OpinionGPT</InlineLink> is a ChatGPT-style model trained specifically to be biased and opinionated!
         </>,
-        categories: ["Featured", "Applications"],
+        categories: ["Applications"],
         uriComponent: "opiniongpt",
     },
     {
@@ -103,7 +91,7 @@ const Research: ResearchProject[] = [
             your NER models!
         </>,
         githubRepoIdentifier: "flairNLP/cleanCoNLL",
-        categories: ["Featured", "Datasets"],
+        categories: ["Datasets", "Featured"],
         uriComponent: "cleanconll",
     },
     {
@@ -117,6 +105,18 @@ const Research: ResearchProject[] = [
         </>,
         categories: ["Libraries", "Featured"],
         uriComponent: "lm-pub-quiz",
+    },
+    {
+        title: "TransformerRanker",
+        image: "transformer-ranker.png",
+        githubRepoIdentifier: "flairNLP/transformer-ranker",
+        imageFit: "contain",
+        imagePadding: 1,
+        introductoryText: <>
+            <InlineLink href="https://github.com/flairNLP/transformer-ranker">TransformerRanker</InlineLink> automatically finds the best-suited LM for your NLP task!
+        </>,
+        categories: ["Libraries"],
+        uriComponent: "transformer-ranker",
     },
     {
         title: "NoiseBench",

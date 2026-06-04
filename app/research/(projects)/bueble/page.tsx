@@ -1,6 +1,5 @@
 import React from "react";
 
-import BlockImage from "@/components/shared/BlockImage";
 import H2 from "@/components/shared/H2";
 import InlineLink from "@/components/shared/InlineLink";
 import P from "@/components/shared/P";
@@ -10,7 +9,7 @@ import OL from "@/components/shared/UL";
  * Set the title of the page here which is shown in the browser tab.
  */
 export const metadata = {
-    title: "Boldt - Alan Akbik",
+    title: "Büble-LM - Alan Akbik",
 };
 
 /**
@@ -31,29 +30,24 @@ export const metadata = {
 export default function Page() {
     return (
         <>
-            <H2>Boldt</H2>
+            <H2>Büble-LM</H2>
             <P>
-                Boldt is a series of German Language Models trained at HU Berlin. Our overarching goal is to create
-                state-of-the-art language models for German - and in the future for other domains - with fewer computational
-                and data resources.
+                BübleLM is a state-of-the-art German language model based on Gemma-2B, adapted using trans-tokenization
+                with a custom German SentencePiece tokenizer.
             </P>
             <P>
-                Boldt was trained using a new paradigm in which we strictly filter available text for German to a
-                highest-quality subset and then repeatedly train for many epochs over this high-signal data. We find
-                that Boldt outperforms all other state-of-the-art LLMs in the 1B parameter range, including Gemma-3 and
-                Llama-3.2:
+                Büble significantly outperforms other German LMs like Sauerkraut-2B and LLäMmlein-1B on most
+                benchmarks we tried. It was trained with a novel trans-tokenization approach by Pieter Delobelle
+                when he was a guest researcher at our chair!
             </P>
-            <BlockImage src="/boldt_1b_evaluation.png" alt="Comparison of Boldt to other models"/>
             <P>
-                We also release a suite of modernized German benchmarks to evaluate LLM performance. Our suite fixes
-                errors in previous benchmarks to give more accurate readings of LLM abilities.
+                More details on this model coming soon!
             </P>
-            <H2>To get started:</H2>
+            <H2>Getting Started</H2>
             <P>
                 <OL>
-                    <li>Check out <InlineLink href="https://huggingface.co/Boldt" target="_blank">all Boldt models on Huggingface</InlineLink>!</li>
-                    <li>Check our  <InlineLink href="https://arxiv.org/abs/2604.28075" target="_blank">paper</InlineLink> for all details!</li>
-                    <li>Check our <InlineLink href="https://huggingface.co/collections/Boldt/german-llm-benchmarks" target="_blank">German benchmarks</InlineLink>!</li>
+                    <li>Try out the <InlineLink href="https://huggingface.co/flair/bueble-lm-2b" target="_blank">model</InlineLink></li>
+                    <li>Check the <InlineLink href="https://huggingface.co/flair/bueble-lm-2b#performance" target="_blank">evaluation results</InlineLink></li>
                 </OL>
             </P>
         </>
