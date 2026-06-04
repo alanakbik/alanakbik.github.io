@@ -37,15 +37,15 @@ const Research: ResearchProject[] = [
         uriComponent: "flair",
     },
     {
-        title: "Büble-LM",
-        image: "/büble-lm.jpg",
+        title: "Boldt",
+        image: "/boldt-logo.png",
         imagePadding: 0.0,
         imageFit: "contain",
         introductoryText: <>
-            Büble-LM is our new state-of-the-art 2 billion parameter language model (LM) for German!
+            Boldt is a series of state-of-the-art German language models, trained at HU!
         </>,
         categories: ["Featured"],
-        uriComponent: "bueble",
+        uriComponent: "boldt",
     },
     {
         title: "Zitatsuchmaschine",
