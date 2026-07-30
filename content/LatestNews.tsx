@@ -30,6 +30,23 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2026-07-30",
+        category: "New Research Grant",
+        content: <>
+            The Federal Ministry for Economic Affairs and Energy (BMWE) has approved a new 3-year research project
+            on Retrieval-Augmented Generation (RAG), together with industry partner Neofonie GmbH! We're hiring again!
+        </>,
+    },
+    {
+        date: "2026-07-11",
+        category: "Paper accepted",
+        conference: "KONVENS 2026",
+        content: <>
+            Our paper &quot;news-crawler-LM: A Small Long-Context Model For High-Quality News Crawling&quot;
+            accepted to <InlineLink href="https://konvens2026.uni-hamburg.de/" target="_blank">KONVENS 2026</InlineLink>!
+        </>,
+    },
+    {
         date: "2026-05-05",
         category: "New Release",
         content: <>
