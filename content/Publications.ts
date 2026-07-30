@@ -8,6 +8,14 @@ import type { Publication } from "@/content/types";
 const Publications: Publication[] = [
     {
         year: 2026,
+        conference: "KONVENS 2026",
+        title: "news-crawler-LM: A Small Long-Context Model For High-Quality News Crawling",
+        authors: "Pascal Stolzenburg, Jonas Golde, Max Dallabetta and Alan Akbik",
+        links: [{ label: "PDF", url: "https://arxiv.org/abs/2607.21284" }],
+        footnote: "Konferenz zur Verarbeitung natürlicher Sprache: KONVENS 2026",
+    },
+    {
+        year: 2026,
         conference: "ACL 2026",
         title: "Beyond Marginal Distributions: A Framework to Evaluate the Representativeness of Demographic-Aligned LLMs",
         authors: "Tristan Williams, Franziska Weeber, Sebastian Padó and Alan Akbik",
