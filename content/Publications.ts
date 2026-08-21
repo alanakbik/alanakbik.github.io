@@ -11,6 +11,7 @@ const Publications: Publication[] = [
         conference: "EMNLP 2026",
         title: "What Matters in Linearizing Language Models? A Comparative Study of Architecture, Scale, and Task Adaptation",
         authors: "Patrick Haller, Jonas Golde and Alan Akbik",
+        links: [],
         footnote: "Proceedings of The 2026 Conference on Empirical Methods in Natural Language Processing (Main Conference)",
     },
     {
@@ -18,6 +19,7 @@ const Publications: Publication[] = [
         conference: "EMNLP 2026",
         title: "Repetition over Diversity: High-Signal Data Filtering for Sample-Efficient German Language Modeling",
         authors: "Ansar Aynetdinov, Patrick Haller and Alan Akbik",
+        links: [],
         footnote: "Proceedings of The 2026 Conference on Empirical Methods in Natural Language Processing (Main Conference)",
     },
     {
@@ -25,6 +27,7 @@ const Publications: Publication[] = [
         conference: "EMNLP 2026",
         title: "What Matters When Building Universal Multilingual Named Entity Recognition Models?",
         authors: "Jonas Golde, Patrick Haller and Alan Akbik",
+        links: [],
         footnote: "Findings of the Association for Computational Linguistics: EMNLP 2026",
     },
     {
@@ -32,6 +35,7 @@ const Publications: Publication[] = [
         conference: "EMNLP 2026",
         title: "Variable-Rank Adaptation: A Comprehensive Survey of Rank Budgeting LoRA Variants",
         authors: "Max Ploner and Alan Akbik",
+        links: [],
         footnote: "Findings of the Association for Computational Linguistics: EMNLP 2026",
     },
     {
