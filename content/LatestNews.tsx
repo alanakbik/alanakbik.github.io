@@ -30,6 +30,43 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2026-08-21",
+        category: "Paper accepted",
+        conference: "EMNLP 2026",
+        content: <>
+            Our paper &quot;What Matters in Linearizing Language Models? A Comparative Study of Architecture, Scale, and Task Adaptation&quot;
+            accepted to <InlineLink href="https://2026.emnlp.org/" target="_blank">EMNLP 2026</InlineLink>!
+        </>,
+    },
+    {
+        date: "2026-08-21",
+        category: "Paper accepted",
+        conference: "EMNLP 2026",
+        content: <>
+            Our paper &quot;Repetition over Diversity: High-Signal Data Filtering for Sample-Efficient German Language Modeling&quot;,
+            explaining the background to our <InlineLink href="https://huggingface.co/Boldt/" target="_blank">Boldt</InlineLink>
+            family of German models and benchmarks, accepted to <InlineLink href="https://2026.emnlp.org/" target="_blank">EMNLP 2026</InlineLink>!
+        </>,
+    },
+    {
+        date: "2026-08-21",
+        category: "Paper accepted",
+        conference: "EMNLP 2026",
+        content: <>
+            Our paper &quot;What Matters When Building Universal Multilingual Named Entity Recognition Models?&quot;
+            accepted to <InlineLink href="https://2026.emnlp.org/" target="_blank">EMNLP 2026</InlineLink>!
+        </>,
+    },
+    {
+        date: "2026-08-21",
+        category: "Paper accepted",
+        conference: "EMNLP 2026",
+        content: <>
+            Our paper &quot;Variable-Rank Adaptation: A Comprehensive Survey of Rank Budgeting LoRA Variants&quot;
+            accepted to <InlineLink href="https://2026.emnlp.org/" target="_blank">EMNLP 2026</InlineLink>!
+        </>,
+    },
+    {
         date: "2026-07-30",
         category: "New Research Grant",
         content: <>
@@ -303,9 +340,10 @@ const LatestNews: TimelineEntryData[] = [
 
 export const PinnedMessages: PinnedMessage[] = [
     {
-        title: "Boldt-1B Released!",
+        title: "4 Full Papers Accepted to EMNLP 2026!",
         content: <>
-            State-of-the-art performance for German NLP: We are releasing <InlineLink href="https://huggingface.co/Boldt/Boldt-1B" target="_blank">Boldt-1B</InlineLink>,
+            Four papers on efficient training of LLMs, parameter-efficient fine-tuning and multilingual NER accepted to
+            EMNLP! This includes the paper describing <InlineLink href="https://huggingface.co/Boldt/Boldt-1B" target="_blank">Boldt-1B</InlineLink>,
             a new open-source foundation LLM that outperforms existing major LLMs in its parameter class. Check it out!</>,
     },
 ];
