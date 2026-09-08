@@ -30,6 +30,40 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2026-09-05",
+        category: "Paper accepted",
+        conference: "EMNLP 2026",
+        content: <>
+            Our paper &quot;What Survives the BabyLM Budget? A Controlled Study of Token Mixers and Generative Objectives&quot;
+            accepted to <InlineLink href="https://2026.emnlp.org/" target="_blank">EMNLP 2026 (BabyLM Workshop)</InlineLink>!
+        </>,
+    },
+    {
+        date: "2026-09-05",
+        category: "Paper accepted",
+        conference: "EMNLP 2026",
+        content: <>
+            Our paper &quot;From Puzzle-Solver to Language Model: Recurrent Inductive Bias, Data Scale, and Benchmark Validity in BabyLM&quot;
+            accepted to <InlineLink href="https://2026.emnlp.org/" target="_blank">EMNLP 2026 (BabyLM Workshop)</InlineLink>!
+        </>,
+    },
+    {
+        date: "2026-09-05",
+        category: "Paper accepted",
+        conference: "EMNLP 2026",
+        content: <>
+            Our paper &quot;Can Randomly Permuting the LM Decoding Order Boost Data-Efficiency?&quot;
+            accepted to <InlineLink href="https://2026.emnlp.org/" target="_blank">EMNLP 2026 (BabyLM Workshop)</InlineLink>!
+        </>,
+    },
+    {
+        date: "2026-09-01",
+        category: "New Lab Member",
+        content: <>
+            We welcome our new PostDoc <InlineLink href="https://ilkerkesen.github.io/" target="_blank">İlker Kesen</InlineLink> to the team!
+        </>,
+    },
+    {
         date: "2026-08-21",
         category: "Paper accepted",
         conference: "EMNLP 2026",
@@ -64,6 +98,13 @@ const LatestNews: TimelineEntryData[] = [
         content: <>
             Our paper &quot;Variable-Rank Adaptation: A Comprehensive Survey of Rank Budgeting LoRA Variants&quot;
             accepted to <InlineLink href="https://2026.emnlp.org/" target="_blank">EMNLP 2026</InlineLink>!
+        </>,
+    },
+    {
+        date: "2026-08-17",
+        category: "New Lab Member",
+        content: <>
+            We welcome our new PhD student <InlineLink href="https://github.com/davidschulte" target="_blank">David Schulte</InlineLink> to the team!
         </>,
     },
     {
@@ -340,9 +381,9 @@ const LatestNews: TimelineEntryData[] = [
 
 export const PinnedMessages: PinnedMessage[] = [
     {
-        title: "4 Full Papers Accepted to EMNLP 2026!",
+        title: "7 Papers Accepted to EMNLP 2026!",
         content: <>
-            Four papers on efficient training of LLMs, parameter-efficient fine-tuning and multilingual NER accepted to
+            7 papers (4 full papers, 3 workshop papers) on efficient training of LLMs, parameter-efficient fine-tuning and multilingual NER accepted to
             EMNLP! This includes the paper describing <InlineLink href="https://huggingface.co/Boldt/Boldt-1B" target="_blank">Boldt-1B</InlineLink>,
             a new open-source foundation LLM that outperforms existing major LLMs in its parameter class. Check it out!</>,
     },
