@@ -25,7 +25,7 @@ const Publications: Publication[] = [
     {
         year: 2026,
         conference: "EMNLP 2026",
-        title: "From Puzzle-Solver to Language Model: Recurrent Inductive Bias, Data Scale, and Benchmark Validity in BabyLM",
+        title: "What Survives the BabyLM Budget? A Controlled Study of Token Mixers and Generative Objectives",
         authors: "Filipe Laitenberger, Patrick Haller, Jonas Golde and Alan Akbik",
         links: [],
         footnote: "BabyLM Workshop @ EMNLP 2026",
