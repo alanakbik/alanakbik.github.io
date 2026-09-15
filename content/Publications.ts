@@ -9,6 +9,22 @@ const Publications: Publication[] = [
     {
         year: 2026,
         conference: "EMNLP 2026",
+        title: "Self-Aware Knowledge Probing: Evaluating Language Models' Relational Knowledge through Confidence Calibration",
+        authors: "Christopher Kissling, Elena Merdjanovska, Alan Akbik",
+        links: [],
+        footnote: "UncertaiNLP @ EMNLP 2026",
+    },
+    {
+        year: 2026,
+        conference: "EMNLP 2026",
+        title: "SelectED: Selective LLM Refinement for Entity Disambiguation",
+        authors: "Susanna Rücker, Alexander Reinicke and Alan Akbik",
+        links: [],
+        footnote: "UncertaiNLP @ EMNLP 2026",
+    },
+    {
+        year: 2026,
+        conference: "EMNLP 2026",
         title: "Can Randomly Permuting the LM Decoding Order Boost Data-Efficiency?",
         authors: "Max Ploner and Alan Akbik",
         links: [],

@@ -30,6 +30,24 @@ import type { PinnedMessage, TimelineEntryData } from "@/content/types";
 
 const LatestNews: TimelineEntryData[] = [
     {
+        date: "2026-09-15",
+        category: "Paper accepted",
+        conference: "EMNLP 2026",
+        content: <>
+            Our paper &quot;Self-Aware Knowledge Probing: Evaluating Language Models&quot;
+            accepted to <InlineLink href="https://2026.emnlp.org/" target="_blank">EMNLP 2026 (UncertaiNLP Workshop)</InlineLink>!
+        </>,
+    },
+    {
+        date: "2026-09-15",
+        category: "Paper accepted",
+        conference: "EMNLP 2026",
+        content: <>
+            Our paper &quot;SelectED: Selective LLM Refinement for Entity Disambiguation&quot;
+            accepted to <InlineLink href="https://2026.emnlp.org/" target="_blank">EMNLP 2026 (UncertaiNLP Workshop)</InlineLink>!
+        </>,
+    },
+    {
         date: "2026-09-05",
         category: "Paper accepted",
         conference: "EMNLP 2026",
@@ -381,11 +399,11 @@ const LatestNews: TimelineEntryData[] = [
 
 export const PinnedMessages: PinnedMessage[] = [
     {
-        title: "7 Papers Accepted to EMNLP 2026!",
+        title: "9 Papers Accepted to EMNLP 2026!",
         content: <>
-            7 papers (4 full papers, 3 workshop papers) on efficient training of LLMs, parameter-efficient fine-tuning and multilingual NER accepted to
+            9 papers (4 full papers, 5 workshop papers) on efficient training of LLMs, parameter-efficient fine-tuning and multilingual NER accepted to
             EMNLP! This includes the paper describing <InlineLink href="https://huggingface.co/Boldt/Boldt-1B" target="_blank">Boldt-1B</InlineLink>,
-            a new open-source foundation LLM that outperforms existing major LLMs in its parameter class. Check it out!</>,
+            a new open-source foundation LLM that outperforms existing major LLMs in its parameter class. Meet us at EMNLP!</>,
     },
 ];
 
