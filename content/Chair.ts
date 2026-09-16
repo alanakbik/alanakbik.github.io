@@ -152,7 +152,7 @@ export const People: Person[] = [
         name: "Sam Gende",
         title: "Research Assistant",
         category: "Student Researchers",
-        image: "/people/sam.png",
+        image: "/people/sam.jpg",
         gitHubLink: "https://github.com/samGende",
         linkedInLink: "https://www.linkedin.com/in/sam-gende-3952b1211/",
     }, {
