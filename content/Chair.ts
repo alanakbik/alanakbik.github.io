@@ -156,6 +156,14 @@ export const People: Person[] = [
         gitHubLink: "https://github.com/samGende",
         linkedInLink: "https://www.linkedin.com/in/sam-gende-3952b1211/",
     }, {
+        name: "Gabi Melhem",
+        title: "Research Assistant",
+        category: "Student Researchers",
+        image: "/people/gabi.jpg",
+        gitHubLink: "https://github.com/GabrielMelhem",
+        linkedInLink: "http://linkedin.com/in/gabrielmelhem",
+        emailAddress: "gabrielmelhem@gmail.com",
+    },  {
         name: "Teresa Löffelhardt",
         title: "Research Assistant",
         category: "Alumni",
