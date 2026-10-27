@@ -395,15 +395,14 @@ const LatestNews: TimelineEntryData[] = [
     }
 ];
 
-
+b
 
 export const PinnedMessages: PinnedMessage[] = [
     {
-        title: "9 Papers Accepted to EMNLP 2026!",
+        title: "New fully funded PhD position available!",
         content: <>
-            9 papers (4 full papers, 5 workshop papers) on efficient training of LLMs, parameter-efficient fine-tuning and multilingual NER accepted to
-            EMNLP! This includes the paper describing <InlineLink href="https://huggingface.co/Boldt/Boldt-1B" target="_blank">Boldt-1B</InlineLink>,
-            a new open-source foundation LLM that outperforms existing major LLMs in its parameter class. Meet us at EMNLP!</>,
+            We're hiring: A new <InlineLink href="https://www.hu-berlin.de/universitaet/arbeiten-an-der-hu/stellenangebote/details/wiss-mitarbeiterin-m-w-d-auf-dem-gebiet-des-maschinellen-lernens-dr-170-26" target="_blank">fully funded PhD position</InlineLink> at our chair available.
+            We are looking for exceptional students with a very strong ML/NLP background. Apply until November 15th, 2026! </>,
     },
 ];
 
